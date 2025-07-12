@@ -1,0 +1,1879 @@
+-------visible_contests table--------
+
+
+-- CREATE OR REPLACE FUNCTION update_visible_contests()
+-- RETURNS void AS $$
+-- BEGIN
+--   DELETE FROM visible_contests;
+
+--   INSERT INTO visible_contests (
+--   match_id,
+--   match_date,
+--   match_time,
+--   contest,
+--   team1_abbr,
+--   team2_abbr,
+--   venue,
+--   game_number
+--   )
+-- WITH current_ist_time AS (
+--   SELECT CURRENT_TIMESTAMP AT TIME ZONE 'Asia/Kolkata' AS now_ist
+-- ),
+-- next_match_day AS (
+--   SELECT match_date
+--   FROM upcoming_matches, current_ist_time
+--   WHERE TO_TIMESTAMP(match_date || ' ' || REPLACE(match_time, ' IST', ''), 'YYYY-MM-DD HH:MI PM') > now_ist
+--   ORDER BY match_date, match_time
+--   LIMIT 1
+-- ),
+-- matches_on_day AS (
+--   SELECT *,
+--     TO_TIMESTAMP(match_date || ' ' || REPLACE(match_time, ' IST', ''), 'YYYY-MM-DD HH:MI PM') AS match_ts
+--   FROM upcoming_matches
+--   WHERE match_date = (SELECT match_date FROM next_match_day)
+-- )
+-- SELECT
+--   match_id,
+--   match_date,
+--   match_time,
+--   contest,
+--   team1_abbr,
+--   team2_abbr,
+--   venue,
+--   ROW_NUMBER() OVER (ORDER BY match_ts ASC) AS game_number
+-- FROM matches_on_day;
+-- END;
+-- $$ LANGUAGE plpgsql;
+
+
+
+
+
+
+=============batter form summary-=============
+CREATE TABLE batter_form_summary (
+  player_name TEXT PRIMARY KEY,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number INTEGER,
+  contest TEXT,
+  fantasy_points NUMERIC,
+  season_avg NUMERIC,
+  count_30_plus INTEGER,
+  count_50_plus INTEGER,
+  last_5_scores TEXT,
+  total_runs numeric,
+  updated_at TIMESTAMP DEFAULT now()
+);
+
+
+
+
+  CREATE OR REPLACE FUNCTION update_batter_form_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM batter_form_summary;
+
+  INSERT INTO batter_form_summary (
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    contest,
+    games_played,
+    fantasy_points,
+    season_avg,
+    count_30_plus,
+    count_50_plus,
+    last_5_scores,
+    total_runs,
+    updated_at
+  )
+  WITH player_ranked_innings AS (
+    SELECT
+      c.game_number,
+      c.contest,
+      b.player_name,
+      b.role,
+      b.current_team,
+      b.image_url,
+      d.match_id,
+      d.match_date,
+      "R" AS runs,
+      "B" AS balls,
+      "4s",
+      "6s",
+      ROW_NUMBER() OVER (PARTITION BY b.player_name ORDER BY d.match_date DESC) AS inning_rank
+    FROM batting_main a
+    JOIN match_info d ON a.match_id = d.match_id
+    JOIN player_information b ON a.mapped_player_id = b.player_id
+    JOIN visible_contests c ON (b.current_team = c.team1_abbr OR b.current_team = c.team2_abbr)
+    WHERE d.season = '2025' AND role IN ('Batter', 'WK-Batter')
+  ),
+
+  season_summary AS (
+    SELECT
+      game_number,
+      contest,
+      player_name,
+      role,
+      image_url,
+      current_team,
+      count(match_id) as games_played,
+      sum(runs) as total_runs,
+      SUM(runs) 
+        + SUM("4s") * 1 
+        + SUM("6s") * 2 
+        + SUM(CASE WHEN runs >= 50 THEN 8 ELSE 0 END)
+        + SUM(CASE WHEN runs >= 100 THEN 16 ELSE 0 END)
+        - SUM(CASE WHEN runs = 0 AND balls > 0 THEN 2 ELSE 0 END) AS fantasy_points,
+      ROUND(AVG(runs)::NUMERIC, 2) AS season_avg,
+      COUNT(CASE WHEN runs >= 30 THEN 1 END) AS count_30_plus,
+      COUNT(CASE WHEN runs >= 50 THEN 1 END) AS count_50_plus
+    FROM player_ranked_innings
+    GROUP BY 1,2,3,4,5,6
+  ),
+
+  last_5_scores AS (
+    SELECT 
+      player_name,
+      STRING_AGG(runs::TEXT, ', ' ORDER BY match_date asc) AS last_5_scores
+    FROM player_ranked_innings
+    WHERE inning_rank <= 5
+    GROUP BY player_name
+  )
+
+  SELECT 
+    s.player_name,
+    s.current_team,
+    s.role,
+    s.image_url,
+    s.game_number,
+    s.contest,
+    s.games_played,
+    s.fantasy_points,
+    s.season_avg,
+    s.count_30_plus,
+    s.count_50_plus,
+    l.last_5_scores,
+    total_runs,
+    NOW()
+  FROM season_summary s
+  JOIN last_5_scores l ON s.player_name = l.player_name;
+END;
+$$ LANGUAGE plpgsql;
+
+SELECT cron.schedule(
+  'update_batter_form_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_batter_form_summary();$$
+);
+
+select update_batter_form_summary();
+
+SELECT cron.unschedule('update_batter_form_summary_2025_every_30_min');
+
+
+	
+===============bowler form summary============
+
+
+CREATE TABLE bowler_form_summary (
+  player_name TEXT PRIMARY KEY,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number INTEGER,
+  contest TEXT,
+  season_avg NUMERIC,
+  season_eco NUMERIC,
+  season_strike_rate NUMERIC,
+  avg_wickets_per_match NUMERIC,
+  count_3_plus_wickets INTEGER,
+  total_wickets INTEGER,
+  fantasy_points NUMERIC,
+  last_5_figures TEXT,
+  -- updated_at TIMESTAMP DEFAULT now()
+);
+
+CREATE OR REPLACE FUNCTION update_bowler_form_summary()
+RETURNS void AS $$
+BEGIN
+  -- Clear previous records
+  DELETE FROM bowler_form_summary;
+
+  -- Insert updated records
+  INSERT INTO bowler_form_summary (
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    contest,
+    season_avg,
+    season_eco,
+    season_strike_rate,
+    avg_wickets_per_match,
+    count_3_plus_wickets,
+    total_wickets,
+    fantasy_points,
+    last_5_figures
+  )
+  
+  -- 🔁 Paste your WITH...SELECT query here
+  WITH bowler_data AS (
+  SELECT
+    br.match_id,
+    pi.player_name,
+    pi.current_team,
+    pi.role,
+    pi.image_url,
+    vc.game_number,
+    vc.contest,
+    br."O",
+    br."R",
+    br."W",
+    br."M",
+    FLOOR(br."O") * 6 + ROUND((br."O" - FLOOR(br."O")) * 10) AS balls_bowled,
+    mi.match_date,
+    ROW_NUMBER() OVER (PARTITION BY pi.player_name ORDER BY mi.match_date DESC) AS inning_rank
+
+  FROM bowling_main br
+  JOIN match_info mi ON br.match_id = mi.match_id
+  JOIN player_information pi ON br.mapped_player_id = pi.player_id
+  JOIN visible_contests vc ON (pi.current_team = vc.team1_abbr OR pi.current_team = vc.team2_abbr)
+  WHERE mi.season = '2025'
+    AND pi.role = 'Bowler'
+),
+
+aggregated AS (
+  SELECT
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    contest,
+    COUNT(match_id) AS matches,
+    SUM("R") AS total_runs,
+    SUM("W") AS total_wickets,
+    SUM("O") AS total_overs,
+    SUM("M") AS total_maidens,
+    SUM(balls_bowled) AS total_balls,
+    COUNT(*) FILTER (WHERE "W" >= 3) AS count_3_plus_wickets,
+
+    SUM("W") * 25
+      + SUM("M") * 12
+      + SUM(
+          CASE WHEN "W" = 3 THEN 4
+               WHEN "W" = 4 THEN 8
+               WHEN "W" >= 5 THEN 16
+               ELSE 0 END
+        )
+      + SUM(
+          CASE 
+            WHEN "O" >= 2 AND "R" / NULLIF("O", 0) <= 4.5 THEN 6
+            WHEN "O" >= 2 AND "R" / "O" <= 5 THEN 4
+            WHEN "O" >= 2 AND "R" / "O" <= 6 THEN 2
+            WHEN "O" >= 2 AND "R" / "O" >= 11 THEN -6
+            WHEN "O" >= 2 AND "R" / "O" >= 10 THEN -4
+            WHEN "O" >= 2 AND "R" / "O" >= 9 THEN -2
+            ELSE 0
+          END
+        ) AS fantasy_points
+  FROM bowler_data
+  GROUP BY player_name, current_team, role, image_url, game_number, contest
+),
+
+last_5_figures AS (
+  SELECT
+    player_name,
+    STRING_AGG("W"::TEXT || '/' || "R"::TEXT, ', ' ORDER BY match_date asc) AS last_5_figures
+  FROM bowler_data
+  WHERE inning_rank <= 5
+  GROUP BY player_name
+)
+
+SELECT
+  a.player_name,
+  a.current_team,
+  a.role,
+  a.image_url,
+  a.game_number,
+  a.contest,
+  ROUND(total_runs::NUMERIC / NULLIF(total_wickets, 0), 2) AS season_avg,
+  ROUND(total_runs::NUMERIC / NULLIF(total_overs, 0), 2) AS season_eco,
+  ROUND(total_balls::NUMERIC / NULLIF(total_wickets, 0), 2) AS season_strike_rate,
+  ROUND(total_wickets::NUMERIC / NULLIF(matches, 0), 2) AS avg_wickets_per_match,
+  a.count_3_plus_wickets,
+  a.total_wickets,
+  a.fantasy_points,
+  l.last_5_figures
+FROM aggregated a
+JOIN last_5_figures l ON a.player_name = l.player_name
+ORDER BY fantasy_points DESC;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+SELECT cron.schedule(
+  'update_bowler_form_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_bowler_form_summary();$$
+);
+
+SELECT cron.unschedule('update_bowler_form_summary_every_30_min');
+
+SELECT update_bowler_form_summary();
+
+
+
+=========all rounder form summary ============
+
+CREATE TABLE allrounder_form_summary (
+  player_name TEXT PRIMARY KEY,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number INTEGER,
+  contest TEXT,
+  fantasy_points NUMERIC,
+  batting_avg NUMERIC,
+  batting_strike_rate NUMERIC,
+  batting_total_runs INTEGER,
+  batting_count_30_plus INTEGER,
+  batting_last_5_scores TEXT,
+  bowling_avg NUMERIC,
+  bowling_economy NUMERIC,
+  bowling_total_wickets INTEGER,
+  bowling_count_3_plus_wickets INTEGER,
+  bowling_last_5_figures TEXT,
+  updated_at TIMESTAMP DEFAULT now()
+);
+
+
+
+CREATE OR REPLACE FUNCTION update_allrounder_form_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM allrounder_form_summary;
+
+  INSERT INTO allrounder_form_summary (
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    contest,
+    games_played,
+    fantasy_points,
+    batting_avg,
+    batting_strike_rate,
+    batting_total_runs,
+    batting_count_30_plus,
+    batting_last_5_scores,
+    bowling_avg,
+    bowling_economy,
+    bowling_total_wickets,
+    bowling_count_3_plus_wickets,
+    bowling_last_5_figures,
+    updated_at
+  )
+
+  WITH player_info AS (
+    SELECT 
+    pi.player_name, pi.player_id,pi.role, pi.current_team,pi.image_url, vc.game_number, vc.contest 
+    FROM player_information pi 
+    join visible_contests vc on (pi.current_team = vc.team1_abbr or pi.current_team = vc.team2_abbr)
+    WHERE pi.role = 'All-Rounder'
+  ),
+
+  batting_ranked AS (
+    SELECT
+      pi.player_id,
+      pi.player_name,
+      pi.current_team,
+      pi.role,
+      pi.image_url,
+      pi.game_number,
+      pi.contest,
+      mi.match_date,
+      mi.match_id,
+      bm."R",
+      bm."B",
+      bm."4s",
+      bm."6s",
+      ROW_NUMBER() OVER (PARTITION BY pi.player_name ORDER BY mi.match_date DESC) AS inning_rank
+    FROM batting_main bm
+    JOIN match_info mi ON bm.match_id = mi.match_id
+    JOIN player_info pi ON bm.mapped_player_id = pi.player_id
+    WHERE mi.season = '2025'
+  ),
+
+  batting_summary AS (
+    SELECT
+      player_id,
+      player_name,
+      current_team,
+      role,
+      image_url,
+      game_number,
+      contest,
+      count(match_id) as games_played,
+      ROUND(AVG("R")::NUMERIC, 2) AS batting_avg,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("B"), 0), 2) AS batting_strike_rate,
+      SUM("R") AS batting_total_runs,
+      COUNT(*) FILTER (WHERE "R" >= 30) AS batting_count_30_plus,
+      SUM("R") + SUM("4s") * 1 + SUM("6s") * 2
+        + SUM(CASE WHEN "R" >= 50 THEN 8 ELSE 0 END)
+        + SUM(CASE WHEN "R" >= 100 THEN 16 ELSE 0 END)
+        - SUM(CASE WHEN "R" = 0 AND "B" > 0 THEN 2 ELSE 0 END) AS batting_points
+    FROM batting_ranked
+    GROUP BY player_id, player_name,current_team, role, image_url, game_number, contest
+  ),
+
+  batting_last_5 AS (
+    SELECT
+      player_id,
+      player_name,
+      STRING_AGG("R"::TEXT, ', ' ORDER BY match_date asc) AS batting_last_5_scores
+    FROM batting_ranked
+    WHERE inning_rank <= 5
+    GROUP BY player_id, player_name
+  ),
+
+  bowling_ranked AS (
+    SELECT
+      pi.player_id,
+      pi.player_name,
+      pi.current_team,
+      pi.role,
+      pi.image_url,
+      pi.game_number,
+      pi.contest,
+      br.match_id,
+      br."O",
+      br."R",
+      br."W",
+      br."M",
+      FLOOR(br."O") * 6 + ROUND((br."O" - FLOOR(br."O")) * 10) AS balls_bowled,
+      mi.match_date,
+      ROW_NUMBER() OVER (PARTITION BY pi.player_name ORDER BY mi.match_date DESC) AS inning_rank
+    FROM bowling_main br
+    JOIN match_info mi ON br.match_id = mi.match_id
+    JOIN player_info pi ON br.mapped_player_id = pi.player_id
+    WHERE mi.season = '2025'
+  ),
+
+  bowling_summary AS (
+    SELECT
+      player_id,
+      player_name,
+      count(match_id) as games_played,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("W"), 0), 2) AS bowling_avg,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("O"), 0), 2) AS bowling_economy,
+      SUM("W") AS bowling_total_wickets,
+      COUNT(*) FILTER (WHERE "W" >= 3) AS bowling_count_3_plus_wickets,
+      SUM("W") * 25
+        + SUM("M") * 12
+        + SUM(
+            CASE WHEN "W" = 3 THEN 4
+                 WHEN "W" = 4 THEN 8
+                 WHEN "W" >= 5 THEN 16
+                 ELSE 0 END
+          )
+        + SUM(
+            CASE 
+              WHEN "O" >= 2 AND "R" / NULLIF("O", 0) <= 4.5 THEN 6
+              WHEN "O" >= 2 AND "R" / "O" <= 5 THEN 4
+              WHEN "O" >= 2 AND "R" / "O" <= 6 THEN 2
+              WHEN "O" >= 2 AND "R" / "O" >= 11 THEN -6
+              WHEN "O" >= 2 AND "R" / "O" >= 10 THEN -4
+              WHEN "O" >= 2 AND "R" / "O" >= 9 THEN -2
+              ELSE 0
+            END
+        ) AS bowling_points
+    FROM bowling_ranked
+    GROUP BY player_id, player_name
+  ),
+
+  bowling_last_5 AS (
+    SELECT
+      player_id,
+      player_name,
+      STRING_AGG("W"::TEXT || '/' || "R"::TEXT, ', ' ORDER BY match_date asc) AS bowling_last_5_figures
+    FROM bowling_ranked
+    WHERE inning_rank <= 5
+    GROUP BY player_id, player_name
+  )
+
+  SELECT
+    b.player_name,
+    b.current_team,
+    b.role,
+    b.image_url,
+    b.game_number,
+    b.contest,
+    GREATEST(COALESCE(b.games_played, 0), COALESCE(w.games_played, 0))as games_played,
+    COALESCE(b.batting_points, 0) + COALESCE(w.bowling_points, 0) AS fantasy_points,
+    b.batting_avg,
+    b.batting_strike_rate,
+    b.batting_total_runs,
+    b.batting_count_30_plus,
+    bl.batting_last_5_scores,
+    w.bowling_avg,
+    w.bowling_economy,
+    w.bowling_total_wickets,
+    w.bowling_count_3_plus_wickets,
+    wl.bowling_last_5_figures,
+    NOW()
+  FROM batting_summary b
+  LEFT JOIN bowling_summary w ON b.player_id = w.player_id
+  LEFT JOIN batting_last_5 bl ON b.player_id = bl.player_id
+  LEFT JOIN bowling_last_5 wl ON b.player_id = wl.player_id
+  ORDER BY fantasy_points DESC;
+END;
+$$ LANGUAGE plpgsql;
+
+
+select update_allrounder_form_summary();
+
+SELECT cron.schedule(
+  'update_allrounder_form_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_allrounder_form_summary();$$
+);
+
+
+select update_allrounder_form_summary();
+
+
+==========batter venue summary =============
+
+CREATE TABLE batter_venue_summary (
+  match_venue TEXT,
+  player_name TEXT,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number numeric,
+  games_played INTEGER,
+  total_runs INTEGER,
+  avg_score NUMERIC,
+  avg_score_2025 NUMERIC,
+  avg_fantasy_points NUMERIC,
+  last_10_scores TEXT,
+  updated_at TIMESTAMP DEFAULT now(),
+  PRIMARY KEY (match_venue, player_name)
+);
+
+
+
+
+CREATE OR REPLACE FUNCTION update_batter_venue_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM batter_venue_summary;
+
+  INSERT INTO batter_venue_summary (
+    match_venue,
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    games_played,
+    total_runs,
+    avg_score,
+    avg_score_2025,
+    avg_fantasy_points,
+    last_10_scores,
+    updated_at
+  )
+
+  WITH player_venue_ranked AS (
+    SELECT
+      b.player_name,
+      b.role,
+      b.current_team,
+      b.image_url,
+      c.game_number,
+      d.match_venue,
+      d.season,
+      d.match_date,
+      a.match_id,
+      a."R" AS runs,
+      a."B" AS balls,
+      a."4s",
+      a."6s",
+      ROW_NUMBER() OVER (
+        PARTITION BY b.player_name, d.match_venue 
+        ORDER BY d.match_date DESC
+      ) AS venue_rank
+    FROM batting_main a
+    JOIN match_info d ON a.match_id = d.match_id
+    JOIN player_information b ON a.mapped_player_id = b.player_id
+    JOIN visible_contests c ON d.match_venue = c.venue
+                            AND (c.team1_abbr = b.current_team OR c.team2_abbr = b.current_team)
+    WHERE b.role IN ('Batter', 'WK-Batter')
+  ),
+
+  venue_summary AS (
+    SELECT
+      match_venue,
+      player_name,
+      current_team,
+      role,
+      image_url,
+      game_number,
+      COUNT(*) AS games_played,
+      SUM(runs) AS total_runs,
+      ROUND(AVG(runs)::NUMERIC, 2) AS avg_score,
+      ROUND(
+        AVG(CASE WHEN season = '2025' THEN runs ELSE NULL END)::NUMERIC, 2
+      ) AS avg_score_2025,
+      ROUND(AVG(
+        runs + "4s" * 1 + "6s" * 2
+        + CASE WHEN runs >= 50 THEN 8 ELSE 0 END
+        + CASE WHEN runs >= 100 THEN 16 ELSE 0 END
+        - CASE WHEN runs = 0 AND balls > 0 THEN 2 ELSE 0 END
+      )::NUMERIC, 2) AS avg_fantasy_points
+    FROM player_venue_ranked
+    GROUP BY match_venue, player_name, current_team, role, image_url, game_number
+  ),
+
+  venue_last_10 AS (
+    SELECT
+      match_venue,
+      player_name,
+      STRING_AGG(runs::TEXT, ', ' ORDER BY match_date ASC) AS last_10_scores
+    FROM player_venue_ranked
+    WHERE venue_rank <= 10
+    GROUP BY match_venue, player_name
+  )
+
+  SELECT
+    s.match_venue,
+    s.player_name,
+    s.current_team,
+    s.role,
+    s.image_url,
+    s.game_number,
+    s.games_played,
+    s.total_runs,
+    s.avg_score,
+    s.avg_score_2025,
+    s.avg_fantasy_points,
+    l.last_10_scores,
+    NOW()
+  FROM venue_summary s
+  LEFT JOIN venue_last_10 l ON s.player_name = l.player_name AND s.match_venue = l.match_venue;
+
+END;
+$$ LANGUAGE plpgsql;
+
+
+SELECT cron.schedule(
+  'update_batter_venue_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_batter_venue_summary();$$
+);
+
+
+select update_batter_venue_summary();
+
+
+
+==========bowler venue summary =========
+
+CREATE TABLE bowler_venue_summary_2025 (
+  match_venue TEXT,
+  player_name TEXT,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number INTEGER,
+  games_played INTEGER,
+  total_wickets INTEGER,
+  total_runs_conceded INTEGER,
+  bowling_avg NUMERIC,
+  avg_eco NUMERIC,
+  avg_strike_rate NUMERIC,
+  count_3_plus_wickets INTEGER,
+  fantasy_points_per_game NUMERIC,
+  wickets_per_game NUMERIC,
+  last_10_figures TEXT,
+  updated_at TIMESTAMP DEFAULT now(),
+  PRIMARY KEY (match_venue, player_name)
+);
+
+
+CREATE OR REPLACE FUNCTION update_bowler_venue_summary_2025()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM bowler_venue_summary_2025;
+
+  INSERT INTO bowler_venue_summary_2025 (
+    match_venue,
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    games_played,
+    total_wickets,
+    total_runs_conceded,
+    bowling_avg,
+    avg_eco,
+    avg_strike_rate,
+    count_3_plus_wickets,
+    fantasy_points_per_game,
+    wickets_per_game,
+    last_10_figures,
+    updated_at
+  )
+
+  WITH bowler_venue_ranked AS (
+    SELECT
+      pi.player_name,
+      pi.current_team,
+      pi.role,
+      pi.image_url,
+      vc.game_number,
+      mi.match_venue,
+      mi.season,
+      mi.match_date,
+      br.match_id,
+      br."O",
+      br."R",
+      br."W",
+      br."M",
+      br."ECO",
+      FLOOR(br."O") * 6 + ROUND((br."O" - FLOOR(br."O")) * 10) AS balls_bowled,
+      ROW_NUMBER() OVER (
+        PARTITION BY pi.player_name, mi.match_venue 
+        ORDER BY mi.match_date DESC
+      ) AS venue_rank
+    FROM bowling_main br
+    JOIN match_info mi ON br.match_id = mi.match_id
+    JOIN player_information pi ON br.mapped_player_id = pi.player_id
+    JOIN visible_contests vc ON mi.match_venue = vc.venue
+                              AND (pi.current_team = vc.team1_abbr OR pi.current_team = vc.team2_abbr)
+    WHERE pi.role = 'Bowler'
+  ),
+
+  venue_summary AS (
+    SELECT
+      match_venue,
+      player_name,
+      current_team,
+      role,
+      image_url,
+      MAX(game_number) AS game_number,
+      COUNT(*) AS games_played,
+      SUM("W") AS total_wickets,
+      SUM("R") AS total_runs_conceded,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("W"), 0), 2) AS bowling_avg,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("O"), 0), 2) AS avg_eco,
+      ROUND(SUM(balls_bowled)::NUMERIC / NULLIF(SUM("W"), 0), 2) AS avg_strike_rate,
+      COUNT(*) FILTER (WHERE "W" >= 3) AS count_3_plus_wickets,
+      ROUND(AVG(
+        "W" * 25
+        + "M" * 12
+        + CASE WHEN "W" = 3 THEN 4
+               WHEN "W" = 4 THEN 8
+               WHEN "W" >= 5 THEN 16 ELSE 0 END
+        + CASE 
+            WHEN "O" >= 2 AND "ECO" <= 4.5 THEN 6
+            WHEN "O" >= 2 AND "ECO" <= 5 THEN 4
+            WHEN "O" >= 2 AND "ECO" <= 6 THEN 2
+            WHEN "O" >= 2 AND "ECO" >= 11 THEN -6
+            WHEN "O" >= 2 AND "ECO" >= 10 THEN -4
+            WHEN "O" >= 2 AND "ECO" >= 9 THEN -2
+            ELSE 0
+          END
+      )::NUMERIC, 2) AS fantasy_points_per_game,
+      ROUND(SUM("W")::NUMERIC / NULLIF(COUNT(*), 0), 2) AS wickets_per_game
+    FROM bowler_venue_ranked
+    GROUP BY match_venue, player_name, current_team, role, image_url
+  ),
+
+  last_5_figures AS (
+    SELECT
+      match_venue,
+      player_name,
+      STRING_AGG("W"::TEXT || '/' || "R"::TEXT, ', ' ORDER BY match_date ASC) AS last_10_figures
+    FROM bowler_venue_ranked
+    WHERE venue_rank <= 10
+    GROUP BY match_venue, player_name
+  )
+
+  SELECT
+    s.match_venue,
+    s.player_name,
+    s.current_team,
+    s.role,
+    s.image_url,
+    s.game_number,
+    s.games_played,
+    s.total_wickets,
+    s.total_runs_conceded,
+    s.bowling_avg,
+    s.avg_eco,
+    s.avg_strike_rate,
+    s.count_3_plus_wickets,
+    s.fantasy_points_per_game,
+    s.wickets_per_game,
+    l.last_10_figures,
+    NOW()
+  FROM venue_summary s
+  LEFT JOIN last_5_figures l ON s.player_name = l.player_name AND s.match_venue = l.match_venue;
+
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+SELECT cron.schedule(
+  'update_bowler_venue_summary_2025_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_bowler_venue_summary_2025();$$
+);
+
+
+=======all rounder venue summary =========
+
+
+CREATE TABLE allrounder_venue_summary (
+  match_venue TEXT,
+  player_name TEXT,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number INTEGER,
+  contest TEXT,
+  games_played numeric,
+  total_fantasy_points NUMERIC,
+  fantasy_points_per_game NUMERIC,
+  
+  -- Batting
+  batting_avg NUMERIC,
+  batting_strike_rate NUMERIC,
+  batting_total_runs INTEGER,
+  batting_count_30_plus INTEGER,
+  batting_last_5_scores TEXT,
+
+  -- Bowling
+  bowling_avg NUMERIC,
+  bowling_economy NUMERIC,
+  bowling_total_wickets INTEGER,
+  bowling_count_3_plus_wickets INTEGER,
+  bowling_last_5_figures TEXT,
+
+  updated_at TIMESTAMP DEFAULT now(),
+  PRIMARY KEY (match_venue, player_name)
+);
+
+
+CREATE OR REPLACE FUNCTION update_allrounder_venue_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM allrounder_venue_summary;
+
+  INSERT INTO allrounder_venue_summary (
+    match_venue,
+    player_name,
+    current_team,
+    role,
+    image_url,
+    game_number,
+    contest,
+    games_played,
+    total_fantasy_points,
+    fantasy_points_per_game,
+    batting_avg,
+    batting_strike_rate,
+    batting_total_runs,
+    batting_count_30_plus,
+    batting_last_5_scores,
+    bowling_avg,
+    bowling_economy,
+    bowling_total_wickets,
+    bowling_count_3_plus_wickets,
+    bowling_last_5_figures,
+    updated_at
+  )
+WITH player_info AS (
+  SELECT * FROM player_information WHERE role = 'All-Rounder'
+),
+
+-- 🏏 Batting at Venue
+batting_ranked AS (
+  SELECT
+    pi.player_name,
+    pi.current_team,
+    pi.role,
+    pi.image_url,
+    vc.game_number,
+    vc.contest,
+    mi.match_venue,
+    mi.match_date,
+    bm."R",
+    bm."B",
+    bm."4s",
+    bm."6s",
+    ROW_NUMBER() OVER (PARTITION BY pi.player_name, mi.match_venue ORDER BY mi.match_date DESC) AS venue_rank
+  FROM batting_main bm
+  JOIN match_info mi ON bm.match_id = mi.match_id
+  JOIN player_info pi ON bm.mapped_player_id = pi.player_id
+  JOIN visible_contests vc ON (pi.current_team = vc.team1_abbr OR pi.current_team = vc.team2_abbr)
+                            AND vc.venue = mi.match_venue
+),
+
+batting_summary AS (
+  SELECT
+    match_venue,
+    player_name,
+    current_team,
+    role,
+    image_url,
+    MAX(game_number) AS game_number,
+    MAX(contest) AS contest,
+    COUNT(*) AS games_played,
+    ROUND(AVG("R")::NUMERIC, 2) AS batting_avg,
+    ROUND(SUM("R")::NUMERIC / NULLIF(SUM("B"), 0), 2) AS batting_strike_rate,
+    SUM("R") AS batting_total_runs,
+    COUNT(*) FILTER (WHERE "R" >= 30) AS batting_count_30_plus,
+    SUM("R") + SUM("4s") + SUM("6s") * 2
+      + SUM(CASE WHEN "R" >= 50 THEN 8 ELSE 0 END)
+      + SUM(CASE WHEN "R" >= 100 THEN 16 ELSE 0 END)
+      - SUM(CASE WHEN "R" = 0 AND "B" > 0 THEN 2 ELSE 0 END) AS batting_points
+  FROM batting_ranked
+  GROUP BY match_venue, player_name, current_team, role, image_url
+),
+
+batting_last_5 AS (
+  SELECT
+    match_venue,
+    player_name,
+    STRING_AGG("R"::TEXT, ', ' ORDER BY match_date ASC) AS batting_last_5_scores
+  FROM batting_ranked
+  WHERE venue_rank <= 5
+  GROUP BY match_venue, player_name
+),
+
+-- 🎯 Bowling at Venue
+bowling_ranked AS (
+  SELECT
+    pi.player_name,
+    pi.current_team,
+    pi.role,
+    pi.image_url,
+    vc.game_number,
+    vc.contest,
+    mi.match_venue,
+    mi.match_date,
+    mi.match_id,
+    br."O",
+    br."R",
+    br."W",
+    br."M",
+    FLOOR(br."O") * 6 + ROUND((br."O" - FLOOR(br."O")) * 10) AS balls_bowled,
+    ROW_NUMBER() OVER (PARTITION BY pi.player_name, mi.match_venue ORDER BY mi.match_date DESC) AS venue_rank
+  FROM bowling_main br
+  JOIN match_info mi ON br.match_id = mi.match_id
+  JOIN player_info pi ON br.mapped_player_id = pi.player_id
+  JOIN visible_contests vc ON (pi.current_team = vc.team1_abbr OR pi.current_team = vc.team2_abbr)
+                            AND vc.venue = mi.match_venue
+),
+
+bowling_summary AS (
+  SELECT
+    match_venue,
+    player_name,
+    count(match_id) as games_played,
+    ROUND(SUM("R")::NUMERIC / NULLIF(SUM("W"), 0), 2) AS bowling_avg,
+    ROUND(SUM("R")::NUMERIC / NULLIF(SUM("O"), 0), 2) AS bowling_economy,
+    SUM("W") AS bowling_total_wickets,
+    COUNT(*) FILTER (WHERE "W" >= 3) AS bowling_count_3_plus_wickets,
+    SUM("W") * 25
+      + SUM("M") * 12
+      + SUM(
+          CASE WHEN "W" = 3 THEN 4
+               WHEN "W" = 4 THEN 8
+               WHEN "W" >= 5 THEN 16 ELSE 0 END
+        )
+      + SUM(
+          CASE 
+            WHEN "O" >= 2 AND "R" / NULLIF("O", 0) <= 4.5 THEN 6
+            WHEN "O" >= 2 AND "R" / "O" <= 5 THEN 4
+            WHEN "O" >= 2 AND "R" / "O" <= 6 THEN 2
+            WHEN "O" >= 2 AND "R" / "O" >= 11 THEN -6
+            WHEN "O" >= 2 AND "R" / "O" >= 10 THEN -4
+            WHEN "O" >= 2 AND "R" / "O" >= 9 THEN -2
+            ELSE 0
+          END
+      ) AS bowling_points
+  FROM bowling_ranked
+  GROUP BY match_venue, player_name
+),
+
+bowling_last_5 AS (
+  SELECT
+    match_venue,
+    player_name,
+    STRING_AGG("W"::TEXT || '/' || "R"::TEXT, ', ' ORDER BY match_date ASC) AS bowling_last_5_figures
+  FROM bowling_ranked
+  WHERE venue_rank <= 5
+  GROUP BY match_venue, player_name
+)
+
+-- ✅ Final Select
+SELECT
+  b.match_venue,
+  b.player_name,
+  b.current_team,
+  b.role,
+  b.image_url,
+  b.game_number,
+  b.contest,
+  GREATEST(COALESCE(b.games_played, 0), COALESCE(w.games_played, 0))as games_played,
+  COALESCE(b.batting_points, 0) + COALESCE(w.bowling_points, 0) AS total_fantasy_points,
+  ROUND((COALESCE(b.batting_points, 0) + COALESCE(w.bowling_points, 0))::NUMERIC / NULLIF(b.games_played, 0), 2) AS fantasy_points_per_game,
+  b.batting_avg,
+  b.batting_strike_rate,
+  b.batting_total_runs,
+  b.batting_count_30_plus,
+  bl.batting_last_5_scores,
+  w.bowling_avg,
+  w.bowling_economy,
+  w.bowling_total_wickets,
+  w.bowling_count_3_plus_wickets,
+  wl.bowling_last_5_figures,
+  NOW() AS updated_at
+FROM batting_summary b
+LEFT JOIN bowling_summary w ON b.player_name = w.player_name AND b.match_venue = w.match_venue
+LEFT JOIN batting_last_5 bl ON b.player_name = bl.player_name AND b.match_venue = bl.match_venue
+LEFT JOIN bowling_last_5 wl ON b.player_name = wl.player_name AND b.match_venue = wl.match_venue
+ORDER BY total_fantasy_points DESC;
+
+END;
+$$ LANGUAGE plpgsql;
+
+
+SELECT cron.schedule(
+  'update_allrounder_venue_summaryevery_30_min',
+  '*/30 * * * *',
+  $$SELECT update_allrounder_venue_summary();$$
+);
+
+
+select update_allrounder_venue_summary();
+
+
+
+===========batsmen opponent summary==========
+
+CREATE TABLE batter_opponent_summary (
+  player_name TEXT,
+  current_team TEXT,
+  image_url TEXT,
+  role TEXT,
+  game_number NUMERIC,
+  opponent_team TEXT,
+  games_played INTEGER,
+  total_runs INTEGER,
+  total_balls INTEGER,
+  batting_avg NUMERIC,
+  batting_strike_rate NUMERIC,
+  count_30_plus INTEGER,
+  count_50_plus INTEGER,
+  last_5_scores TEXT,
+  fantasy_points NUMERIC,
+  fantasy_points_per_game NUMERIC,
+  updated_at TIMESTAMP DEFAULT now(),
+  PRIMARY KEY (player_name, opponent_team)
+);
+
+
+
+CREATE OR REPLACE FUNCTION update_batter_opponent_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM batter_opponent_summary;
+
+  INSERT INTO batter_opponent_summary (
+    player_name,
+    current_team,
+    image_url,
+    role,
+    game_number,
+    opponent_team,
+    games_played,
+    total_runs,
+    total_balls,
+    batting_avg,
+    batting_strike_rate,
+    count_30_plus,
+    count_50_plus,
+    last_5_scores,
+    fantasy_points,
+    fantasy_points_per_game,
+    updated_at
+  )
+
+with player_info as
+(
+  select 
+  pi.player_id,
+  pi.player_name,
+  pi.current_team,
+  pi.role,
+  pi.image_url,
+  vc.game_number,
+  vc.contest,
+  case when pi.current_team = vc.team1_abbr then team2_abbr
+        else team1_abbr end as opponent_team
+  from player_information pi 
+  join visible_contests vc on (pi.current_team = vc.team1_abbr or pi.current_team = vc.team2_abbr)
+  where pi.role IN ('Batter', 'WK-Batter')
+
+),
+
+base AS (
+    SELECT
+      pi.player_name,
+      pi.current_team,
+      pi.image_url,
+      pi.role,
+      pi.game_number,
+      pi.contest,
+      pi.opponent_team,
+      bm.match_id,
+      mi.match_date,
+      bm."R" AS runs,
+      bm."B" AS balls,
+      bm."4s",
+      bm."6s"
+      from player_info pi
+      join batting_main bm on bm.mapped_player_id = pi.player_id
+                            and bm.opponent_team_abrv = pi.opponent_team
+      join match_info mi on mi.match_id = bm.match_id
+  ),
+
+  ranked AS (
+    SELECT *,
+      ROW_NUMBER() OVER (
+        PARTITION BY player_name, opponent_team ORDER BY match_date DESC
+      ) AS inning_rank
+    FROM base
+  ),
+
+
+  summary AS (
+    SELECT
+      player_name,
+      current_team,
+      image_url,
+      role,
+      game_number,
+      opponent_team,
+      COUNT(match_id) AS games_played,
+      SUM(runs) AS total_runs,
+      SUM(balls) AS total_balls,
+      ROUND(AVG(runs)::NUMERIC, 2) AS batting_avg,
+      ROUND(SUM(runs)::NUMERIC / NULLIF(SUM(balls), 0), 2) AS batting_strike_rate,
+      COUNT(*) FILTER (WHERE runs >= 30) AS count_30_plus,
+      COUNT(*) FILTER (WHERE runs >= 50) AS count_50_plus,
+      SUM(
+        runs + "4s" + "6s" * 2
+        + CASE WHEN runs >= 50 THEN 8 ELSE 0 END
+        + CASE WHEN runs >= 100 THEN 16 ELSE 0 END
+        - CASE WHEN runs = 0 AND balls > 0 THEN 2 ELSE 0 END
+      ) AS fantasy_points
+    FROM ranked
+    GROUP BY player_name, current_team, image_url,role, game_number, opponent_team
+  ),
+
+  last_5 AS (
+    SELECT
+      player_name,
+      opponent_team,
+      STRING_AGG(runs::TEXT, ', ' ORDER BY match_date ASC) AS last_5_scores
+    FROM ranked
+    WHERE inning_rank <= 5
+    GROUP BY player_name, opponent_team
+  )
+
+  SELECT
+    s.player_name,
+    s.current_team,
+    s.image_url,
+    s.role,
+    s.game_number,
+    s.opponent_team,
+    s.games_played,
+    s.total_runs,
+    s.total_balls,
+    s.batting_avg,
+    s.batting_strike_rate,
+    s.count_30_plus,
+    s.count_50_plus,
+    l.last_5_scores,
+    s.fantasy_points,
+    ROUND(s.fantasy_points::NUMERIC / NULLIF(s.games_played, 0), 2) AS fantasy_points_per_game,
+    NOW()
+  FROM summary s
+  LEFT JOIN last_5 l ON s.player_name = l.player_name AND s.opponent_team = l.opponent_team;
+
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+select update_batter_opponent_summary();
+
+
+SELECT cron.schedule(
+  'update_batter_opponent_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_batter_opponent_summary();$$
+);
+
+
+
+
+
+==================bowler opponents summary =============
+
+
+CREATE TABLE bowler_opponent_summary (
+  player_name TEXT,
+  current_team TEXT,
+  image_url TEXT,
+  role TEXT,
+  opponent_team TEXT,
+  game_number INTEGER,
+  games_played INTEGER,
+  total_wickets INTEGER,
+  total_runs_conceded INTEGER,
+  total_overs NUMERIC,
+  total_balls INTEGER,
+  bowling_avg NUMERIC,
+  bowling_economy NUMERIC,
+  bowling_strike_rate NUMERIC,
+  count_3_plus_wickets INTEGER,
+  last_5_figures TEXT,
+  fantasy_points NUMERIC,
+  fantasy_points_per_game NUMERIC,
+  updated_at TIMESTAMP DEFAULT now(),
+  PRIMARY KEY (player_name, opponent_team)
+);
+
+
+
+CREATE OR REPLACE FUNCTION update_bowler_opponent_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM bowler_opponent_summary;
+
+  INSERT INTO bowler_opponent_summary (
+    player_name, current_team, image_url, role, opponent_team,
+    game_number, games_played, total_wickets, total_runs_conceded, total_overs,
+    total_balls, bowling_avg, bowling_economy, bowling_strike_rate,
+    count_3_plus_wickets, last_5_figures, fantasy_points, fantasy_points_per_game, updated_at
+  )
+  
+with player_info as
+(
+  select 
+  pi.player_id,
+  pi.player_name,
+  pi.current_team,
+  pi.role,
+  pi.image_url,
+  vc.game_number,
+  vc.contest,
+  case when pi.current_team = vc.team1_abbr then team2_abbr
+        else team1_abbr end as opponent_team
+  from player_information pi 
+  join visible_contests vc on (pi.current_team = vc.team1_abbr or pi.current_team = vc.team2_abbr)
+  where pi.role = 'Bowler'
+),
+
+  base AS (
+    SELECT
+      pi.player_name,
+      pi.current_team,
+      pi.image_url,
+      pi.role,
+      pi.game_number,
+      pi.opponent_team,
+      bm.match_id,
+      mi.match_date,
+      bm."O",
+      bm."R",
+      bm."W",
+      bm."M",
+      FLOOR(bm."O") * 6 + ROUND((bm."O" - FLOOR(bm."O")) * 10) AS balls_bowled
+from player_info pi
+join bowling_main bm on bm.mapped_player_id = pi.player_id
+                        and bm.opponent_team_abrv = pi.opponent_team
+join match_info mi on mi.match_id = bm.match_id
+  ),
+
+  ranked AS (
+    SELECT *,
+      ROW_NUMBER() OVER (
+        PARTITION BY player_name ORDER BY match_date DESC
+      ) AS inning_rank
+    FROM base
+  ),
+
+  summary AS (
+    SELECT
+      player_name,
+      current_team,
+      image_url,
+      role,
+      opponent_team,
+      game_number,
+      COUNT(match_id) AS games_played,
+      SUM("W") AS total_wickets,
+      SUM("R") AS total_runs_conceded,
+      SUM("O") AS total_overs,
+      SUM(balls_bowled) AS total_balls,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("W"), 0), 2) AS bowling_avg,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("O"), 0), 2) AS bowling_economy,
+      ROUND(SUM(balls_bowled)::NUMERIC / NULLIF(SUM("W"), 0), 2) AS bowling_strike_rate,
+      COUNT(*) FILTER (WHERE "W" >= 3) AS count_3_plus_wickets,
+      SUM("W") * 25
+        + SUM("M") * 12
+        + SUM(
+            CASE WHEN "W" = 3 THEN 4
+                 WHEN "W" = 4 THEN 8
+                 WHEN "W" >= 5 THEN 16 ELSE 0 END
+          )
+        + SUM(
+            CASE 
+              WHEN "O" >= 2 AND "R" / NULLIF("O", 0) <= 4.5 THEN 6
+              WHEN "O" >= 2 AND "R" / "O" <= 5 THEN 4
+              WHEN "O" >= 2 AND "R" / "O" <= 6 THEN 2
+              WHEN "O" >= 2 AND "R" / "O" >= 11 THEN -6
+              WHEN "O" >= 2 AND "R" / "O" >= 10 THEN -4
+              WHEN "O" >= 2 AND "R" / "O" >= 9 THEN -2
+              ELSE 0
+            END
+        ) AS fantasy_points
+    FROM ranked
+    GROUP BY player_name, current_team, image_url, role, opponent_team, game_number
+  ),
+
+  last_5_figures AS (
+    SELECT
+      player_name,
+      opponent_team,
+      STRING_AGG("W"::TEXT || '/' || "R"::TEXT, ', ' ORDER BY match_date ASC) AS last_5_figures
+    FROM ranked
+    WHERE inning_rank <= 5
+    GROUP BY player_name, opponent_team
+  )
+
+  SELECT
+    s.player_name,
+    s.current_team,
+    s.image_url,
+    s.role,
+    s.opponent_team,
+    s.game_number,
+    s.games_played,
+    s.total_wickets,
+    s.total_runs_conceded,
+    s.total_overs,
+    s.total_balls,
+    s.bowling_avg,
+    s.bowling_economy,
+    s.bowling_strike_rate,
+    s.count_3_plus_wickets,
+    f.last_5_figures,
+    s.fantasy_points,
+    ROUND(s.fantasy_points::NUMERIC / NULLIF(s.games_played, 0), 2) AS fantasy_points_per_game,
+    NOW()
+  FROM summary s
+  LEFT JOIN last_5_figures f ON s.player_name = f.player_name AND s.opponent_team = f.opponent_team;
+
+END;
+$$ LANGUAGE plpgsql;
+
+
+SELECT cron.schedule(
+  'update_bowler_opponent_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_bowler_opponent_summary();$$
+);
+
+select update_batter_opponent_summary();
+
+
+
+===============all_rounder_opponent_summary============
+CREATE TABLE allrounder_opponent_summary (
+  opponent_team TEXT,
+  player_name TEXT,
+  current_team TEXT,
+  role TEXT,
+  image_url TEXT,
+  game_number INTEGER,
+  contest TEXT,
+  games_played INTEGER,
+  total_fantasy_points NUMERIC,
+  fantasy_points_per_game NUMERIC,
+  batting_avg NUMERIC,
+  batting_strike_rate NUMERIC,
+  batting_total_runs INTEGER,
+  batting_count_30_plus INTEGER,
+  batting_last_5_scores TEXT,
+  bowling_avg NUMERIC,
+  bowling_economy NUMERIC,
+  bowling_total_wickets INTEGER,
+  bowling_count_3_plus_wickets INTEGER,
+  bowling_last_5_figures TEXT,
+  updated_at TIMESTAMP DEFAULT now(),
+  PRIMARY KEY (player_name, opponent_team)
+);
+
+
+
+CREATE OR REPLACE FUNCTION update_allrounder_opponent_summary()
+RETURNS void AS $$
+BEGIN
+  DELETE FROM allrounder_opponent_summary;
+
+  INSERT INTO allrounder_opponent_summary (
+    opponent_team, 
+    player_name, 
+    current_team, 
+    role, 
+    image_url,
+    game_number, 
+    contest, 
+    games_played,
+    total_fantasy_points, 
+    fantasy_points_per_game,
+    batting_avg, 
+    batting_strike_rate, 
+    batting_total_runs, 
+    batting_count_30_plus, 
+    batting_last_5_scores,
+    bowling_avg, 
+    bowling_economy, 
+    bowling_total_wickets, 
+    bowling_count_3_plus_wickets, 
+    bowling_last_5_figures,
+    updated_at
+  )
+
+with player_info as
+(
+  select 
+  pi.player_id,
+  pi.player_name,
+  pi.current_team,
+  pi.role,
+  pi.image_url,
+  vc.game_number,
+  vc.contest,
+  case when pi.current_team = vc.team1_abbr then team2_abbr
+        else team1_abbr end as opponent_team
+  from player_information pi 
+  join visible_contests vc on (pi.current_team = vc.team1_abbr or pi.current_team = vc.team2_abbr)
+  where pi.role = 'All-Rounder'
+),
+
+  -- 🏏 Batting vs Opponent
+  batting_ranked AS (
+    SELECT
+      pi.player_name,
+      pi.current_team,
+      pi.role,
+      pi.image_url,
+      pi.game_number,
+      pi.contest,
+      pi.opponent_team,
+      bm.player_team,
+      mi.season,
+      mi.match_date,
+      bm."R",
+      bm."B",
+      bm."4s",
+      bm."6s",
+      ROW_NUMBER() OVER (PARTITION BY pi.player_name ORDER BY mi.match_date DESC) AS opponent_rank
+from player_info pi
+join batting_main bm on bm.mapped_player_id = pi.player_id
+                        and bm.opponent_team_abrv = pi.opponent_team
+join match_info mi on mi.match_id = bm.match_id
+),
+
+  batting_summary AS (
+    SELECT
+      opponent_team,
+      player_name,
+      current_team,
+      role,
+      image_url,
+      MAX(game_number) AS game_number,
+      MAX(contest) AS contest,
+      COUNT(*) AS games_played,
+      ROUND(AVG("R")::NUMERIC, 2) AS batting_avg,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("B"), 0), 2) AS batting_strike_rate,
+      SUM("R") AS batting_total_runs,
+      COUNT(*) FILTER (WHERE "R" >= 30) AS batting_count_30_plus,
+      SUM("R") + SUM("4s") + SUM("6s") * 2
+        + SUM(CASE WHEN "R" >= 50 THEN 8 ELSE 0 END)
+        + SUM(CASE WHEN "R" >= 100 THEN 16 ELSE 0 END)
+        - SUM(CASE WHEN "R" = 0 AND "B" > 0 THEN 2 ELSE 0 END) AS batting_points
+    FROM batting_ranked
+    GROUP BY opponent_team, player_name, current_team, role, image_url
+  ),
+
+  batting_last_5 AS (
+    SELECT
+      opponent_team,
+      player_name,
+      STRING_AGG("R"::TEXT, ', ' ORDER BY match_date ASC) AS batting_last_5_scores
+    FROM batting_ranked
+    WHERE opponent_rank <= 5
+    GROUP BY opponent_team, player_name
+  ),
+
+  -- 🎯 Bowling vs Opponent
+  bowling_ranked AS (
+    SELECT
+      pi.player_name,
+      pi.current_team,
+      pi.role,
+      pi.image_url,
+      pi.game_number,
+      pi.contest,
+      pi.opponent_team,
+      mi.match_date,
+      mi.match_id,
+      br."O",
+      br."R",
+      br."W",
+      br."M",
+      FLOOR(br."O") * 6 + ROUND((br."O" - FLOOR(br."O")) * 10) AS balls_bowled,
+      ROW_NUMBER() OVER (PARTITION BY pi.player_name ORDER BY mi.match_date DESC) AS opponent_rank
+      from player_info pi
+      join bowling_main br on br.mapped_player_id = pi.player_id
+                            and br.opponent_team_abrv = pi.opponent_team
+      join match_info mi on mi.match_id = br.match_id
+  ),
+
+  bowling_summary AS (
+    SELECT
+      opponent_team,
+      player_name,
+      count(match_id) as games_played,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("W"), 0), 2) AS bowling_avg,
+      ROUND(SUM("R")::NUMERIC / NULLIF(SUM("O"), 0), 2) AS bowling_economy,
+      SUM("W") AS bowling_total_wickets,
+      COUNT(*) FILTER (WHERE "W" >= 3) AS bowling_count_3_plus_wickets,
+      SUM("W") * 25
+        + SUM("M") * 12
+        + SUM(
+            CASE WHEN "W" = 3 THEN 4
+                 WHEN "W" = 4 THEN 8
+                 WHEN "W" >= 5 THEN 16 ELSE 0 END
+          )
+        + SUM(
+            CASE 
+              WHEN "O" >= 2 AND "R" / NULLIF("O", 0) <= 4.5 THEN 6
+              WHEN "O" >= 2 AND "R" / "O" <= 5 THEN 4
+              WHEN "O" >= 2 AND "R" / "O" <= 6 THEN 2
+              WHEN "O" >= 2 AND "R" / "O" >= 11 THEN -6
+              WHEN "O" >= 2 AND "R" / "O" >= 10 THEN -4
+              WHEN "O" >= 2 AND "R" / "O" >= 9 THEN -2
+              ELSE 0
+            END
+        ) AS bowling_points
+    FROM bowling_ranked
+    GROUP BY opponent_team, player_name
+  ),
+
+  bowling_last_5 AS (
+    SELECT
+      opponent_team,
+      player_name,
+      STRING_AGG("W"::TEXT || '/' || "R"::TEXT, ', ' ORDER BY match_date ASC) AS bowling_last_5_figures
+    FROM bowling_ranked
+    WHERE opponent_rank <= 5
+    GROUP BY opponent_team, player_name
+  )
+
+  -- ✅ Final Output
+  SELECT
+    b.opponent_team,
+    b.player_name,
+    b.current_team,
+    b.role,
+    b.image_url,
+    b.game_number,
+    b.contest,
+    GREATEST(COALESCE(b.games_played, 0), COALESCE(w.games_played, 0))as games_played,
+    COALESCE(b.batting_points, 0) + COALESCE(w.bowling_points, 0) AS total_fantasy_points,
+    ROUND((COALESCE(b.batting_points, 0) + COALESCE(w.bowling_points, 0))::NUMERIC / NULLIF(b.games_played, 0), 2) AS fantasy_points_per_game,
+    b.batting_avg,
+    b.batting_strike_rate,
+    b.batting_total_runs,
+    b.batting_count_30_plus,
+    bl.batting_last_5_scores,
+    w.bowling_avg,
+    w.bowling_economy,
+    w.bowling_total_wickets,
+    w.bowling_count_3_plus_wickets,
+    wl.bowling_last_5_figures,
+    NOW()
+  FROM batting_summary b
+  LEFT JOIN bowling_summary w ON b.player_name = w.player_name AND b.opponent_team = w.opponent_team
+  LEFT JOIN batting_last_5 bl ON b.player_name = bl.player_name AND b.opponent_team = bl.opponent_team
+  LEFT JOIN bowling_last_5 wl ON b.player_name = wl.player_name AND b.opponent_team = wl.opponent_team
+  ORDER BY total_fantasy_points DESC;
+
+END;
+$$ LANGUAGE plpgsql;
+
+
+SELECT cron.schedule(
+  'update_allrounder_opponent_summary_every_30_min',
+  '*/30 * * * *',
+  $$SELECT update_allrounder_opponent_summary();$$
+);
+
+select update_allrounder_opponent_summary();
+
+
+
+===============================
+ ================================================================/* =================================================================
+   BEST‑XI PER GAME  — Dominant Season, Medium Venue, Light Opp
+   Fantasy limits: 1 WK · 3‑6 BAT · 1‑4 AR · 3‑6 BWL
+   Output: weight_mix, game_number, player, role, player_score, xi_total
+   =================================================================*/
+WITH
+/* ── shrinkage strengths (different k per dimension) ──────────── */
+params AS (
+  SELECT 3::NUMERIC AS k_venue,
+         6::NUMERIC AS k_opp
+),
+
+/* ── weight definitions (Season, Venue, Opponent) ───────────────
+     H / M / L  →  7/4/1  ·  4/2/1  ·  2/1/0                    */
+weight_scale(label, season_w, venue_w, opp_w) AS (
+  VALUES
+    ('low',    1, 1, 0),
+    ('medium', 4, 2, 1),
+    ('high',   7, 4, 2)
+),
+weight_combos AS (      -- 27 permutations
+  SELECT CONCAT(s.label,'_',v.label,'_',o.label) AS combo_key,
+         s.season_w, v.venue_w, o.opp_w
+  FROM weight_scale s
+  CROSS JOIN weight_scale v
+  CROSS JOIN weight_scale o
+),
+
+/* ── 1. Season‑PPG per player & game ─────────────────────────── */
+player_season AS (
+  SELECT player_name, current_team, role, game_number,
+         COALESCE(
+           CASE WHEN games_played > 0 THEN fantasy_points / games_played END,
+           0
+         ) AS season_ppg
+  FROM (
+        SELECT player_name, current_team, role, game_number,
+               fantasy_points, games_played FROM batter_form_summary
+        UNION ALL
+        SELECT player_name, current_team, role, game_number,
+               fantasy_points, games_played FROM bowler_form_summary
+        UNION ALL
+        SELECT player_name, current_team, role, game_number,
+               fantasy_points, games_played FROM allrounder_form_summary
+  ) x
+  WHERE NOT (player_name ILIKE ANY (ARRAY['%ashwin%', '%ruturaj%']))
+),
+
+/* ── 2. Venue shrinkage (k = 3) ─────────────────────────────── */
+venue_raw AS (
+  SELECT player_name, game_number, avg_fantasy_points AS raw_ppg, games_played AS n
+  FROM batter_venue_summary
+  UNION ALL
+  SELECT player_name, game_number, fantasy_points_per_game, games_played
+  FROM bowler_venue_summary
+  UNION ALL
+  SELECT player_name, game_number, fantasy_points_per_game, games_played
+  FROM allrounder_venue_summary
+),
+venue_adj AS (
+  SELECT v.player_name, v.game_number,
+         CASE WHEN v.n > 0
+              THEN ROUND((v.n*v.raw_ppg + p.k_venue*s.season_ppg) / (v.n+p.k_venue), 2)
+              ELSE s.season_ppg
+         END AS venue_ppg
+  FROM venue_raw v
+  JOIN player_season s USING (player_name, game_number)
+  CROSS JOIN params p
+),
+
+/* ── 3. Opponent shrinkage (k = 6) ──────────────────────────── */
+opp_raw AS (
+  SELECT player_name, game_number, fantasy_points_per_game AS raw_ppg, games_played AS n
+  FROM batter_opponent_summary
+  UNION ALL
+  SELECT player_name, game_number, fantasy_points_per_game, games_played
+  FROM bowler_opponent_summary
+  UNION ALL
+  SELECT player_name, game_number, fantasy_points_per_game, games_played
+  FROM allrounder_opponent_summary
+),
+opp_adj AS (
+  SELECT o.player_name, o.game_number,
+         CASE WHEN o.n > 0
+              THEN ROUND((o.n*o.raw_ppg + p.k_opp*s.season_ppg) / (o.n+p.k_opp), 2)
+              ELSE s.season_ppg
+         END AS opp_ppg
+  FROM opp_raw o
+  JOIN player_season s USING (player_name, game_number)
+  CROSS JOIN params p
+),
+
+/* ── 4. Master metric table (per player & game) ─────────────── */
+player_metrics AS (
+  SELECT
+      s.player_name,
+      s.game_number,
+      CASE
+        WHEN s.role ILIKE '%WK%'     THEN 'WK'
+        WHEN s.role ILIKE '%Bowler%' THEN 'BWL'
+        WHEN s.role ILIKE '%All%'    THEN 'AR'
+        ELSE 'BAT'
+      END AS role_bucket,
+      s.season_ppg,
+      COALESCE(v.venue_ppg, s.season_ppg) AS venue_ppg,
+      COALESCE(o.opp_ppg  , s.season_ppg) AS opp_ppg
+  FROM player_season s
+  LEFT JOIN venue_adj v USING (player_name, game_number)
+  LEFT JOIN opp_adj   o USING (player_name, game_number)
+),
+
+/* ── 5. Weighted score + ranking per bucket & mix & game ────── */
+ranked AS (
+  SELECT
+      wc.combo_key,
+      pm.game_number,
+      pm.player_name,
+      pm.role_bucket,
+      ROUND(
+        (wc.season_w*pm.season_ppg +
+         wc.venue_w *pm.venue_ppg  +
+         wc.opp_w   *pm.opp_ppg) /
+        (wc.season_w + wc.venue_w + wc.opp_w), 2) AS player_score,
+      ROW_NUMBER() OVER (
+        PARTITION BY wc.combo_key, pm.game_number, pm.role_bucket
+        ORDER BY
+          (wc.season_w*pm.season_ppg +
+           wc.venue_w *pm.venue_ppg  +
+           wc.opp_w   *pm.opp_ppg) DESC
+      ) AS rn
+  FROM player_metrics pm
+  CROSS JOIN weight_combos wc
+),
+
+/* ── 6. Every legal role‑count split that sums to 11 ────────── */
+dist AS (
+  SELECT wk, bat, ar, 11-(wk+bat+ar) AS bwl
+  FROM generate_series(1,4) wk,
+       generate_series(3,6) bat,
+       generate_series(1,4) ar
+  WHERE 11-(wk+bat+ar) BETWEEN 3 AND 6
+),
+
+/* ── 7. Build squads via top‑k per bucket ───────────────────── */
+/* ── 7. build squads via top‑k per bucket ───────────────────── */
+xi_build AS (
+  SELECT
+      r.combo_key,
+      r.game_number,
+      d.wk, d.bat, d.ar, d.bwl,                 -- ★ keep dist cols ★
+      ARRAY_AGG(r.player_name
+                ORDER BY r.role_bucket, r.rn) AS picks,
+      SUM(r.player_score)                      AS squad_total
+  FROM ranked r
+  JOIN dist d ON
+       (r.role_bucket='WK'  AND r.rn <= d.wk )
+    OR (r.role_bucket='BAT' AND r.rn <= d.bat)
+    OR (r.role_bucket='AR'  AND r.rn <= d.ar )
+    OR (r.role_bucket='BWL' AND r.rn <= d.bwl)
+  GROUP BY
+      r.combo_key,
+      r.game_number,
+      d.wk, d.bat, d.ar, d.bwl                 -- ★ now grouped ★
+  HAVING COUNT(*) = 11                         -- exactly 11 players
+),
+
+/* ── 8. Best XI per mix & game (highest squad_total) ────────── */
+best_xi AS (
+  SELECT DISTINCT ON (combo_key, game_number)
+         combo_key, game_number, picks, squad_total
+  FROM   xi_build
+  ORDER  BY combo_key, game_number, squad_total DESC
+),
+
+/* ── 9. Explode players & attach IDs ───────────────────────── */
+xi_player_scores AS (
+  SELECT
+      bx.combo_key,
+      bx.game_number,
+      r.player_name,
+      r.role_bucket,
+      r.player_score,
+      bx.squad_total
+  FROM best_xi bx
+  JOIN LATERAL unnest(bx.picks) p(player_name) ON TRUE
+  JOIN ranked r
+        ON r.combo_key   = bx.combo_key
+       AND r.game_number = bx.game_number
+       AND r.player_name = p.player_name
+)
+
+/* ── 10. Final output: one row per player × mix × game ─────── */
+SELECT
+    x.combo_key       AS weight_mix,
+    x.game_number,
+    x.player_name,
+    pi.player_id,
+    x.role_bucket,
+    x.player_score,
+    x.squad_total     AS xi_total_score
+FROM xi_player_scores x
+LEFT JOIN player_information pi USING (player_name)
+ORDER BY weight_mix, game_number, xi_total_score DESC, player_score DESC;
+;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

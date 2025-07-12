@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ipldata25
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: SUPABASE_URL
+        value: https://muzalkdrbjzzpwlqiqyi.supabase.co
+      - key: SUPABASE_SERVICE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11emFsa2RyYmp6enB3bHFpcXlpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NDEwMTI5MiwiZXhwIjoyMDU5Njc3MjkyfQ.YMkXu1ycf2kH5jud0b7e-SzR0aPLwOEZO1ZmFm5WgrE
+    healthCheckPath: /api/health
+    autoDeploy: true
+    plan: free 
