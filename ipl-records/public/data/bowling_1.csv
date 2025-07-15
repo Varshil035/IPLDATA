@@ -1,0 +1,717 @@
+match_id,innings,player_team,bowler,bowler_full_name,O,M,R,W,NB,WD,ECO
+25679291,1,Chennai Super Kings,D Chahar,D Chahar,3,0,14,1,0,0,4.70
+25679291,1,Chennai Super Kings,Watson,Shane Watson,4,0,29,2,0,1,7.20
+25679291,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,2,0,14,0,0,0,7.00
+25679291,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,1,0,9,0,0,0,9.00
+25679291,1,Chennai Super Kings,Mark Wood,Mark Wood,4,0,49,0,0,1,12.20
+25679291,1,Chennai Super Kings,Tahir,Imran Tahir,2,0,23,1,0,0,11.50
+25679291,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,25,0,0,0,6.20
+25679291,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,4,0,44,1,0,1,11.00
+25679291,2,Mumbai Indians,Mustafizur Rahman,Mustafizur Rahman,3.5,0,39,1,0,0,10.20
+25679291,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,37,1,1,0,9.20
+25679291,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,24,3,0,3,6.00
+25679291,2,Mumbai Indians,Mayank Markande,Mayank Markande,4,0,23,3,0,0,5.80
+30183435,1,Kings XI Punjab,Ashwin (c),Ashwin (c),4,0,23,1,0,1,5.80
+30183435,1,Kings XI Punjab,Mohit Sharma,Mohit Sharma,4,0,33,2,0,0,8.20
+30183435,1,Kings XI Punjab,Mujeeb,Mujeeb Ur Rahman,4,0,28,2,0,1,7.00
+30183435,1,Kings XI Punjab,Axar,Axar Patel,3,0,35,1,0,0,11.70
+30183435,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,38,0,1,1,9.50
+30183435,1,Kings XI Punjab,Stoinis,Marcus Stoinis,1,0,7,0,0,0,7.00
+30183435,2,Delhi Daredevils,Trent Boult,Trent Boult,3.5,0,34,1,1,0,8.90
+30183435,2,Delhi Daredevils,Mohammed Shami,Mohammed Shami,2,0,26,0,0,0,13.00
+30183435,2,Delhi Daredevils,Amit Mishra,Amit Mishra,4,0,46,0,0,0,11.50
+30183435,2,Delhi Daredevils,Chris Morris,Chris Morris,3,0,25,1,0,0,8.30
+30183435,2,Delhi Daredevils,Daniel Christian,Daniel Christian,2,0,12,1,0,0,6.00
+30183435,2,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,4,0,24,1,0,0,6.00
+50552842,1,Kolkata Knight Riders,Vinay Kumar,Vinay Kumar,2,0,30,2,0,0,15.00
+50552842,1,Kolkata Knight Riders,Chawla,Piyush Chawla,4,0,31,1,0,0,7.80
+50552842,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,3,0,33,0,0,5,11.00
+50552842,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,30,1,0,0,7.50
+50552842,1,Kolkata Knight Riders,Johnson,Mitchell Johnson,4,0,30,1,0,0,7.50
+50552842,1,Kolkata Knight Riders,A Russell,A Russell,2,0,10,0,0,0,5.00
+50552842,1,Kolkata Knight Riders,Nitish Rana,Nitish Rana,1,0,11,2,0,0,11.00
+50552842,2,Royal Challengers Bangalore,Yuzvendra Chahal,Yuzvendra Chahal,3,0,29,0,0,1,9.70
+50552842,2,Royal Challengers Bangalore,Chris Woakes,Chris Woakes,4,0,36,3,0,2,9.00
+50552842,2,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,4,0,48,1,0,1,12.00
+50552842,2,Royal Challengers Bangalore,Umesh Yadav,Umesh Yadav,4,0,27,2,0,2,6.80
+50552842,2,Royal Challengers Bangalore,Kulwant Khejroliya,Kulwant Khejroliya,3.5,0,34,0,0,4,8.90
+16890119,1,Sunrisers Hyderabad,Bhuvneshwar,Bhuvneshwar Kumar,4,0,30,1,0,3,7.50
+16890119,1,Sunrisers Hyderabad,Stanlake,Billy Stanlake,4,0,29,1,0,1,7.20
+16890119,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,23,2,0,0,5.80
+16890119,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,17,2,0,1,4.20
+16890119,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,23,1,0,0,5.80
+16890119,2,Rajasthan Royals,Dhawal Kulkarni,Dhawal Kulkarni,2.5,0,18,0,0,1,6.40
+16890119,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,3,0,28,1,0,1,9.30
+16890119,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,1,0,9,0,0,0,9.00
+16890119,2,Rajasthan Royals,Ben Laughlin,Ben Laughlin,2,0,20,0,1,0,10.00
+16890119,2,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,3,0,17,0,0,0,5.70
+16890119,2,Rajasthan Royals,Ben Stokes,Ben Stokes,2,0,21,0,0,1,10.50
+16890119,2,Rajasthan Royals,D Arcy Short,D Arcy Short,2,0,9,0,0,0,4.50
+16228818,1,Chennai Super Kings,D Chahar,D Chahar,1,0,18,0,0,1,18.00
+16228818,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,2,0,11,1,0,0,5.50
+16228818,1,Chennai Super Kings,Watson,Shane Watson,4,0,39,2,0,2,9.80
+16228818,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,2,0,19,1,0,0,9.50
+16228818,1,Chennai Super Kings,Tahir,Imran Tahir,4,0,26,0,0,0,6.50
+16228818,1,Chennai Super Kings,SN Thakur,SN Thakur,4,0,37,1,0,0,9.20
+16228818,1,Chennai Super Kings,DJ Bravo,DJ Bravo,3,0,50,0,0,0,16.70
+16228818,2,Kolkata Knight Riders,Vinay Kumar,Vinay Kumar,1.5,0,35,0,1,1,19.10
+16228818,2,Kolkata Knight Riders,Piyush Chawla,Piyush Chawla,4,0,49,1,0,1,12.20
+16228818,2,Kolkata Knight Riders,Andre Russell,Andre Russell,4,0,35,0,0,0,8.80
+16228818,2,Kolkata Knight Riders,Tom Curran,Tom Curran,3,0,39,2,0,0,13.00
+16228818,2,Kolkata Knight Riders,Sunil Narine,Sunil Narine,4,0,17,1,0,0,4.20
+16228818,2,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,3,0,27,1,0,1,9.00
+57401276,1,Delhi Daredevils,Boult,Trent Boult,3,0,26,1,0,0,8.70
+57401276,1,Delhi Daredevils,Nadeem,Shahbaz Nadeem,4,0,34,2,0,0,8.50
+57401276,1,Delhi Daredevils,Chris Morris,Chris Morris,3,0,34,0,0,0,11.30
+57401276,1,Delhi Daredevils,Shami,Mohammed Shami,3.5,0,29,1,0,1,7.60
+57401276,1,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,4,0,29,0,0,1,7.20
+57401276,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,1,0,10,0,0,0,10.00
+57401276,2,Rajasthan Royals,Dhawal Kulkarni,Dhawal Kulkarni,1,0,4,0,0,1,4.00
+57401276,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,2,0,24,1,0,0,12.00
+57401276,2,Rajasthan Royals,Ben Laughlin,Ben Laughlin,2,0,20,2,0,0,10.00
+89818043,1,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,25,2,0,0,6.20
+89818043,1,Sunrisers Hyderabad,Stanlake,Billy Stanlake,4,0,42,2,0,1,10.50
+89818043,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,13,1,0,1,3.20
+89818043,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,29,2,1,0,7.20
+89818043,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,34,1,0,1,8.50
+89818043,2,Mumbai Indians,Pradeep Sangwan,Pradeep Sangwan,2,0,19,0,0,0,9.50
+89818043,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,32,2,0,0,8.00
+89818043,2,Mumbai Indians,Ben Cutting,Ben Cutting,4,0,40,0,0,1,10.00
+89818043,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,2,0,10,0,0,0,5.00
+89818043,2,Mumbai Indians,Mayank Markande,Mayank Markande,4,0,23,4,0,0,5.80
+89818043,2,Mumbai Indians,Mustafizur Rahman,Mustafizur Rahman,4,0,24,3,0,0,6.00
+10591151,1,Royal Challengers Bangalore,Chris Woakes,Chris Woakes,3.2,0,36,2,0,3,10.80
+10591151,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,0,23,3,0,0,5.80
+10591151,1,Royal Challengers Bangalore,Kulwant Khejroliya,Kulwant Khejroliya,4,0,33,2,0,0,8.20
+10591151,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,4,0,38,1,0,0,9.50
+10591151,1,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,4,0,22,2,0,0,5.50
+10591151,2,Kings XI Punjab,Axar Patel,Axar Patel,4,0,25,1,0,0,6.20
+10591151,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),4,0,30,2,0,0,7.50
+10591151,2,Kings XI Punjab,Mujeeb Ur Rahman,Mujeeb Ur Rahman,4,0,29,1,0,0,7.20
+10591151,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,27,1,0,1,6.80
+10591151,2,Kings XI Punjab,Mohit Sharma,Mohit Sharma,3.3,0,45,0,0,0,12.90
+61770985,1,Delhi Daredevils,Boult,Trent Boult,4,0,39,2,0,1,9.80
+61770985,1,Delhi Daredevils,Nadeem,Shahbaz Nadeem,2,0,22,0,0,2,11.00
+61770985,1,Delhi Daredevils,Shami,Mohammed Shami,4,0,36,1,0,0,9.00
+61770985,1,Delhi Daredevils,Christian,Daniel Christian,3,0,35,2,0,0,11.70
+61770985,1,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,4,0,36,2,0,1,9.00
+61770985,1,Delhi Daredevils,Maxwell,Glenn Maxwell,3,0,21,0,0,1,7.00
+61770985,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,2,0,32,0,0,0,16.00
+61770985,2,Mumbai Indians,Akila Dananjaya,Akila Dananjaya,4,0,47,0,0,1,11.80
+61770985,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,27,0,0,0,6.80
+61770985,2,Mumbai Indians,Mustafizur Rahman,Mustafizur Rahman,4,0,25,1,0,0,6.20
+61770985,2,Mumbai Indians,Mayank Markande,Mayank Markande,3,0,42,0,0,0,14.00
+61770985,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,3,0,21,2,0,0,7.00
+45899307,1,Sunrisers Hyderabad,Bhuvneshwar,Bhuvneshwar Kumar,4,0,26,3,2,0,6.50
+45899307,1,Sunrisers Hyderabad,Stanlake,Billy Stanlake,4,0,21,2,0,0,5.20
+45899307,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,37,1,0,0,9.20
+45899307,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,31,0,0,0,7.80
+45899307,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,21,2,0,3,5.20
+45899307,2,Kolkata Knight Riders,Mitchell Johnson,Mitchell Johnson,3,0,30,1,0,4,10.00
+45899307,2,Kolkata Knight Riders,Andre Russell,Andre Russell,3,0,39,0,0,0,13.00
+45899307,2,Kolkata Knight Riders,Sunil Narine,Sunil Narine,4,0,17,2,0,1,4.20
+45899307,2,Kolkata Knight Riders,Piyush Chawla,Piyush Chawla,4,0,20,1,0,0,5.00
+45899307,2,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,23,1,0,0,5.80
+45899307,2,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,1,0,10,0,0,0,10.00
+57422007,1,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,4,0,30,0,0,0,7.50
+57422007,1,Royal Challengers Bangalore,Chris Woakes,Chris Woakes,4,0,47,2,0,2,11.80
+57422007,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,0,59,0,2,2,14.80
+57422007,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,4,0,22,2,0,1,5.50
+57422007,1,Royal Challengers Bangalore,Kulwant Khejroliya,Kulwant Khejroliya,3,0,40,0,0,1,13.30
+57422007,1,Royal Challengers Bangalore,Negi,Pawan Negi,1,0,13,0,0,0,13.00
+57422007,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,4,0,36,1,0,0,9.00
+57422007,2,Rajasthan Royals,Dhawal Kulkarni,Dhawal Kulkarni,1,0,14,0,0,0,14.00
+57422007,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,3,0,35,0,0,0,11.70
+57422007,2,Rajasthan Royals,Ben Stokes,Ben Stokes,3,0,32,1,0,2,10.70
+57422007,2,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,4,0,22,2,0,0,5.50
+57422007,2,Rajasthan Royals,D Arcy Short,D Arcy Short,1,0,10,1,0,0,10.00
+57422007,2,Rajasthan Royals,Ben Laughlin,Ben Laughlin,4,0,46,1,0,1,11.50
+88927779,1,Chennai Super Kings,D Chahar,D Chahar,3,0,37,0,0,1,12.30
+88927779,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,4,0,41,1,0,0,10.20
+88927779,1,Chennai Super Kings,SN Thakur,SN Thakur,3,0,33,2,0,0,11.00
+88927779,1,Chennai Super Kings,Tahir,Imran Tahir,4,0,34,2,0,0,8.50
+88927779,1,Chennai Super Kings,Watson,Shane Watson,2,0,15,1,0,0,7.50
+88927779,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,37,1,0,0,9.20
+88927779,2,Kings XI Punjab,Barinder Sran,Barinder Sran,4,0,37,0,0,6,9.20
+88927779,2,Kings XI Punjab,Mohit Sharma,Mohit Sharma,4,0,47,1,0,1,11.80
+88927779,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,47,2,0,1,11.80
+88927779,2,Kings XI Punjab,Mujeeb Ur Rahman,Mujeeb Ur Rahman,3,0,18,0,0,0,6.00
+88927779,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),4,0,32,1,0,2,8.00
+88927779,2,Kings XI Punjab,Yuvraj Singh,Yuvraj Singh,1,0,10,0,0,1,10.00
+52943274,1,Delhi Daredevils,Boult,Trent Boult,4,1,29,2,0,0,7.20
+52943274,1,Delhi Daredevils,Chris Morris,Chris Morris,4,0,41,2,0,1,10.20
+52943274,1,Delhi Daredevils,Nadeem,Shahbaz Nadeem,4,0,43,1,0,0,10.80
+52943274,1,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,3,0,18,3,0,0,6.00
+52943274,1,Delhi Daredevils,Shami,Mohammed Shami,4,0,53,1,0,1,13.20
+52943274,1,Delhi Daredevils,Vijay Shankar,Vijay Shankar,1,0,12,0,0,0,12.00
+52943274,2,Kolkata Knight Riders,Piyush Chawla,Piyush Chawla,2,0,16,1,0,1,8.00
+52943274,2,Kolkata Knight Riders,Andre Russell,Andre Russell,2,0,25,1,0,3,12.50
+52943274,2,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,2,0,14,1,0,1,7.00
+52943274,2,Kolkata Knight Riders,Sunil Narine,Sunil Narine,3,0,18,3,0,0,6.00
+52943274,2,Kolkata Knight Riders,Tom Curran,Tom Curran,2,0,21,1,0,0,10.50
+52943274,2,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,3.2,0,32,3,0,0,9.60
+79481315,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,0,36,2,0,1,9.00
+79481315,1,Royal Challengers Bangalore,Chris Woakes,Chris Woakes,3,0,31,1,0,1,10.30
+79481315,1,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,2,0,32,0,0,5,16.00
+79481315,1,Royal Challengers Bangalore,Siraj,Mohammed Siraj,4,0,34,0,0,6,8.50
+79481315,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,3,0,32,0,0,0,10.70
+79481315,1,Royal Challengers Bangalore,CJ Anderson,CJ Anderson,4,0,47,2,0,3,11.80
+79481315,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,28,2,0,1,7.00
+79481315,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,4,0,28,3,0,1,7.00
+79481315,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,3,0,24,2,0,0,8.00
+79481315,2,Mumbai Indians,Mustafizur Rahman,Mustafizur Rahman,4,0,55,0,1,0,13.80
+79481315,2,Mumbai Indians,Mayank Markande,Mayank Markande,4,0,25,1,0,1,6.20
+79481315,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,1,0,4,0,0,0,4.00
+79450473,1,Kolkata Knight Riders,Chawla,Piyush Chawla,4,0,18,1,0,0,4.50
+79450473,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,23,1,0,0,5.80
+79450473,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,48,0,0,0,12.00
+79450473,1,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,4,0,40,1,0,3,10.00
+79450473,1,Kolkata Knight Riders,Nitish Rana,Nitish Rana,2,0,11,2,0,0,5.50
+79450473,1,Kolkata Knight Riders,Tom Curran,Tom Curran,2,0,19,2,1,0,9.50
+79450473,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,4,0,23,2,0,0,5.80
+79450473,2,Rajasthan Royals,Dhawal Kulkarni,Dhawal Kulkarni,2,0,20,0,0,0,10.00
+79450473,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,3,0,34,0,0,0,11.30
+79450473,2,Rajasthan Royals,Ben Laughlin,Ben Laughlin,3.5,0,37,0,0,1,9.70
+79450473,2,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,3,0,23,0,0,0,7.70
+79450473,2,Rajasthan Royals,Ben Stokes,Ben Stokes,3,0,25,0,0,1,8.30
+80774249,1,Sunrisers Hyderabad,Bhuvneshwar,Bhuvneshwar Kumar,4,0,25,1,0,1,6.20
+80774249,1,Sunrisers Hyderabad,Chris Jordan,Chris Jordan,4,0,31,0,0,1,7.80
+80774249,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,55,1,0,0,13.80
+80774249,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,33,1,0,0,8.20
+80774249,1,Sunrisers Hyderabad,Deepak Hooda,Deepak Hooda,2,0,16,0,0,1,8.00
+80774249,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,2,0,28,0,0,0,14.00
+80774249,2,Kings XI Punjab,Barinder Sran,Barinder Sran,4,0,22,0,1,3,5.50
+80774249,2,Kings XI Punjab,Mohit Sharma,Mohit Sharma,4,0,51,2,0,1,12.80
+80774249,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,23,2,0,0,5.80
+80774249,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),4,0,53,0,0,5,13.20
+80774249,2,Kings XI Punjab,Mujeeb Ur Rahman,Mujeeb Ur Rahman,4,0,27,0,0,1,6.80
+89102970,1,Rajasthan Royals,Binny,Stuart Binny,2,0,33,0,1,1,16.50
+89102970,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,3,0,35,0,0,0,11.70
+89102970,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,4,0,39,0,0,0,9.80
+89102970,1,Rajasthan Royals,Stokes,Ben Stokes,3,0,39,0,0,0,13.00
+89102970,1,Rajasthan Royals,Laughlin,Ben Laughlin,4,0,38,2,0,3,9.50
+89102970,1,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,4,0,20,3,0,1,5.00
+89102970,2,Chennai Super Kings,Deepak Chahar,Deepak Chahar,4,0,30,2,0,4,7.50
+89102970,2,Chennai Super Kings,Shardul Thakur,Shardul Thakur,3,0,18,2,0,0,6.00
+89102970,2,Chennai Super Kings,Shane Watson,Shane Watson,3,0,13,1,0,1,4.30
+89102970,2,Chennai Super Kings,Imran Tahir,Imran Tahir,4,0,44,1,0,1,11.00
+89102970,2,Chennai Super Kings,Dwayne Bravo,Dwayne Bravo,2,0,16,2,0,2,8.00
+89102970,2,Chennai Super Kings,Karn Sharma,Karn Sharma,1.3,0,13,2,0,0,8.70
+89102970,2,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,1,0,6,0,0,0,6.00
+29027302,1,Kings XI Punjab,Rajpoot,Ankit Rajpoot,3,0,32,0,0,2,10.70
+29027302,1,Kings XI Punjab,Mujeeb,Mujeeb Ur Rahman,4,0,32,1,0,1,8.00
+29027302,1,Kings XI Punjab,Barinder,Barinder Sran,4,0,50,2,0,2,12.50
+29027302,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,30,2,1,1,7.50
+29027302,1,Kings XI Punjab,Ashwin (c),Ashwin (c),4,0,33,1,0,1,8.20
+29027302,1,Kings XI Punjab,Yuvraj,Yuvraj Singh,1,0,13,0,0,0,13.00
+29027302,2,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,3,0,29,0,0,2,9.70
+29027302,2,Kolkata Knight Riders,Andre Russell,Andre Russell,1.5,0,31,0,0,0,16.90
+29027302,2,Kolkata Knight Riders,Nitish Rana,Nitish Rana,0.1,0,0,0,0,0,0.00
+29027302,2,Kolkata Knight Riders,Sunil Narine,Sunil Narine,3,0,23,1,0,0,7.70
+29027302,2,Kolkata Knight Riders,Piyush Chawla,Piyush Chawla,2,0,24,0,0,0,12.00
+29027302,2,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,1,0,13,0,0,0,13.00
+29027302,2,Kolkata Knight Riders,Tom Curran,Tom Curran,0.1,0,6,0,0,0,36.00
+44251598,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,0,27,1,0,0,6.80
+44251598,1,Royal Challengers Bangalore,Chris Woakes,Chris Woakes,4,0,40,0,0,0,10.00
+44251598,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,3,0,22,2,0,1,7.30
+44251598,1,Royal Challengers Bangalore,Siraj,Mohammed Siraj,4,0,35,0,0,2,8.80
+44251598,1,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,4,0,31,1,0,0,7.80
+44251598,1,Royal Challengers Bangalore,CJ Anderson,CJ Anderson,1,0,10,1,0,0,10.00
+44251598,2,Delhi Daredevils,Trent Boult,Trent Boult,4,0,33,1,0,0,8.20
+44251598,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,2,0,13,1,0,1,6.50
+44251598,2,Delhi Daredevils,Shahbaz Nadeem,Shahbaz Nadeem,2,0,27,0,0,0,13.50
+44251598,2,Delhi Daredevils,Chris Morris,Chris Morris,4,0,43,0,0,2,10.80
+44251598,2,Delhi Daredevils,Harshal Patel,Harshal Patel,3,0,33,1,0,0,11.00
+44251598,2,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,3,0,26,0,0,0,8.70
+64859377,1,Sunrisers Hyderabad,Bhuvneshwar,Bhuvneshwar Kumar,3,0,22,1,0,0,7.30
+64859377,1,Sunrisers Hyderabad,Stanlake,Billy Stanlake,4,0,38,0,0,2,9.50
+64859377,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,32,0,0,1,8.00
+64859377,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,33,0,0,1,8.20
+64859377,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,49,1,0,0,12.20
+64859377,1,Sunrisers Hyderabad,Deepak Hooda,Deepak Hooda,1,0,8,0,0,0,8.00
+64859377,2,Chennai Super Kings,Deepak Chahar,Deepak Chahar,4,1,15,3,0,0,3.80
+64859377,2,Chennai Super Kings,Shardul Thakur,Shardul Thakur,4,0,45,1,0,1,11.20
+64859377,2,Chennai Super Kings,Shane Watson,Shane Watson,2,0,23,0,0,0,11.50
+64859377,2,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,28,0,0,1,7.00
+64859377,2,Chennai Super Kings,Karn Sharma,Karn Sharma,3,0,30,1,0,0,10.00
+64859377,2,Chennai Super Kings,Dwayne Bravo,Dwayne Bravo,3,0,37,1,0,0,12.30
+35540201,1,Rajasthan Royals,D Kulkarni,D Kulkarni,4,0,32,2,0,2,8.00
+35540201,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,3,0,20,0,0,0,6.70
+35540201,1,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,22,3,0,0,5.50
+35540201,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,4,0,31,1,0,0,7.80
+35540201,1,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,2,0,30,0,0,1,15.00
+35540201,1,Rajasthan Royals,Stokes,Ben Stokes,3,0,31,0,1,0,10.30
+35540201,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,3,0,32,1,0,1,10.70
+35540201,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,28,2,1,0,7.00
+35540201,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,4,0,33,1,0,2,8.20
+35540201,2,Mumbai Indians,Mustafizur Rahman,Mustafizur Rahman,4,0,35,1,1,0,8.80
+35540201,2,Mumbai Indians,Mayank Markande,Mayank Markande,2,0,15,0,0,0,7.50
+35540201,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,2.4,0,25,2,0,1,9.40
+97839188,1,Delhi Daredevils,Boult,Trent Boult,3,0,21,2,0,1,7.00
+97839188,1,Delhi Daredevils,Avesh Khan,Avesh Khan,4,0,36,2,0,0,9.00
+97839188,1,Delhi Daredevils,Plunkett,Liam Plunkett,4,0,17,3,0,1,4.20
+97839188,1,Delhi Daredevils,Christian,Daniel Christian,3,0,17,1,0,0,5.70
+97839188,1,Delhi Daredevils,A Mishra,A Mishra,4,0,33,0,0,3,8.20
+97839188,1,Delhi Daredevils,Maxwell,Glenn Maxwell,1,0,4,0,0,0,4.00
+97839188,1,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,1,0,6,0,0,0,6.00
+97839188,2,Kings XI Punjab,Ankit Rajpoot,Ankit Rajpoot,4,0,23,2,0,2,5.80
+97839188,2,Kings XI Punjab,Barinder Sran,Barinder Sran,4,0,45,1,0,3,11.20
+97839188,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,25,2,0,2,6.20
+97839188,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),4,0,19,0,0,0,4.80
+97839188,2,Kings XI Punjab,Mujeeb Ur Rahman,Mujeeb Ur Rahman,4,0,25,2,0,0,6.20
+22438751,1,Mumbai Indians,Bumrah,Jasprit Bumrah,4,0,25,1,0,0,6.20
+22438751,1,Mumbai Indians,McClenaghan,Mitchell McClenaghan,3,0,22,2,0,5,7.30
+22438751,1,Mumbai Indians,Hardik Pandya,Hardik Pandya,3,0,20,2,0,2,6.70
+22438751,1,Mumbai Indians,Mustafizur,Mustafizur Rahman,3.4,0,18,1,0,0,4.90
+22438751,1,Mumbai Indians,Markande,Mayank Markande,3,0,15,2,0,0,5.00
+22438751,1,Mumbai Indians,Krunal Pandya,Krunal Pandya,2,0,14,0,0,1,7.00
+22438751,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,3,0,9,1,0,1,3.00
+22438751,2,Sunrisers Hyderabad,Mohammad Nabi,Mohammad Nabi,3,0,23,1,0,0,7.70
+22438751,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,3,0,16,1,0,0,5.30
+22438751,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,23,3,0,0,5.80
+22438751,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,1,11,2,0,0,2.80
+22438751,2,Sunrisers Hyderabad,Basil Thampi,Basil Thampi,1.5,0,4,2,0,0,2.20
+24653108,1,Chennai Super Kings,D Chahar,D Chahar,2,0,20,0,0,0,10.00
+24653108,1,Chennai Super Kings,SN Thakur,SN Thakur,4,1,46,2,0,2,11.50
+24653108,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,2,0,24,0,0,0,12.00
+24653108,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,2,0,22,0,0,0,11.00
+24653108,1,Chennai Super Kings,Watson,Shane Watson,2,0,21,0,0,1,10.50
+24653108,1,Chennai Super Kings,Tahir,Imran Tahir,4,0,35,2,0,0,8.80
+24653108,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,1,33,2,0,1,8.20
+24653108,2,Royal Challengers Bangalore,Pawan Negi,Pawan Negi,3,0,36,1,0,0,12.00
+24653108,2,Royal Challengers Bangalore,Umesh Yadav,Umesh Yadav,4,0,23,1,0,0,5.80
+24653108,2,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,1,0,14,0,0,0,14.00
+24653108,2,Royal Challengers Bangalore,Mohammed Siraj,Mohammed Siraj,4,0,48,0,0,4,12.00
+24653108,2,Royal Challengers Bangalore,Yuzvendra Chahal,Yuzvendra Chahal,4,0,26,2,1,2,6.50
+24653108,2,Royal Challengers Bangalore,Corey Anderson,Corey Anderson,3.4,0,58,0,0,2,15.80
+68797121,1,Kings XI Punjab,Rajpoot,Ankit Rajpoot,4,0,14,5,0,0,3.50
+68797121,1,Kings XI Punjab,Barinder,Barinder Sran,3,0,27,0,1,0,9.00
+68797121,1,Kings XI Punjab,Ashwin (c),Ashwin (c),4,0,34,0,0,0,8.50
+68797121,1,Kings XI Punjab,Manoj Tiwary,Manoj Tiwary,1,0,10,0,0,3,10.00
+68797121,1,Kings XI Punjab,Mujeeb,Mujeeb Ur Rahman,4,0,17,1,0,2,4.20
+68797121,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,28,0,0,0,7.00
+68797121,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,17,2,0,0,4.20
+68797121,2,Sunrisers Hyderabad,Mohammad Nabi,Mohammad Nabi,2,0,24,0,0,0,12.00
+68797121,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,25,0,0,0,6.20
+68797121,2,Sunrisers Hyderabad,Basil Thampi,Basil Thampi,2.2,0,14,2,0,0,6.00
+68797121,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,19,3,0,0,4.80
+68797121,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,3,0,18,2,0,0,6.00
+91943896,1,Kolkata Knight Riders,Chawla,Piyush Chawla,4,0,33,1,0,0,8.20
+91943896,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,2,0,22,0,0,0,11.00
+91943896,1,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,4,0,58,1,1,1,14.50
+91943896,1,Kolkata Knight Riders,Narine,Sunil Narine,3,0,35,0,0,0,11.70
+91943896,1,Kolkata Knight Riders,Johnson,Mitchell Johnson,4,0,42,0,0,0,10.50
+91943896,1,Kolkata Knight Riders,A Russell,A Russell,3,0,28,1,0,1,9.30
+91943896,2,Delhi Daredevils,Trent Boult,Trent Boult,4,0,44,2,0,2,11.00
+91943896,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,2,0,22,2,0,0,11.00
+91943896,2,Delhi Daredevils,Avesh Khan,Avesh Khan,4,0,29,2,0,1,7.20
+91943896,2,Delhi Daredevils,Liam Plunkett,Liam Plunkett,4,0,24,0,0,0,6.00
+91943896,2,Delhi Daredevils,Amit Mishra,Amit Mishra,4,1,23,2,0,0,5.80
+91943896,2,Delhi Daredevils,Vijay Shankar,Vijay Shankar,1,0,10,0,0,0,10.00
+91943896,2,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,1,0,11,0,0,0,11.00
+30746005,1,Mumbai Indians,McClenaghan,Mitchell McClenaghan,4,0,26,2,0,0,6.50
+30746005,1,Mumbai Indians,Bumrah,Jasprit Bumrah,4,0,25,0,0,1,6.20
+30746005,1,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,39,1,0,0,9.80
+30746005,1,Mumbai Indians,Krunal Pandya,Krunal Pandya,4,0,32,2,0,1,8.00
+30746005,1,Mumbai Indians,Markande,Mayank Markande,3,0,30,0,0,1,10.00
+30746005,1,Mumbai Indians,Cutting,Ben Cutting,1,0,14,0,0,1,14.00
+30746005,2,Chennai Super Kings,Deepak Chahar,Deepak Chahar,2.1,0,19,0,0,1,8.80
+30746005,2,Chennai Super Kings,Shardul Thakur,Shardul Thakur,4,0,38,0,0,1,9.50
+30746005,2,Chennai Super Kings,Shane Watson,Shane Watson,4,0,41,0,0,1,10.20
+30746005,2,Chennai Super Kings,Harbhajan Singh,Harbhajan Singh,3.5,0,20,1,0,0,5.20
+30746005,2,Chennai Super Kings,Imran Tahir,Imran Tahir,2.4,0,26,0,0,1,9.80
+30746005,2,Chennai Super Kings,Dwayne Bravo,Dwayne Bravo,3,0,21,1,0,1,7.00
+55652113,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,4,0,18,2,0,0,4.50
+55652113,1,Rajasthan Royals,D Kulkarni,D Kulkarni,2,0,20,0,0,0,10.00
+55652113,1,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,26,3,0,0,6.50
+55652113,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,3,0,33,1,0,0,11.00
+55652113,1,Rajasthan Royals,Ish Sodhi,Ish Sodhi,3,0,25,1,0,0,8.30
+55652113,1,Rajasthan Royals,Stokes,Ben Stokes,3,0,20,0,0,0,6.70
+55652113,1,Rajasthan Royals,Lomror,Mahipal Lomror,1,0,8,0,0,0,8.00
+55652113,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,15,1,0,0,3.80
+55652113,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,4,0,30,0,0,0,7.50
+55652113,2,Sunrisers Hyderabad,Basil Thampi,Basil Thampi,2,0,26,1,0,0,13.00
+55652113,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,23,2,0,0,5.80
+55652113,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,31,1,0,0,7.80
+55652113,2,Sunrisers Hyderabad,Yusuf Pathan,Yusuf Pathan,2,0,14,1,0,0,7.00
+77093352,1,Kolkata Knight Riders,Chawla,Piyush Chawla,3,0,22,0,0,0,7.30
+77093352,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,38,0,0,0,9.50
+77093352,1,Kolkata Knight Riders,Johnson,Mitchell Johnson,3,0,38,0,0,1,12.70
+77093352,1,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,3,0,21,0,0,2,7.00
+77093352,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,20,1,0,0,5.00
+77093352,1,Kolkata Knight Riders,A Russell,A Russell,3,0,31,3,0,2,10.30
+77093352,2,Royal Challengers Bangalore,Tim Southee,Tim Southee,4,0,34,0,0,2,8.50
+77093352,2,Royal Challengers Bangalore,Umesh Yadav,Umesh Yadav,3.1,0,36,0,0,0,11.40
+77093352,2,Royal Challengers Bangalore,Yuzvendra Chahal,Yuzvendra Chahal,4,0,29,0,0,0,7.20
+77093352,2,Royal Challengers Bangalore,Mohammed Siraj,Mohammed Siraj,4,0,40,2,0,4,10.00
+77093352,2,Royal Challengers Bangalore,Murugan Ashwin,Murugan Ashwin,4,0,36,2,0,1,9.00
+86795960,1,Delhi Daredevils,Boult,Trent Boult,4,0,48,0,0,0,12.00
+86795960,1,Delhi Daredevils,Avesh Khan,Avesh Khan,4,0,28,0,0,1,7.00
+86795960,1,Delhi Daredevils,Rahul Tewatia,Rahul Tewatia,2,0,23,0,0,0,11.50
+86795960,1,Delhi Daredevils,Plunkett,Liam Plunkett,3,0,52,0,0,0,17.30
+86795960,1,Delhi Daredevils,A Mishra,A Mishra,4,0,30,1,0,0,7.50
+86795960,1,Delhi Daredevils,Vijay Shankar,Vijay Shankar,2,0,22,1,1,2,11.00
+86795960,1,Delhi Daredevils,Maxwell,Glenn Maxwell,1,0,5,1,0,0,5.00
+86795960,2,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,4,0,26,1,0,2,6.50
+86795960,2,Chennai Super Kings,KM Asif,KM Asif,3,0,43,2,0,1,14.30
+86795960,2,Chennai Super Kings,Shane Watson,Shane Watson,2,0,27,0,0,0,13.50
+86795960,2,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,31,1,0,1,7.80
+86795960,2,Chennai Super Kings,Harbhajan Singh,Harbhajan Singh,4,0,26,0,0,1,6.50
+86795960,2,Chennai Super Kings,Dwayne Bravo,Dwayne Bravo,3,0,43,0,0,1,14.30
+14402401,1,Mumbai Indians,Duminy,Jean-Paul Duminy,2,0,28,0,0,0,14.00
+14402401,1,Mumbai Indians,McClenaghan,Mitchell McClenaghan,4,0,34,1,1,1,8.50
+14402401,1,Mumbai Indians,Bumrah,Jasprit Bumrah,4,0,22,1,0,0,5.50
+14402401,1,Mumbai Indians,Krunal Pandya,Krunal Pandya,4,0,24,0,0,0,6.00
+14402401,1,Mumbai Indians,Markande,Mayank Markande,3,0,28,1,0,0,9.30
+14402401,1,Mumbai Indians,Hardik Pandya,Hardik Pandya,3,0,28,3,1,0,9.30
+14402401,2,Royal Challengers Bangalore,Tim Southee,Tim Southee,4,0,25,2,0,1,6.20
+14402401,2,Royal Challengers Bangalore,Umesh Yadav,Umesh Yadav,4,0,29,2,0,2,7.20
+14402401,2,Royal Challengers Bangalore,Mohammed Siraj,Mohammed Siraj,4,0,28,2,0,3,7.00
+14402401,2,Royal Challengers Bangalore,Yuzvendra Chahal,Yuzvendra Chahal,4,0,23,0,0,7,5.80
+14402401,2,Royal Challengers Bangalore,Washington Sundar,Washington Sundar,1,0,15,0,0,0,15.00
+14402401,2,Royal Challengers Bangalore,Colin de Grandhomme,Colin de Grandhomme,3,0,28,0,0,5,9.30
+86204440,1,Rajasthan Royals,D Kulkarni,D Kulkarni,3,0,37,1,0,3,12.30
+86204440,1,Rajasthan Royals,Jofra Archer,Jofra Archer,3.1,0,31,1,0,1,9.80
+86204440,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,2,0,27,0,0,0,13.50
+86204440,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,4,0,46,3,0,0,11.50
+86204440,1,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,2,0,26,1,0,0,13.00
+86204440,1,Rajasthan Royals,Stokes,Ben Stokes,3,0,28,0,0,2,9.30
+86204440,2,Delhi Daredevils,Shahbaz Nadeem,Shahbaz Nadeem,1,0,13,0,0,0,13.00
+86204440,2,Delhi Daredevils,Trent Boult,Trent Boult,3,0,26,2,0,3,8.70
+86204440,2,Delhi Daredevils,Avesh Khan,Avesh Khan,2,0,36,0,0,0,18.00
+86204440,2,Delhi Daredevils,Liam Plunkett,Liam Plunkett,3,0,37,0,0,0,12.30
+86204440,2,Delhi Daredevils,Amit Mishra,Amit Mishra,2,0,12,1,0,0,6.00
+86204440,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,1,0,21,1,0,0,21.00
+63587158,1,Kolkata Knight Riders,Johnson,Mitchell Johnson,4,0,51,0,0,0,12.80
+63587158,1,Kolkata Knight Riders,Chawla,Piyush Chawla,4,0,35,2,0,0,8.80
+63587158,1,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,3,0,21,0,0,1,7.00
+63587158,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,20,2,0,0,5.00
+63587158,1,Kolkata Knight Riders,A Russell,A Russell,1,0,12,0,0,1,12.00
+63587158,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,34,1,0,1,8.50
+63587158,2,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,3,0,36,1,0,1,12.00
+63587158,2,Chennai Super Kings,KM Asif,KM Asif,3,0,32,1,0,1,10.70
+63587158,2,Chennai Super Kings,Shane Watson,Shane Watson,2,0,19,0,0,1,9.50
+63587158,2,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,39,1,0,6,9.80
+63587158,2,Chennai Super Kings,Harbhajan Singh,Harbhajan Singh,3,0,20,1,0,0,6.70
+63587158,2,Chennai Super Kings,Dwayne Bravo,Dwayne Bravo,1.4,0,22,0,0,2,13.20
+63587158,2,Chennai Super Kings,Karn Sharma,Karn Sharma,1,0,11,0,0,0,11.00
+88391654,1,Mumbai Indians,McClenaghan,Mitchell McClenaghan,4,0,31,1,0,1,7.80
+88391654,1,Mumbai Indians,Bumrah,Jasprit Bumrah,4,0,19,1,0,0,4.80
+88391654,1,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,44,1,0,3,11.00
+88391654,1,Mumbai Indians,Markande,Mayank Markande,3,0,29,1,0,1,9.70
+88391654,1,Mumbai Indians,Duminy,Jean-Paul Duminy,1,0,8,0,0,0,8.00
+88391654,1,Mumbai Indians,Cutting,Ben Cutting,3,0,28,1,0,0,9.30
+88391654,1,Mumbai Indians,Krunal Pandya,Krunal Pandya,1,0,10,0,0,0,10.00
+88391654,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),4,0,23,0,0,0,5.80
+88391654,2,Kings XI Punjab,Ankit Rajpoot,Ankit Rajpoot,3,0,31,0,0,0,10.30
+88391654,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,35,1,0,1,8.80
+88391654,2,Kings XI Punjab,Mujeeb Ur Rahman,Mujeeb Ur Rahman,4,0,37,2,0,1,9.20
+88391654,2,Kings XI Punjab,Axar Patel,Axar Patel,1,0,9,0,0,0,9.00
+88391654,2,Kings XI Punjab,Marcus Stoinis,Marcus Stoinis,3,0,37,1,0,0,12.30
+11522540,1,Chennai Super Kings,Willey,David Willey,4,0,24,1,0,0,6.00
+11522540,1,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,4,0,24,1,0,1,6.00
+11522540,1,Chennai Super Kings,SN Thakur,SN Thakur,2,0,19,0,0,0,9.50
+11522540,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,18,3,0,0,4.50
+11522540,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,4,0,22,2,0,0,5.50
+11522540,1,Chennai Super Kings,DJ Bravo,DJ Bravo,2,0,17,0,0,0,8.50
+11522540,2,Royal Challengers Bangalore,Tim Southee,Tim Southee,3,0,30,0,0,0,10.00
+11522540,2,Royal Challengers Bangalore,Yuzvendra Chahal,Yuzvendra Chahal,3,1,29,0,1,1,9.70
+11522540,2,Royal Challengers Bangalore,Umesh Yadav,Umesh Yadav,3,0,15,2,0,0,5.00
+11522540,2,Royal Challengers Bangalore,Mohammed Siraj,Mohammed Siraj,2,0,18,0,0,0,9.00
+11522540,2,Royal Challengers Bangalore,Colin de Grandhomme,Colin de Grandhomme,4,0,16,1,0,0,4.00
+11522540,2,Royal Challengers Bangalore,Murugan Ashwin,Murugan Ashwin,3,0,17,1,0,2,5.70
+98904096,1,Sunrisers Hyderabad,Bhuvneshwar,Bhuvneshwar Kumar,4,0,33,0,0,0,8.20
+98904096,1,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,35,0,0,1,8.80
+98904096,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,34,0,0,0,8.50
+98904096,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,37,1,0,1,9.20
+98904096,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,23,2,0,0,5.80
+98904096,2,Delhi Daredevils,Trent Boult,Trent Boult,4,0,30,0,0,3,7.50
+98904096,2,Delhi Daredevils,Avesh Khan,Avesh Khan,3,0,47,0,1,0,15.70
+98904096,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,1,0,4,0,0,0,4.00
+98904096,2,Delhi Daredevils,Liam Plunkett,Liam Plunkett,4,0,27,1,0,1,6.80
+98904096,2,Delhi Daredevils,Amit Mishra,Amit Mishra,4,0,19,2,0,1,4.80
+98904096,2,Delhi Daredevils,Daniel Christian,Daniel Christian,3.5,0,37,0,0,0,9.70
+61739047,1,Kolkata Knight Riders,Nitish Rana,Nitish Rana,2,0,17,0,0,1,8.50
+61739047,1,Kolkata Knight Riders,Prasidh,Prasidh Krishna,4,0,39,0,0,1,9.80
+61739047,1,Kolkata Knight Riders,Johnson,Mitchell Johnson,3,0,25,0,0,2,8.30
+61739047,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,35,2,0,0,8.80
+61739047,1,Kolkata Knight Riders,Chawla,Piyush Chawla,3,0,35,0,0,0,11.70
+61739047,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,2,0,17,0,0,0,8.50
+61739047,1,Kolkata Knight Riders,A Russell,A Russell,2,0,12,2,0,1,6.00
+61739047,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,4,0,30,1,0,0,7.50
+61739047,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,34,1,0,0,8.50
+61739047,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,19,2,0,1,4.80
+61739047,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,3,0,29,1,0,0,9.70
+61739047,2,Mumbai Indians,Mayank Markande,Mayank Markande,3,0,25,1,0,0,8.30
+61739047,2,Mumbai Indians,Ben Cutting,Ben Cutting,2,0,23,0,0,0,11.50
+29216261,1,Kings XI Punjab,Ashwin (c),Ashwin (c),4,0,30,1,0,0,7.50
+29216261,1,Kings XI Punjab,Rajpoot,Ankit Rajpoot,3,0,37,1,0,0,12.30
+29216261,1,Kings XI Punjab,Mujeeb,Mujeeb Ur Rahman,4,0,27,3,0,1,6.80
+29216261,1,Kings XI Punjab,Axar,Axar Patel,4,0,21,1,0,0,5.20
+29216261,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,24,2,0,0,6.00
+29216261,1,Kings XI Punjab,Stoinis,Marcus Stoinis,1,0,6,0,0,0,6.00
+29216261,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,3,0,18,1,0,1,6.00
+29216261,2,Rajasthan Royals,Jofra Archer,Jofra Archer,3.4,0,43,1,0,1,11.70
+29216261,2,Rajasthan Royals,Ben Stokes,Ben Stokes,3,0,22,1,0,0,7.30
+29216261,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,4,0,26,0,0,1,6.50
+29216261,2,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,3,0,26,0,0,0,8.70
+29216261,2,Rajasthan Royals,Anureet Singh,Anureet Singh,2,0,20,1,0,0,10.00
+70861412,1,Royal Challengers Bangalore,Moeen,Moeen Ali,3,0,19,0,0,0,6.30
+70861412,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,0,36,1,0,2,9.00
+70861412,1,Royal Challengers Bangalore,Southee,Tim Southee,4,0,30,3,0,1,7.50
+70861412,1,Royal Challengers Bangalore,Siraj,Mohammed Siraj,4,0,25,3,0,1,6.20
+70861412,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,4,0,25,1,1,0,6.20
+70861412,1,Royal Challengers Bangalore,de Grandhomme,de Grandhomme,1,0,8,0,0,1,8.00
+70861412,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,20,1,0,1,5.00
+70861412,2,Sunrisers Hyderabad,Bhuvneshwar Kumar,Bhuvneshwar Kumar,4,0,27,1,0,0,6.80
+70861412,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,4,0,36,2,0,0,9.00
+70861412,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,25,1,0,0,6.20
+70861412,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,31,1,0,2,7.80
+63572074,1,Kings XI Punjab,Stoinis,Marcus Stoinis,2,0,15,1,0,0,7.50
+63572074,1,Kings XI Punjab,Axar,Axar Patel,3,0,24,0,0,0,8.00
+63572074,1,Kings XI Punjab,Mohit Sharma,Mohit Sharma,3,0,29,0,1,1,9.70
+63572074,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,34,4,0,0,8.50
+63572074,1,Kings XI Punjab,Ashwin (c),Ashwin (c),4,0,34,0,0,0,8.50
+63572074,1,Kings XI Punjab,Mujeeb,Mujeeb Ur Rahman,4,0,21,2,0,0,5.20
+63572074,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,3,0,12,2,0,1,4.00
+63572074,2,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,32,1,0,0,8.00
+63572074,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,4,0,36,1,1,0,9.00
+63572074,2,Rajasthan Royals,Ben Stokes,Ben Stokes,2,0,13,1,0,0,6.50
+63572074,2,Rajasthan Royals,Ish Sodhi,Ish Sodhi,4,0,14,1,0,0,3.50
+63572074,2,Rajasthan Royals,Mahipal Lomror,Mahipal Lomror,2,0,19,0,0,0,9.50
+63572074,2,Rajasthan Royals,Anureet Singh,Anureet Singh,1,0,12,0,0,0,12.00
+99171228,1,Kolkata Knight Riders,A Russell,A Russell,2,0,16,0,0,2,8.00
+99171228,1,Kolkata Knight Riders,Prasidh,Prasidh Krishna,4,0,41,1,0,1,10.20
+99171228,1,Kolkata Knight Riders,Tom Curran,Tom Curran,3,0,33,1,1,1,11.00
+99171228,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,27,1,0,0,6.80
+99171228,1,Kolkata Knight Riders,Chawla,Piyush Chawla,4,0,48,3,0,0,12.00
+99171228,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,3,0,43,0,0,0,14.30
+99171228,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,3,0,24,1,0,0,8.00
+99171228,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,3.1,0,12,2,0,0,3.80
+99171228,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,3,0,17,1,0,0,5.70
+99171228,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,3,0,16,2,0,0,5.30
+99171228,2,Mumbai Indians,Mayank Markande,Mayank Markande,4,0,26,1,0,0,6.50
+99171228,2,Mumbai Indians,Ben Cutting,Ben Cutting,2,0,12,1,0,0,6.00
+78705812,1,Sunrisers Hyderabad,Bhuvneshwar,Bhuvneshwar Kumar,4,0,51,1,0,1,12.80
+78705812,1,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,24,0,0,0,6.00
+78705812,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,27,2,0,0,6.80
+78705812,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,48,0,0,0,12.00
+78705812,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,35,0,0,0,8.80
+78705812,2,Delhi Daredevils,Trent Boult,Trent Boult,3.5,0,43,0,0,0,11.20
+78705812,2,Delhi Daredevils,Harshal Patel,Harshal Patel,4,0,32,1,0,0,8.00
+78705812,2,Delhi Daredevils,Shahbaz Nadeem,Shahbaz Nadeem,2,0,22,0,0,0,11.00
+78705812,2,Delhi Daredevils,Liam Plunkett,Liam Plunkett,4,0,41,0,0,0,10.20
+78705812,2,Delhi Daredevils,Amit Mishra,Amit Mishra,3,0,29,0,0,0,9.70
+78705812,2,Delhi Daredevils,Vijay Shankar,Vijay Shankar,1,0,14,0,0,1,14.00
+78705812,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,1,0,9,0,0,0,9.00
+23170294,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,3,0,28,0,0,0,9.30
+23170294,1,Rajasthan Royals,Ankit Sharma,Ankit Sharma,1,0,11,0,0,0,11.00
+23170294,1,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,42,2,1,5,10.50
+23170294,1,Rajasthan Royals,Stokes,Ben Stokes,4,0,31,0,0,1,7.80
+23170294,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,4,0,34,0,0,4,8.50
+23170294,1,Rajasthan Royals,Ish Sodhi,Ish Sodhi,4,0,29,1,0,0,7.20
+23170294,2,Chennai Super Kings,David Willey,David Willey,4,0,47,1,0,1,11.80
+23170294,2,Chennai Super Kings,Harbhajan Singh,Harbhajan Singh,2,0,29,1,0,0,14.50
+23170294,2,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,28,1,0,0,7.00
+23170294,2,Chennai Super Kings,Shardul Thakur,Shardul Thakur,4,0,22,1,0,1,5.50
+23170294,2,Chennai Super Kings,Karn Sharma,Karn Sharma,1,0,10,0,0,0,10.00
+23170294,2,Chennai Super Kings,Dwayne Bravo,Dwayne Bravo,3.5,0,31,1,0,0,8.10
+23170294,2,Chennai Super Kings,Shane Watson,Shane Watson,1,0,9,0,0,0,9.00
+73983062,1,Kings XI Punjab,Mohit Sharma,Mohit Sharma,4,0,40,1,0,1,10.00
+73983062,1,Kings XI Punjab,Mujeeb,Mujeeb Ur Rahman,2.2,0,28,0,0,0,12.00
+73983062,1,Kings XI Punjab,Ashwin (c),Ashwin (c),2.4,0,36,0,0,1,13.50
+73983062,1,Kings XI Punjab,Barinder,Barinder Sran,3,0,48,1,0,0,16.00
+73983062,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,41,4,0,2,10.20
+73983062,1,Kings XI Punjab,Axar,Axar Patel,4,0,52,0,0,1,13.00
+73983062,2,Kolkata Knight Riders,Sunil Narine,Sunil Narine,4,0,44,1,0,0,11.00
+73983062,2,Kolkata Knight Riders,Prasidh Krishna,Prasidh Krishna,4,0,31,2,0,2,7.80
+73983062,2,Kolkata Knight Riders,Javon Searles,Javon Searles,4,0,52,1,0,3,13.00
+73983062,2,Kolkata Knight Riders,Andre Russell,Andre Russell,4,0,41,3,0,0,10.20
+73983062,2,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,2,0,29,1,0,1,14.50
+73983062,2,Kolkata Knight Riders,Piyush Chawla,Piyush Chawla,2,0,16,0,0,0,8.00
+17701187,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,4,0,28,2,0,0,7.00
+17701187,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,3,0,28,0,0,1,9.30
+17701187,1,Royal Challengers Bangalore,Southee,Tim Southee,4,0,41,0,1,2,10.20
+17701187,1,Royal Challengers Bangalore,Moeen,Moeen Ali,4,0,25,1,0,2,6.20
+17701187,1,Royal Challengers Bangalore,Siraj,Mohammed Siraj,4,0,46,1,0,0,11.50
+17701187,1,Royal Challengers Bangalore,de Grandhomme,de Grandhomme,1,0,12,0,0,0,12.00
+17701187,2,Delhi Daredevils,Sandeep Lamichhane,Sandeep Lamichhane,4,0,25,1,0,0,6.20
+17701187,2,Delhi Daredevils,Trent Boult,Trent Boult,4,0,40,2,0,0,10.00
+17701187,2,Delhi Daredevils,Junior Dala,Junior Dala,3,0,34,0,0,1,11.30
+17701187,2,Delhi Daredevils,Harshal Patel,Harshal Patel,4,0,51,1,0,5,12.80
+17701187,2,Delhi Daredevils,Amit Mishra,Amit Mishra,4,0,33,1,0,1,8.20
+44465908,1,Chennai Super Kings,D Chahar,D Chahar,4,0,16,1,0,3,4.00
+44465908,1,Chennai Super Kings,SN Thakur,SN Thakur,4,0,32,2,0,3,8.00
+44465908,1,Chennai Super Kings,Willey,David Willey,2,0,24,0,0,0,12.00
+44465908,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,2,0,26,0,0,1,13.00
+44465908,1,Chennai Super Kings,Watson,Shane Watson,2,0,15,0,0,1,7.50
+44465908,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,39,1,0,2,9.80
+44465908,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,2,0,24,0,0,0,12.00
+44465908,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,36,1,0,1,9.00
+44465908,2,Sunrisers Hyderabad,Bhuvneshwar Kumar,Bhuvneshwar Kumar,4,0,38,0,0,0,9.50
+44465908,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,25,0,0,0,6.20
+44465908,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,4,0,41,0,0,0,10.20
+44465908,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,3,0,40,0,0,0,13.30
+14405637,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,2,0,23,0,0,2,11.50
+14405637,1,Rajasthan Royals,D Kulkarni,D Kulkarni,4,0,43,1,0,0,10.80
+14405637,1,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,16,2,0,3,4.00
+14405637,1,Rajasthan Royals,Stokes,Ben Stokes,4,0,26,2,0,1,6.50
+14405637,1,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,2,0,21,0,0,0,10.50
+14405637,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,4,0,37,1,0,1,9.20
+14405637,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,3,0,34,1,0,5,11.30
+14405637,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,4,0,28,0,0,4,7.00
+14405637,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,4,0,24,0,0,0,6.00
+14405637,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,52,2,0,0,13.00
+14405637,2,Mumbai Indians,Mayank Markande,Mayank Markande,3,0,32,0,0,0,10.70
+54112227,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,0,23,3,0,0,5.80
+54112227,1,Royal Challengers Bangalore,Southee,Tim Southee,2,0,19,0,0,0,9.50
+54112227,1,Royal Challengers Bangalore,Siraj,Mohammed Siraj,3,0,17,1,0,1,5.70
+54112227,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,2,0,6,1,0,0,3.00
+54112227,1,Royal Challengers Bangalore,de Grandhomme,de Grandhomme,2,0,8,1,0,2,4.00
+54112227,1,Royal Challengers Bangalore,Moeen,Moeen Ali,2.1,0,13,1,0,0,6.00
+54112227,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),1,0,9,0,0,0,9.00
+54112227,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,33,0,0,0,8.20
+54112227,2,Kings XI Punjab,Ankit Rajpoot,Ankit Rajpoot,1.1,0,21,0,1,1,18.00
+54112227,2,Kings XI Punjab,Mohit Sharma,Mohit Sharma,1,0,15,0,0,0,15.00
+54112227,2,Kings XI Punjab,Marcus Stoinis,Marcus Stoinis,1,0,12,0,0,0,12.00
+37307759,1,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,4,0,44,1,0,0,11.00
+37307759,1,Kolkata Knight Riders,Prasidh,Prasidh Krishna,4,0,35,2,0,0,8.80
+37307759,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,29,1,0,1,7.20
+37307759,1,Kolkata Knight Riders,A Russell,A Russell,3,0,13,2,0,0,4.30
+37307759,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,20,4,0,0,5.00
+37307759,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,2,0,32,0,0,0,16.00
+37307759,2,Rajasthan Royals,Ben Stokes,Ben Stokes,4,1,15,3,0,1,3.80
+37307759,2,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,43,0,0,0,10.80
+37307759,2,Rajasthan Royals,Ish Sodhi,Ish Sodhi,4,0,21,1,0,0,5.20
+37307759,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,3,0,23,0,0,0,7.70
+37307759,2,Rajasthan Royals,Anureet Singh,Anureet Singh,1,0,10,0,0,0,10.00
+95655282,1,Kings XI Punjab,Rajpoot,Ankit Rajpoot,4,0,46,1,0,2,11.50
+95655282,1,Kings XI Punjab,Mohit Sharma,Mohit Sharma,3,0,34,0,1,1,11.30
+95655282,1,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,16,4,0,1,4.00
+95655282,1,Kings XI Punjab,Axar,Axar Patel,3,0,24,0,0,1,8.00
+95655282,1,Kings XI Punjab,Ashwin (c),Ashwin (c),3,0,18,2,0,0,6.00
+95655282,1,Kings XI Punjab,Stoinis,Marcus Stoinis,3,0,43,1,0,0,14.30
+95655282,2,Mumbai Indians,Mitchell McClenaghan,Mitchell McClenaghan,4,0,37,2,0,1,9.20
+95655282,2,Mumbai Indians,Jasprit Bumrah,Jasprit Bumrah,4,0,15,3,0,1,3.80
+95655282,2,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,42,0,0,2,10.50
+95655282,2,Mumbai Indians,Krunal Pandya,Krunal Pandya,4,0,36,0,0,0,9.00
+95655282,2,Mumbai Indians,Mayank Markande,Mayank Markande,3,0,34,0,0,1,11.30
+95655282,2,Mumbai Indians,Ben Cutting,Ben Cutting,1,0,15,0,0,0,15.00
+78640391,1,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,40,1,0,1,10.00
+78640391,1,Sunrisers Hyderabad,Shakib,Shakib Al Hasan,4,0,35,0,0,0,8.80
+78640391,1,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,27,3,0,0,6.80
+78640391,1,Sunrisers Hyderabad,S Kaul,S Kaul,4,0,44,2,0,0,11.00
+78640391,1,Sunrisers Hyderabad,Basil Thampi,Basil Thampi,4,0,70,0,0,1,17.50
+78640391,2,Royal Challengers Bangalore,Umesh Yadav,Umesh Yadav,4,0,31,0,0,0,7.80
+78640391,2,Royal Challengers Bangalore,Tim Southee,Tim Southee,4,0,45,0,0,1,11.20
+78640391,2,Royal Challengers Bangalore,Yuzvendra Chahal,Yuzvendra Chahal,4,0,28,1,0,1,7.00
+78640391,2,Royal Challengers Bangalore,Mohammed Siraj,Mohammed Siraj,4,0,43,1,0,1,10.80
+78640391,2,Royal Challengers Bangalore,Moeen Ali,Moeen Ali,2,0,21,1,0,0,10.50
+78640391,2,Royal Challengers Bangalore,Colin de Grandhomme,Colin de Grandhomme,2,0,34,0,0,0,17.00
+30469729,1,Chennai Super Kings,D Chahar,D Chahar,3,0,23,1,0,2,7.70
+30469729,1,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,3,0,14,2,0,2,4.70
+30469729,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,19,1,0,0,4.80
+30469729,1,Chennai Super Kings,SN Thakur,SN Thakur,4,0,27,1,0,0,6.80
+30469729,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,2,0,24,0,0,0,12.00
+30469729,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,52,0,0,2,13.00
+30469729,2,Delhi Daredevils,Trent Boult,Trent Boult,4,0,20,2,0,0,5.00
+30469729,2,Delhi Daredevils,Sandeep Lamichhane,Sandeep Lamichhane,4,0,21,1,0,0,5.20
+30469729,2,Delhi Daredevils,Avesh Khan,Avesh Khan,2,0,28,0,0,0,14.00
+30469729,2,Delhi Daredevils,Harshal Patel,Harshal Patel,4,0,23,1,0,0,5.80
+30469729,2,Delhi Daredevils,Amit Mishra,Amit Mishra,4,0,20,2,0,0,5.00
+30469729,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,2,0,14,0,0,0,7.00
+28038694,1,Royal Challengers Bangalore,Chahal,Yuzvendra Chahal,4,0,26,0,0,0,6.50
+28038694,1,Royal Challengers Bangalore,Umesh,Umesh Yadav,4,1,25,3,0,0,6.20
+28038694,1,Royal Challengers Bangalore,Moeen,Moeen Ali,2,0,19,0,0,0,9.50
+28038694,1,Royal Challengers Bangalore,Southee,Tim Southee,4,0,37,0,0,1,9.20
+28038694,1,Royal Challengers Bangalore,Siraj,Mohammed Siraj,4,0,33,1,0,0,8.20
+28038694,1,Royal Challengers Bangalore,de Grandhomme,de Grandhomme,2,0,23,0,0,3,11.50
+28038694,2,Rajasthan Royals,Krishnappa Gowtham,Krishnappa Gowtham,2,0,6,1,0,0,3.00
+28038694,2,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,37,0,0,1,9.20
+28038694,2,Rajasthan Royals,Ben Laughlin,Ben Laughlin,2,0,15,2,0,0,7.50
+28038694,2,Rajasthan Royals,Jaydev Unadkat,Jaydev Unadkat,3.2,0,27,2,0,0,8.10
+28038694,2,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,4,0,16,4,0,0,4.00
+28038694,2,Rajasthan Royals,Ish Sodhi,Ish Sodhi,4,0,31,1,0,0,7.80
+88389412,1,Kolkata Knight Riders,Nitish Rana,Nitish Rana,1,0,5,0,0,0,5.00
+88389412,1,Kolkata Knight Riders,Prasidh,Prasidh Krishna,4,0,30,4,0,2,7.50
+88389412,1,Kolkata Knight Riders,A Russell,A Russell,3,0,31,1,1,1,10.30
+88389412,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,23,1,0,2,5.80
+88389412,1,Kolkata Knight Riders,Chawla,Piyush Chawla,2,0,19,0,0,0,9.50
+88389412,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,35,1,0,0,8.80
+88389412,1,Kolkata Knight Riders,Searles,Javon Searles,2,0,24,1,0,0,12.00
+88389412,2,Sunrisers Hyderabad,Bhuvneshwar Kumar,Bhuvneshwar Kumar,4,0,33,0,0,1,8.20
+88389412,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,2,0,30,0,0,2,15.00
+88389412,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,26,2,0,1,6.50
+88389412,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,3,0,30,1,0,0,10.00
+88389412,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,31,0,0,0,7.80
+88389412,2,Sunrisers Hyderabad,Carlos Brathwaite,Carlos Brathwaite,2.4,0,21,2,0,1,7.90
+11903893,1,Mumbai Indians,Krunal Pandya,Krunal Pandya,2,0,11,1,0,0,5.50
+11903893,1,Mumbai Indians,Bumrah,Jasprit Bumrah,4,0,29,1,0,3,7.20
+11903893,1,Mumbai Indians,Hardik Pandya,Hardik Pandya,4,0,36,0,0,1,9.00
+11903893,1,Mumbai Indians,Mustafizur,Mustafizur Rahman,4,0,34,0,0,0,8.50
+11903893,1,Mumbai Indians,Markande,Mayank Markande,2,0,21,1,0,0,10.50
+11903893,1,Mumbai Indians,Cutting,Ben Cutting,4,0,36,0,0,1,9.00
+11903893,2,Delhi Daredevils,Sandeep Lamichhane,Sandeep Lamichhane,4,0,36,3,0,1,9.00
+11903893,2,Delhi Daredevils,Trent Boult,Trent Boult,4,0,33,1,0,1,8.20
+11903893,2,Delhi Daredevils,Glenn Maxwell,Glenn Maxwell,2,0,19,0,0,0,9.50
+11903893,2,Delhi Daredevils,Harshal Patel,Harshal Patel,2.3,0,28,3,0,2,11.20
+11903893,2,Delhi Daredevils,Liam Plunkett,Liam Plunkett,3,0,27,0,0,2,9.00
+11903893,2,Delhi Daredevils,Amit Mishra,Amit Mishra,4,0,19,3,0,0,4.80
+26731324,1,Chennai Super Kings,D Chahar,D Chahar,4,0,30,1,1,2,7.50
+26731324,1,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,4,1,10,4,0,1,2.50
+26731324,1,Chennai Super Kings,Harbhajan,Harbhajan Singh,1,0,13,0,0,0,13.00
+26731324,1,Chennai Super Kings,SN Thakur,SN Thakur,3.4,0,33,2,0,2,9.00
+26731324,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,39,2,0,0,9.80
+26731324,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,3,0,23,1,0,0,7.70
+26731324,2,Kings XI Punjab,Ankit Rajpoot,Ankit Rajpoot,4,1,19,2,1,0,4.80
+26731324,2,Kings XI Punjab,Mohit Sharma,Mohit Sharma,3.1,0,28,1,0,1,8.80
+26731324,2,Kings XI Punjab,Andrew Tye,Andrew Tye,4,0,47,0,0,5,11.80
+26731324,2,Kings XI Punjab,Axar Patel,Axar Patel,4,0,28,0,0,0,7.00
+26731324,2,Kings XI Punjab,Ravichandran Ashwin (c),Ravichandran Ashwin (c),4,0,36,2,0,1,9.00
+83120692,1,Chennai Super Kings,D Chahar,D Chahar,4,0,31,1,0,2,7.80
+83120692,1,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,4,0,20,1,0,0,5.00
+83120692,1,Chennai Super Kings,SN Thakur,SN Thakur,4,0,50,1,0,3,12.50
+83120692,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,25,2,0,4,6.20
+83120692,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,4,0,13,1,0,0,3.20
+83120692,2,Sunrisers Hyderabad,Bhuvneshwar Kumar,Bhuvneshwar Kumar,3.1,0,14,1,0,1,4.40
+83120692,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,3,0,30,2,0,0,10.00
+83120692,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,32,2,0,1,8.00
+83120692,2,Sunrisers Hyderabad,Carlos Brathwaite,Carlos Brathwaite,3,0,31,0,0,1,10.30
+83120692,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,11,2,0,0,2.80
+83120692,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,2,0,20,0,0,0,10.00
+32529376,1,Rajasthan Royals,Gowtham,Krishnappa Gowtham,3,0,15,2,0,0,5.00
+32529376,1,Rajasthan Royals,Jofra Archer,Jofra Archer,4,0,33,2,1,3,8.20
+32529376,1,Rajasthan Royals,Unadkat,Jaydev Unadkat,2,0,33,0,0,0,16.50
+32529376,1,Rajasthan Royals,Ish Sodhi,Ish Sodhi,4,0,15,0,0,0,3.80
+32529376,1,Rajasthan Royals,Shreyas Gopal,Shreyas Gopal,4,0,34,1,0,0,8.50
+32529376,1,Rajasthan Royals,Laughlin,Ben Laughlin,3,0,35,2,0,2,11.70
+32529376,2,Kolkata Knight Riders,Andre Russell,Andre Russell,3,0,22,0,0,0,7.30
+32529376,2,Kolkata Knight Riders,Prasidh Krishna,Prasidh Krishna,4,0,28,1,0,0,7.00
+32529376,2,Kolkata Knight Riders,Piyush Chawla,Piyush Chawla,4,0,24,2,0,0,6.00
+32529376,2,Kolkata Knight Riders,Sunil Narine,Sunil Narine,4,0,39,0,0,1,9.80
+32529376,2,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,18,1,0,0,4.50
+32529376,2,Kolkata Knight Riders,Javon Searles,Javon Searles,1,0,13,0,0,0,13.00
+55717066,1,Kolkata Knight Riders,Shivam Mavi,Shivam Mavi,4,0,33,1,0,1,8.20
+55717066,1,Kolkata Knight Riders,Prasidh,Prasidh Krishna,4,0,56,0,0,3,14.00
+55717066,1,Kolkata Knight Riders,A Russell,A Russell,1,0,9,0,0,0,9.00
+55717066,1,Kolkata Knight Riders,Narine,Sunil Narine,4,0,24,1,0,0,6.00
+55717066,1,Kolkata Knight Riders,Chawla,Piyush Chawla,3,0,22,1,0,0,7.30
+55717066,1,Kolkata Knight Riders,Kuldeep Yadav,Kuldeep Yadav,4,0,29,2,0,0,7.20
+55717066,2,Sunrisers Hyderabad,Bhuvneshwar Kumar,Bhuvneshwar Kumar,4,0,38,0,0,0,9.50
+55717066,2,Sunrisers Hyderabad,K Khaleel Ahmed,K Khaleel Ahmed,3,0,38,0,0,1,12.70
+55717066,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,4,0,32,2,0,0,8.00
+55717066,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,0,19,3,0,0,4.80
+55717066,2,Sunrisers Hyderabad,Carlos Brathwaite,Carlos Brathwaite,2,0,15,2,0,0,7.50
+55717066,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,3,0,16,1,0,0,5.30
+53482560,1,Chennai Super Kings,D Chahar,D Chahar,4,0,25,0,1,1,6.20
+53482560,1,Chennai Super Kings,Lungi Ngidi,Lungi Ngidi,4,1,26,1,0,0,6.50
+53482560,1,Chennai Super Kings,SN Thakur,SN Thakur,3,0,31,1,0,2,10.30
+53482560,1,Chennai Super Kings,Karn Sharma,Karn Sharma,3,0,25,1,0,1,8.30
+53482560,1,Chennai Super Kings,DJ Bravo,DJ Bravo,4,0,46,1,0,2,11.50
+53482560,1,Chennai Super Kings,Ravindra Jadeja,Ravindra Jadeja,2,0,24,1,0,0,12.00
+53482560,2,Sunrisers Hyderabad,Bhuvneshwar Kumar,Bhuvneshwar Kumar,4,1,17,0,0,0,4.20
+53482560,2,Sunrisers Hyderabad,Sandeep Sharma,Sandeep Sharma,4,0,52,1,0,2,13.00
+53482560,2,Sunrisers Hyderabad,Siddarth Kaul,Siddarth Kaul,3,0,43,0,0,0,14.30
+53482560,2,Sunrisers Hyderabad,Rashid Khan,Rashid Khan,4,1,24,0,0,0,6.00
+53482560,2,Sunrisers Hyderabad,Shakib Al Hasan,Shakib Al Hasan,1,0,15,0,0,0,15.00
+53482560,2,Sunrisers Hyderabad,Carlos Brathwaite,Carlos Brathwaite,2.3,0,27,1,0,1,10.80

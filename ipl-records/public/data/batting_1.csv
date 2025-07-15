@@ -1,0 +1,934 @@
+match_id,innings,player_team,player_name,player_full_name,out_details,R,B,4s,6s,SR
+25679291,1,MI,Rohit (c),Rohit (c),c Rayudu b Watson,15,18,1,1,83.33
+25679291,1,MI,Lewis,Evin Lewis,lbw b D Chahar,0,2,0,0,0
+25679291,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Mark Wood b Tahir,40,29,4,1,137.93
+25679291,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Harbhajan b Watson,43,29,6,1,148.28
+25679291,1,MI,Hardik Pandya,Hardik Pandya,not out,22,20,2,0,110
+25679291,1,MI,Krunal Pandya,Krunal Pandya,not out,41,22,5,2,186.36
+25679291,2,CSK,Shane Watson,Shane Watson,c Lewis b Hardik Pandya,16,14,1,1,114.29
+25679291,2,CSK,Ambati Rayudu,Ambati Rayudu,lbw b Markande,22,19,4,0,115.79
+25679291,2,CSK,Suresh Raina,Suresh Raina,c Krunal Pandya b Hardik Pandya,4,6,0,0,66.67
+25679291,2,CSK,Kedar Jadhav,Kedar Jadhav,not out,24,22,1,2,109.09
+25679291,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),lbw b Markande,5,5,0,0,100
+25679291,2,CSK,Ravindra Jadeja,Ravindra Jadeja,c Suryakumar Yadav b Mustafizur,12,13,1,0,92.31
+25679291,2,CSK,Dwayne Bravo,Dwayne Bravo,c Rohit b Bumrah,68,30,3,7,226.67
+25679291,2,CSK,Deepak Chahar,Deepak Chahar,st Ishan Kishan b Markande,0,1,0,0,0
+25679291,2,CSK,Harbhajan Singh,Harbhajan Singh,c Bumrah b McClenaghan,8,5,1,0,160
+25679291,2,CSK,Mark Wood,Mark Wood,c Mustafizur b Hardik Pandya,1,3,0,0,33.33
+25679291,2,CSK,Imran Tahir,Imran Tahir,not out,2,2,0,0,100
+30183435,1,DD,Munro,Colin Munro,lbw b Mujeeb,4,6,0,0,66.67
+30183435,1,DD,Gambhir (c),Gambhir (c),run out (Mujeeb),55,42,5,1,130.95
+30183435,1,DD,Shreyas Iyer,Shreyas Iyer,c Rahul b Axar,11,11,0,1,100
+30183435,1,DD,Vijay Shankar,Vijay Shankar,c Axar b Mohit Sharma,13,13,0,0,100
+30183435,1,DD,Pant (wk),Pant (wk),c Andrew Tye b Mujeeb,28,13,4,1,215.38
+30183435,1,DD,Rahul Tewatia,Rahul Tewatia,lbw b Ashwin,9,7,1,0,128.57
+30183435,1,DD,Chris Morris,Chris Morris,not out,27,16,1,1,168.75
+30183435,1,DD,Christian,Daniel Christian,b Mohit Sharma,13,13,0,1,100
+30183435,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),c Shami b Boult,51,16,6,4,318.75
+30183435,2,KXIP,Mayank Agarwal,Mayank Agarwal,c Shami b Chris Morris,7,5,0,1,140
+30183435,2,KXIP,Yuvraj Singh,Yuvraj Singh,c Vijay Shankar b Rahul Tewatia,12,22,2,0,54.55
+30183435,2,KXIP,Karun Nair,Karun Nair,c Boult b Christian,50,33,5,2,151.52
+30183435,2,KXIP,David Miller,David Miller,not out,24,23,1,0,104.35
+30183435,2,KXIP,Marcus Stoinis,Marcus Stoinis,not out,22,15,2,0,146.67
+50552842,1,RCB,Brendon McCullum,Brendon McCullum,b Narine,43,27,6,2,159.26
+50552842,1,RCB,de Kock (wk),de Kock (wk),c Vinay Kumar b Chawla,4,4,1,0,100
+50552842,1,RCB,Kohli (c),Kohli (c),b Nitish Rana,31,33,1,1,93.94
+50552842,1,RCB,de Villiers,de Villiers,c Johnson b Nitish Rana,44,23,1,5,191.3
+50552842,1,RCB,Sarfaraz Khan,Sarfaraz Khan,c Rinku Singh b Johnson,6,10,0,0,60
+50552842,1,RCB,Mandeep,Mandeep Singh,c Kuldeep Yadav b Vinay Kumar,37,18,4,2,205.56
+50552842,1,RCB,Chris Woakes,Chris Woakes,c A Russell b Vinay Kumar,5,5,1,0,100
+50552842,1,RCB,Washington Sundar,Washington Sundar,not out,0,0,0,0,0
+50552842,2,KKR,Sunil Narine,Sunil Narine,b Umesh,50,19,4,5,263.16
+50552842,2,KKR,Chris Lynn,Chris Lynn,c de Villiers b Chris Woakes,5,8,1,0,62.5
+50552842,2,KKR,Robin Uthappa,Robin Uthappa,c Brendon McCullum b Umesh,13,12,0,1,108.33
+50552842,2,KKR,Nitish Rana,Nitish Rana,lbw b Washington Sundar,34,25,2,2,136
+50552842,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),not out,35,29,4,0,120.69
+50552842,2,KKR,Rinku Singh,Rinku Singh,c de Kock b Chris Woakes,6,6,1,0,100
+50552842,2,KKR,Andre Russell,Andre Russell,c de Villiers b Chris Woakes,15,11,2,1,136.36
+50552842,2,KKR,Vinay Kumar,Vinay Kumar,not out,6,3,1,0,200
+16890119,1,RR,A Rahane (c),A Rahane (c),c Rashid Khan b S Kaul,13,13,2,0,100
+16890119,1,RR,D Arcy Short,D Arcy Short,run out (Williamson),4,4,1,0,100
+16890119,1,RR,Samson,Sanju Samson,c Rashid Khan b Shakib,49,42,5,0,116.67
+16890119,1,RR,Stokes,Ben Stokes,c Williamson b Stanlake,5,8,0,0,62.5
+16890119,1,RR,R Tripathi,R Tripathi,c Manish Pandey b Shakib,17,15,2,0,113.33
+16890119,1,RR,Jos Buttler (wk),Jos Buttler (wk),b Rashid Khan,6,9,0,0,66.67
+16890119,1,RR,Gowtham,Krishnappa Gowtham,c Saha b S Kaul,0,2,0,0,0
+16890119,1,RR,Shreyas Gopal,Shreyas Gopal,c Y Pathan b Bhuvneshwar,18,18,2,0,100
+16890119,1,RR,D Kulkarni,D Kulkarni,not out,3,4,0,0,75
+16890119,1,RR,Unadkat,Jaydev Unadkat,run out (Y Pathan/Saha),1,2,0,0,50
+16890119,1,RR,Laughlin,Ben Laughlin,not out,1,3,0,0,33.33
+16890119,2,SRH,Wriddhiman Saha (wk),Wriddhiman Saha (wk),c Laughlin b Unadkat,5,5,1,0,100
+16890119,2,SRH,Shikhar Dhawan,Shikhar Dhawan,not out,77,57,13,1,135.09
+16890119,2,SRH,Kane Williamson (c),Kane Williamson (c),not out,36,35,3,1,102.86
+16228818,1,KKR,Chris Lynn,Chris Lynn,b Ravindra Jadeja,22,16,4,0,137.5
+16228818,1,KKR,Narine,Sunil Narine,c Raina b Harbhajan,12,4,0,2,300
+16228818,1,KKR,Uthappa,Robin Uthappa,run out (Raina),29,16,2,3,181.25
+16228818,1,KKR,Nitish Rana,Nitish Rana,c Dhoni b Watson,16,14,2,0,114.29
+16228818,1,KKR,Karthik (c & wk),Karthik (c & wk),lbw b Watson,26,25,2,1,104
+16228818,1,KKR,Rinku Singh,Rinku Singh,c DJ Bravo b SN Thakur,2,4,0,0,50
+16228818,1,KKR,A Russell,A Russell,not out,88,36,1,11,244.44
+16228818,1,KKR,Tom Curran,Tom Curran,not out,2,5,0,0,40
+16228818,2,CSK,Shane Watson,Shane Watson,c Rinku Singh b Tom Curran,42,19,3,3,221.05
+16228818,2,CSK,Ambati Rayudu,Ambati Rayudu,c (sub)Shivam Mavi b Kuldeep Yadav,39,26,3,2,150
+16228818,2,CSK,Suresh Raina,Suresh Raina,c Vinay Kumar b Narine,14,12,0,1,116.67
+16228818,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),c Karthik b Chawla,25,28,1,1,89.29
+16228818,2,CSK,Sam Billings,Sam Billings,c Uthappa b Tom Curran,56,23,2,5,243.48
+16228818,2,CSK,Ravindra Jadeja,Ravindra Jadeja,not out,11,7,0,1,157.14
+16228818,2,CSK,Dwayne Bravo,Dwayne Bravo,not out,11,5,0,1,220
+57401276,1,RR,A Rahane (c),A Rahane (c),c Chris Morris b Nadeem,45,40,5,0,112.5
+57401276,1,RR,D Arcy Short,D Arcy Short,run out (Vijay Shankar),6,3,1,0,200
+57401276,1,RR,Stokes,Ben Stokes,c Pant b Boult,16,12,1,1,133.33
+57401276,1,RR,Samson,Sanju Samson,b Nadeem,37,22,2,2,168.18
+57401276,1,RR,Jos Buttler (wk),Jos Buttler (wk),b Shami,29,18,2,2,161.11
+57401276,1,RR,R Tripathi,R Tripathi,not out,15,11,0,1,136.36
+57401276,1,RR,Gowtham,Krishnappa Gowtham,not out,2,1,0,0,200
+57401276,2,DD,Glenn Maxwell,Glenn Maxwell,c Jos Buttler b Laughlin,17,12,2,1,141.67
+57401276,2,DD,Colin Munro,Colin Munro,run out (Jos Buttler/Gowtham),0,0,0,0,0
+57401276,2,DD,Rishabh Pant (wk),Rishabh Pant (wk),c Gowtham b Unadkat,20,14,3,0,142.86
+57401276,2,DD,Chris Morris,Chris Morris,not out,17,7,2,1,242.86
+57401276,2,DD,Vijay Shankar,Vijay Shankar,c Stokes b Laughlin,3,3,0,0,100
+57401276,2,DD,Shreyas Iyer,Shreyas Iyer,not out,0,0,0,0,0
+89818043,1,MI,Rohit (c),Rohit (c),c Shakib b Stanlake,11,10,1,1,110
+89818043,1,MI,Lewis,Evin Lewis,b S Kaul,29,17,3,2,170.59
+89818043,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Y Pathan b S Kaul,9,9,2,0,100
+89818043,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Deepak Hooda b Sandeep Sharma,28,31,2,1,90.32
+89818043,1,MI,Krunal Pandya,Krunal Pandya,c Williamson b Shakib,15,10,2,0,150
+89818043,1,MI,Pollard,Kieron Pollard,c Dhawan b Stanlake,28,23,3,2,121.74
+89818043,1,MI,Cutting,Ben Cutting,b Rashid Khan,9,9,1,0,100
+89818043,1,MI,Sangwan,Pradeep Sangwan,lbw b Sandeep Sharma,0,4,0,0,0
+89818043,1,MI,Markande,Mayank Markande,not out,6,3,1,0,200
+89818043,1,MI,Bumrah,Jasprit Bumrah,not out,4,5,0,0,80
+89818043,2,SRH,Wriddhiman Saha (wk),Wriddhiman Saha (wk),lbw b Markande,22,20,3,0,110
+89818043,2,SRH,Shikhar Dhawan,Shikhar Dhawan,c Bumrah b Markande,45,28,8,0,160.71
+89818043,2,SRH,Kane Williamson (c),Kane Williamson (c),c Ishan Kishan b Mustafizur,6,4,1,0,150
+89818043,2,SRH,Manish Pandey,Manish Pandey,c Rohit b Markande,11,8,1,0,137.5
+89818043,2,SRH,Shakib Al Hasan,Shakib Al Hasan,b Markande,12,12,1,0,100
+89818043,2,SRH,Deepak Hooda,Deepak Hooda,not out,32,25,1,1,128
+89818043,2,SRH,Yusuf Pathan,Yusuf Pathan,c Pollard b Bumrah,14,14,2,0,100
+89818043,2,SRH,Rashid Khan,Rashid Khan,c Ishan Kishan b Bumrah,0,1,0,0,0
+89818043,2,SRH,Siddarth Kaul,Siddarth Kaul,c and b Mustafizur,0,4,0,0,0
+89818043,2,SRH,Sandeep Sharma,Sandeep Sharma,c Krunal Pandya b Mustafizur,0,2,0,0,0
+89818043,2,SRH,Billy Stanlake,Billy Stanlake,not out,5,2,1,0,250
+10591151,1,KXIP,Rahul (wk),Rahul (wk),c Sarfaraz Khan b Washington Sundar,47,30,2,4,156.67
+10591151,1,KXIP,Mayank Agarwal,Mayank Agarwal,c de Kock b Umesh,15,11,3,0,136.36
+10591151,1,KXIP,Finch,Aaron Finch,lbw b Umesh,0,1,0,0,0
+10591151,1,KXIP,Yuvraj,Yuvraj Singh,b Umesh,4,4,1,0,100
+10591151,1,KXIP,Nair,Karun Nair,b Kulwant Khejroliya,29,26,3,0,111.54
+10591151,1,KXIP,Stoinis,Marcus Stoinis,st de Kock b Washington Sundar,11,9,0,1,122.22
+10591151,1,KXIP,Axar,Axar Patel,lbw b Kulwant Khejroliya,2,3,0,0,66.67
+10591151,1,KXIP,Ashwin (c),Ashwin (c),st de Kock b Chahal,33,21,3,1,157.14
+10591151,1,KXIP,Andrew Tye,Andrew Tye,c Kohli b Chris Woakes,7,7,0,0,100
+10591151,1,KXIP,Mohit Sharma,Mohit Sharma,not out,1,2,0,0,50
+10591151,1,KXIP,Mujeeb,Mujeeb Ur Rahman,c Sarfaraz Khan b Chris Woakes,0,2,0,0,0
+10591151,2,RCB,Quinton de Kock (wk),Quinton de Kock (wk),b Ashwin,45,34,7,1,132.35
+10591151,2,RCB,Brendon McCullum,Brendon McCullum,c Mujeeb b Axar,0,1,0,0,0
+10591151,2,RCB,Virat Kohli (c),Virat Kohli (c),b Mujeeb,21,16,4,0,131.25
+10591151,2,RCB,AB de Villiers,AB de Villiers,c Nair b Andrew Tye,57,40,2,4,142.5
+10591151,2,RCB,Sarfaraz Khan,Sarfaraz Khan,c Nair b Ashwin,0,1,0,0,0
+10591151,2,RCB,Mandeep Singh,Mandeep Singh,run out ((sub)Mayank Dagar/Rahul),22,19,1,0,115.79
+10591151,2,RCB,Chris Woakes,Chris Woakes,not out,1,2,0,0,50
+10591151,2,RCB,Washington Sundar,Washington Sundar,not out,9,4,2,0,225
+61770985,1,MI,Suryakumar Yadav,Suryakumar Yadav,lbw b Rahul Tewatia,53,32,7,1,165.62
+61770985,1,MI,Lewis,Evin Lewis,c Roy b Rahul Tewatia,48,28,4,4,171.43
+61770985,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),b Christian,44,23,5,2,191.3
+61770985,1,MI,Rohit (c),Rohit (c),c Roy b Boult,18,15,2,0,120
+61770985,1,MI,Pollard,Kieron Pollard,b Christian,0,1,0,0,0
+61770985,1,MI,Krunal Pandya,Krunal Pandya,c Rahul Tewatia b Shami,11,10,1,0,110
+61770985,1,MI,Hardik Pandya,Hardik Pandya,c Shreyas Iyer b Boult,2,3,0,0,66.67
+61770985,1,MI,Dananjaya,Akila Dananjaya,not out,4,5,0,0,80
+61770985,1,MI,Markande,Mayank Markande,not out,4,3,0,0,133.33
+61770985,2,DD,Jason Roy,Jason Roy,not out,91,53,6,6,171.7
+61770985,2,DD,Gautam Gambhir (c),Gautam Gambhir (c),c Rohit b Mustafizur,15,16,2,0,93.75
+61770985,2,DD,Rishabh Pant (wk),Rishabh Pant (wk),c Pollard b Krunal Pandya,47,25,6,2,188
+61770985,2,DD,Glenn Maxwell,Glenn Maxwell,c Hardik Pandya b Krunal Pandya,13,6,1,1,216.67
+61770985,2,DD,Shreyas Iyer,Shreyas Iyer,not out,27,20,3,1,135
+45899307,1,KKR,Uthappa,Robin Uthappa,c Saha b Bhuvneshwar,3,8,0,0,37.5
+45899307,1,KKR,Chris Lynn,Chris Lynn,c and b Shakib,49,34,7,1,144.12
+45899307,1,KKR,Nitish Rana,Nitish Rana,c Manish Pandey b Stanlake,18,16,2,1,112.5
+45899307,1,KKR,Narine,Sunil Narine,c Williamson b Shakib,9,10,1,0,90
+45899307,1,KKR,Karthik (c & wk),Karthik (c & wk),c Saha b Bhuvneshwar,29,27,2,1,107.41
+45899307,1,KKR,A Russell,A Russell,c Manish Pandey b Stanlake,9,5,0,1,180
+45899307,1,KKR,Shubman Gill,Shubman Gill,c Shakib b Bhuvneshwar,3,9,0,0,33.33
+45899307,1,KKR,Shivam Mavi,Shivam Mavi,c Bhuvneshwar b S Kaul,7,8,0,0,87.5
+45899307,1,KKR,Johnson,Mitchell Johnson,not out,4,5,0,0,80
+45899307,2,SRH,Wriddhiman Saha (wk),Wriddhiman Saha (wk),c Karthik b Narine,24,15,5,0,160
+45899307,2,SRH,Shikhar Dhawan,Shikhar Dhawan,b Narine,7,7,1,0,100
+45899307,2,SRH,Kane Williamson (c),Kane Williamson (c),c A Russell b Johnson,50,44,4,1,113.64
+45899307,2,SRH,Manish Pandey,Manish Pandey,lbw b Kuldeep Yadav,4,11,0,0,36.36
+45899307,2,SRH,Shakib Al Hasan,Shakib Al Hasan,b Chawla,27,21,2,1,128.57
+45899307,2,SRH,Deepak Hooda,Deepak Hooda,not out,5,9,0,0,55.56
+45899307,2,SRH,Yusuf Pathan,Yusuf Pathan,not out,17,7,2,1,242.86
+57422007,1,RR,A Rahane (c),A Rahane (c),c Umesh b Chris Woakes,36,20,6,1,180
+57422007,1,RR,D Arcy Short,D Arcy Short,c de Kock b Chahal,11,17,1,0,64.71
+57422007,1,RR,Samson,Sanju Samson,not out,92,45,2,10,204.44
+57422007,1,RR,Stokes,Ben Stokes,b Chahal,27,21,2,1,128.57
+57422007,1,RR,Jos Buttler (wk),Jos Buttler (wk),c Kohli b Chris Woakes,23,14,2,1,164.29
+57422007,1,RR,R Tripathi,R Tripathi,not out,14,5,1,1,280
+57422007,2,RCB,Brendon McCullum,Brendon McCullum,c Stokes b Gowtham,4,4,1,0,100
+57422007,2,RCB,Quinton de Kock (wk),Quinton de Kock (wk),c Unadkat b D Arcy Short,26,19,4,0,136.84
+57422007,2,RCB,Virat Kohli (c),Virat Kohli (c),c D Arcy Short b Shreyas Gopal,57,30,6,2,190
+57422007,2,RCB,AB de Villiers,AB de Villiers,c Unadkat b Shreyas Gopal,20,18,1,1,111.11
+57422007,2,RCB,Mandeep Singh,Mandeep Singh,not out,47,25,6,1,188
+57422007,2,RCB,Pawan Negi,Pawan Negi,c Jos Buttler b Laughlin,3,4,0,0,75
+57422007,2,RCB,Washington Sundar,Washington Sundar,b Stokes,35,19,1,3,184.21
+57422007,2,RCB,Chris Woakes,Chris Woakes,not out,0,1,0,0,0
+88927779,1,KXIP,Rahul (wk),Rahul (wk),c DJ Bravo b Harbhajan,37,22,7,0,168.18
+88927779,1,KXIP,Gayle,Chris Gayle,c Tahir b Watson,63,33,7,4,190.91
+88927779,1,KXIP,Mayank Agarwal,Mayank Agarwal,c Ravindra Jadeja b Tahir,30,19,1,2,157.89
+88927779,1,KXIP,Yuvraj,Yuvraj Singh,c Dhoni b SN Thakur,20,13,2,1,153.85
+88927779,1,KXIP,Finch,Aaron Finch,lbw b Tahir,0,1,0,0,0
+88927779,1,KXIP,Nair,Karun Nair,c Ravindra Jadeja b DJ Bravo,29,17,2,1,170.59
+88927779,1,KXIP,Ashwin (c),Ashwin (c),c Dhoni b SN Thakur,14,11,0,1,127.27
+88927779,1,KXIP,Andrew Tye,Andrew Tye,not out,3,4,0,0,75
+88927779,1,KXIP,Barinder,Barinder Sran,not out,0,0,0,0,0
+88927779,2,CSK,Shane Watson,Shane Watson,c Barinder b Mohit Sharma,11,9,2,0,122.22
+88927779,2,CSK,Murali Vijay,Murali Vijay,c Barinder b Andrew Tye,12,10,0,1,120
+88927779,2,CSK,Ambati Rayudu,Ambati Rayudu,run out (Ashwin),49,35,5,1,140
+88927779,2,CSK,Sam Billings,Sam Billings,lbw b Ashwin,9,8,1,0,112.5
+88927779,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),not out,79,44,6,5,179.55
+88927779,2,CSK,Ravindra Jadeja,Ravindra Jadeja,c Ashwin b Andrew Tye,19,13,1,1,146.15
+88927779,2,CSK,Dwayne Bravo,Dwayne Bravo,not out,1,1,0,0,100
+52943274,1,KKR,Chris Lynn,Chris Lynn,c Roy b Shami,31,29,4,1,106.9
+52943274,1,KKR,Narine,Sunil Narine,c Maxwell b Boult,1,4,0,0,25
+52943274,1,KKR,Uthappa,Robin Uthappa,c and b Nadeem,35,19,2,3,184.21
+52943274,1,KKR,Nitish Rana,Nitish Rana,c Gambhir b Chris Morris,59,35,5,4,168.57
+52943274,1,KKR,Karthik (c & wk),Karthik (c & wk),c Boult b Chris Morris,19,10,2,1,190
+52943274,1,KKR,A Russell,A Russell,b Boult,41,12,0,6,341.67
+52943274,1,KKR,Shubman Gill,Shubman Gill,c Chris Morris b Rahul Tewatia,6,5,1,0,120
+52943274,1,KKR,Tom Curran,Tom Curran,c Maxwell b Rahul Tewatia,2,3,0,0,66.67
+52943274,1,KKR,Chawla,Piyush Chawla,c Pant b Rahul Tewatia,0,3,0,0,0
+52943274,1,KKR,Shivam Mavi,Shivam Mavi,not out,0,0,0,0,0
+52943274,2,DD,Gautam Gambhir (c),Gautam Gambhir (c),b Shivam Mavi,8,7,1,0,114.29
+52943274,2,DD,Jason Roy,Jason Roy,st Karthik b Chawla,1,3,0,0,33.33
+52943274,2,DD,Shreyas Iyer,Shreyas Iyer,c Nitish Rana b A Russell,4,3,1,0,133.33
+52943274,2,DD,Rishabh Pant (wk),Rishabh Pant (wk),c Chawla b Kuldeep Yadav,43,26,7,1,165.38
+52943274,2,DD,Glenn Maxwell,Glenn Maxwell,c Uthappa b Kuldeep Yadav,47,22,3,4,213.64
+52943274,2,DD,Rahul Tewatia,Rahul Tewatia,c A Russell b Tom Curran,1,2,0,0,50
+52943274,2,DD,Vijay Shankar,Vijay Shankar,lbw b Narine,2,4,0,0,50
+52943274,2,DD,Chris Morris,Chris Morris,b Narine,2,3,0,0,66.67
+52943274,2,DD,Mohammed Shami,Mohammed Shami,c A Russell b Narine,7,6,1,0,116.67
+52943274,2,DD,Shahbaz Nadeem,Shahbaz Nadeem,not out,6,8,0,0,75
+52943274,2,DD,Trent Boult,Trent Boult,c and b Kuldeep Yadav,0,2,0,0,0
+79481315,1,MI,Suryakumar Yadav,Suryakumar Yadav,b Umesh,0,1,0,0,0
+79481315,1,MI,Lewis,Evin Lewis,c de Kock b CJ Anderson,65,42,6,5,154.76
+79481315,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),b Umesh,0,1,0,0,0
+79481315,1,MI,Rohit (c),Rohit (c),c Chris Woakes b CJ Anderson,94,52,10,5,180.77
+79481315,1,MI,Krunal Pandya,Krunal Pandya,run out (Chris Woakes/CJ Anderson),15,12,1,1,125
+79481315,1,MI,Pollard,Kieron Pollard,c de Villiers b Chris Woakes,5,7,0,0,71.43
+79481315,1,MI,Hardik Pandya,Hardik Pandya,not out,17,5,1,2,340
+79481315,1,MI,McClenaghan,Mitchell McClenaghan,not out,0,0,0,0,0
+79481315,2,RCB,Virat Kohli (c),Virat Kohli (c),not out,92,62,7,4,148.39
+79481315,2,RCB,Quinton de Kock (wk),Quinton de Kock (wk),b McClenaghan,19,12,2,1,158.33
+79481315,2,RCB,AB de Villiers,AB de Villiers,c Hardik Pandya b McClenaghan,1,2,0,0,50
+79481315,2,RCB,Mandeep Singh,Mandeep Singh,st Ishan Kishan b Krunal Pandya,16,14,1,0,114.29
+79481315,2,RCB,Corey Anderson,Corey Anderson,c (sub)Duminy b Krunal Pandya,0,1,0,0,0
+79481315,2,RCB,Washington Sundar,Washington Sundar,c Suryakumar Yadav b Krunal Pandya,7,8,1,0,87.5
+79481315,2,RCB,Sarfaraz Khan,Sarfaraz Khan,st (sub)Tare b Markande,5,6,1,0,83.33
+79481315,2,RCB,Chris Woakes,Chris Woakes,c Krunal Pandya b Bumrah,11,11,0,1,100
+79481315,2,RCB,Umesh Yadav,Umesh Yadav,c Rohit b Bumrah,1,2,0,0,50
+79481315,2,RCB,Mohammed Siraj,Mohammed Siraj,not out,8,3,0,1,266.67
+79450473,1,RR,A Rahane (c),A Rahane (c),st Karthik b Nitish Rana,36,19,5,1,189.47
+79450473,1,RR,D Arcy Short,D Arcy Short,b Nitish Rana,44,43,5,1,102.33
+79450473,1,RR,Samson,Sanju Samson,c Kuldeep Yadav b Shivam Mavi,7,8,1,0,87.5
+79450473,1,RR,R Tripathi,R Tripathi,c A Russell b Kuldeep Yadav,15,11,2,0,136.36
+79450473,1,RR,Stokes,Ben Stokes,c Nitish Rana b Chawla,14,11,0,1,127.27
+79450473,1,RR,Jos Buttler (wk),Jos Buttler (wk),not out,24,18,2,0,133.33
+79450473,1,RR,Gowtham,Krishnappa Gowtham,c Shivam Mavi b Tom Curran,12,7,0,1,171.43
+79450473,1,RR,Shreyas Gopal,Shreyas Gopal,b Tom Curran,0,1,0,0,0
+79450473,1,RR,D Kulkarni,D Kulkarni,run out (Shubman Gill/Shivam Mavi),3,3,0,0,100
+79450473,1,RR,Unadkat,Jaydev Unadkat,not out,0,0,0,0,0
+79450473,2,KKR,Sunil Narine,Sunil Narine,run out (Unadkat/Jos Buttler),35,25,5,1,140
+79450473,2,KKR,Chris Lynn,Chris Lynn,b Gowtham,0,2,0,0,0
+79450473,2,KKR,Robin Uthappa,Robin Uthappa,c Stokes b Gowtham,48,36,6,2,133.33
+79450473,2,KKR,Nitish Rana,Nitish Rana,not out,35,27,2,1,129.63
+79450473,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),not out,42,23,2,2,182.61
+80774249,1,KXIP,Rahul (wk),Rahul (wk),lbw b Rashid Khan,18,21,3,0,85.71
+80774249,1,KXIP,Gayle,Chris Gayle,not out,104,63,1,11,165.08
+80774249,1,KXIP,Mayank Agarwal,Mayank Agarwal,c Deepak Hooda b S Kaul,18,9,2,1,200
+80774249,1,KXIP,Nair,Karun Nair,c Dhawan b Bhuvneshwar,31,21,3,1,147.62
+80774249,1,KXIP,Finch,Aaron Finch,not out,14,6,1,1,233.33
+80774249,2,SRH,Wriddhiman Saha (wk),Wriddhiman Saha (wk),b Mohit Sharma,6,7,1,0,85.71
+80774249,2,SRH,Shikhar Dhawan,Shikhar Dhawan,retd hurt,0,1,0,0,0
+80774249,2,SRH,Kane Williamson (c),Kane Williamson (c),c Finch b Andrew Tye,54,41,3,2,131.71
+80774249,2,SRH,Yusuf Pathan,Yusuf Pathan,b Mohit Sharma,19,13,3,0,146.15
+80774249,2,SRH,Manish Pandey,Manish Pandey,not out,57,42,3,1,135.71
+80774249,2,SRH,Deepak Hooda,Deepak Hooda,c (sub)Manoj Tiwary b Andrew Tye,5,5,0,0,100
+80774249,2,SRH,Shakib Al Hasan,Shakib Al Hasan,not out,24,12,1,2,200
+89102970,1,CSK,Watson,Shane Watson,c Jos Buttler b Laughlin,106,57,9,6,185.96
+89102970,1,CSK,Rayudu,Ambati Rayudu,c Jos Buttler b Laughlin,12,8,2,0,150
+89102970,1,CSK,Raina,Suresh Raina,c Gowtham b Shreyas Gopal,46,29,9,0,158.62
+89102970,1,CSK,Dhoni (c & wk),Dhoni (c & wk),c Gowtham b Shreyas Gopal,5,3,1,0,166.67
+89102970,1,CSK,Billings,Sam Billings,c Stokes b Shreyas Gopal,3,7,0,0,42.86
+89102970,1,CSK,DJ Bravo,DJ Bravo,not out,24,16,4,0,150
+89102970,1,CSK,Ravindra Jadeja,Ravindra Jadeja,not out,2,1,0,0,200
+89102970,2,RR,Ajinkya Rahane (c),Ajinkya Rahane (c),b D Chahar,16,11,1,1,145.45
+89102970,2,RR,Heinrich Klaasen,Heinrich Klaasen,b SN Thakur,7,7,1,0,100
+89102970,2,RR,Sanju Samson,Sanju Samson,c Karn Sharma b D Chahar,2,3,0,0,66.67
+89102970,2,RR,Ben Stokes,Ben Stokes,c Billings b Tahir,45,37,3,1,121.62
+89102970,2,RR,Jos Buttler (wk),Jos Buttler (wk),c Tahir b DJ Bravo,22,17,1,1,129.41
+89102970,2,RR,Rahul Tripathi,Rahul Tripathi,c Billings b DJ Bravo,5,5,0,0,100
+89102970,2,RR,Stuart Binny,Stuart Binny,c and b SN Thakur,10,8,1,0,125
+89102970,2,RR,Krishnappa Gowtham,Krishnappa Gowtham,c Dhoni b Watson,1,2,0,0,50
+89102970,2,RR,Shreyas Gopal,Shreyas Gopal,not out,8,10,0,0,80
+89102970,2,RR,Jaydev Unadkat,Jaydev Unadkat,b Karn Sharma,16,10,3,0,160
+89102970,2,RR,Ben Laughlin,Ben Laughlin,c Dhoni b Karn Sharma,0,1,0,0,0
+29027302,1,KKR,Chris Lynn,Chris Lynn,c Rahul b Andrew Tye,74,41,6,4,180.49
+29027302,1,KKR,Narine,Sunil Narine,c Nair b Mujeeb,1,4,0,0,25
+29027302,1,KKR,Uthappa,Robin Uthappa,c Nair b Ashwin,34,23,5,1,147.83
+29027302,1,KKR,Nitish Rana,Nitish Rana,run out (Rajpoot/Rahul),3,5,0,0,60
+29027302,1,KKR,Karthik (c & wk),Karthik (c & wk),c Andrew Tye b Barinder,43,28,6,0,153.57
+29027302,1,KKR,A Russell,A Russell,c Nair b Barinder,10,7,2,0,142.86
+29027302,1,KKR,Shubman Gill,Shubman Gill,not out,14,8,2,0,175
+29027302,1,KKR,Tom Curran,Tom Curran,c Rajpoot b Andrew Tye,1,3,0,0,33.33
+29027302,1,KKR,Chawla,Piyush Chawla,not out,2,2,0,0,100
+29027302,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),c Tom Curran b Narine,60,27,9,2,222.22
+29027302,2,KXIP,Chris Gayle,Chris Gayle,not out,62,38,5,6,163.16
+29027302,2,KXIP,Mayank Agarwal,Mayank Agarwal,not out,2,2,0,0,100
+44251598,1,DD,Roy,Jason Roy,b Chahal,5,16,0,0,31.25
+44251598,1,DD,Gambhir (c),Gambhir (c),c Chahal b Umesh,3,10,0,0,30
+44251598,1,DD,Shreyas Iyer,Shreyas Iyer,c Siraj b Washington Sundar,52,31,4,3,167.74
+44251598,1,DD,Pant (wk),Pant (wk),c de Villiers b CJ Anderson,85,48,6,7,177.08
+44251598,1,DD,Maxwell,Glenn Maxwell,c Siraj b Chahal,4,6,0,0,66.67
+44251598,1,DD,Rahul Tewatia,Rahul Tewatia,not out,13,9,3,0,144.44
+44251598,1,DD,Chris Morris,Chris Morris,not out,0,0,0,0,0
+44251598,2,RCB,Quinton de Kock (wk),Quinton de Kock (wk),run out (Vijay Shankar/Pant),18,16,1,1,112.5
+44251598,2,RCB,Manan Vohra,Manan Vohra,c Roy b Maxwell,2,5,0,0,40
+44251598,2,RCB,Virat Kohli (c),Virat Kohli (c),c Boult b Harshal Patel,30,26,2,1,115.38
+44251598,2,RCB,AB de Villiers,AB de Villiers,not out,90,39,10,5,230.77
+44251598,2,RCB,Corey Anderson,Corey Anderson,b Boult,15,13,0,1,115.38
+44251598,2,RCB,Mandeep Singh,Mandeep Singh,not out,17,9,1,1,188.89
+64859377,1,CSK,Watson,Shane Watson,c Deepak Hooda b Bhuvneshwar,9,15,0,1,60
+64859377,1,CSK,du Plessis,du Plessis,st Saha b Rashid Khan,11,13,1,0,84.62
+64859377,1,CSK,Raina,Suresh Raina,not out,54,43,5,2,125.58
+64859377,1,CSK,Rayudu,Ambati Rayudu,run out (S Kaul/Williamson),79,37,9,4,213.51
+64859377,1,CSK,Dhoni (c & wk),Dhoni (c & wk),not out,25,12,3,1,208.33
+64859377,2,SRH,Ricky Bhui,Ricky Bhui,c Watson b D Chahar,0,5,0,0,0
+64859377,2,SRH,Kane Williamson (c),Kane Williamson (c),c Ravindra Jadeja b DJ Bravo,84,51,5,5,164.71
+64859377,2,SRH,Manish Pandey,Manish Pandey,c Karn Sharma b D Chahar,0,2,0,0,0
+64859377,2,SRH,Deepak Hooda,Deepak Hooda,c Ravindra Jadeja b D Chahar,1,7,0,0,14.29
+64859377,2,SRH,Shakib Al Hasan,Shakib Al Hasan,c Raina b Karn Sharma,24,19,2,1,126.32
+64859377,2,SRH,Yusuf Pathan,Yusuf Pathan,c Raina b SN Thakur,45,27,1,4,166.67
+64859377,2,SRH,Wriddhiman Saha (wk),Wriddhiman Saha (wk),not out,5,5,0,0,100
+64859377,2,SRH,Rashid Khan,Rashid Khan,not out,17,4,1,2,425
+35540201,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Jos Buttler b Unadkat,72,47,6,3,153.19
+35540201,1,MI,Lewis,Evin Lewis,b D Kulkarni,0,1,0,0,0
+35540201,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Jos Buttler b D Kulkarni,58,42,4,3,138.1
+35540201,1,MI,Pollard,Kieron Pollard,not out,21,20,1,1,105
+35540201,1,MI,Rohit (c),Rohit (c),run out (A Rahane),0,1,0,0,0
+35540201,1,MI,Krunal Pandya,Krunal Pandya,c Klaasen b Jofra Archer,7,6,1,0,116.67
+35540201,1,MI,Hardik Pandya,Hardik Pandya,b Jofra Archer,4,2,1,0,200
+35540201,1,MI,McClenaghan,Mitchell McClenaghan,b Jofra Archer,0,1,0,0,0
+35540201,1,MI,Markande,Mayank Markande,not out,0,1,0,0,0
+35540201,2,RR,Ajinkya Rahane (c),Ajinkya Rahane (c),c Krunal Pandya b McClenaghan,14,17,1,0,82.35
+35540201,2,RR,Rahul Tripathi,Rahul Tripathi,c Suryakumar Yadav b Krunal Pandya,9,8,1,0,112.5
+35540201,2,RR,Sanju Samson,Sanju Samson,c Hardik Pandya b Bumrah,52,39,4,0,133.33
+35540201,2,RR,Ben Stokes,Ben Stokes,b Hardik Pandya,40,27,3,1,148.15
+35540201,2,RR,Jos Buttler (wk),Jos Buttler (wk),b Bumrah,6,8,0,0,75
+35540201,2,RR,Heinrich Klaasen,Heinrich Klaasen,c Ishan Kishan b Mustafizur,0,1,0,0,0
+35540201,2,RR,Jofra Archer,Jofra Archer,c and b Hardik Pandya,8,9,1,0,88.89
+35540201,2,RR,Krishnappa Gowtham,Krishnappa Gowtham,not out,33,11,4,2,300
+35540201,2,RR,Jaydev Unadkat,Jaydev Unadkat,not out,0,0,0,0,0
+97839188,1,KXIP,Rahul (wk),Rahul (wk),c Avesh Khan b Plunkett,23,15,3,1,153.33
+97839188,1,KXIP,Finch,Aaron Finch,c Shreyas Iyer b Avesh Khan,2,4,0,0,50
+97839188,1,KXIP,Mayank Agarwal,Mayank Agarwal,b Plunkett,21,16,3,0,131.25
+97839188,1,KXIP,Nair,Karun Nair,c Shreyas Iyer b Plunkett,34,32,4,0,106.25
+97839188,1,KXIP,Yuvraj,Yuvraj Singh,c Pant b Avesh Khan,14,17,1,0,82.35
+97839188,1,KXIP,Miller,David Miller,c Plunkett b Christian,26,19,1,1,136.84
+97839188,1,KXIP,Ashwin (c),Ashwin (c),c Rahul Tewatia b Boult,6,7,0,0,85.71
+97839188,1,KXIP,Andrew Tye,Andrew Tye,b Boult,3,9,0,0,33.33
+97839188,1,KXIP,Barinder,Barinder Sran,not out,0,1,0,0,0
+97839188,2,DD,Prithvi Shaw,Prithvi Shaw,b Rajpoot,22,10,4,0,220
+97839188,2,DD,Gautam Gambhir (c),Gautam Gambhir (c),c Finch b Andrew Tye,4,13,0,0,30.77
+97839188,2,DD,Glenn Maxwell,Glenn Maxwell,c Andrew Tye b Rajpoot,12,10,1,1,120
+97839188,2,DD,Shreyas Iyer,Shreyas Iyer,c Finch b Mujeeb,57,45,5,1,126.67
+97839188,2,DD,Rishabh Pant (wk),Rishabh Pant (wk),b Mujeeb,4,7,0,0,57.14
+97839188,2,DD,Daniel Christian,Daniel Christian,run out (Mayank Agarwal/Ashwin),6,11,0,0,54.55
+97839188,2,DD,Rahul Tewatia,Rahul Tewatia,c Rahul b Andrew Tye,24,21,1,1,114.29
+97839188,2,DD,Liam Plunkett,Liam Plunkett,c Nair b Barinder,0,1,0,0,0
+97839188,2,DD,Amit Mishra,Amit Mishra,not out,1,2,0,0,50
+22438751,1,SRH,Dhawan,Shikhar Dhawan,b McClenaghan,5,6,1,0,83.33
+22438751,1,SRH,Williamson (c),Williamson (c),c Ishan Kishan b Hardik Pandya,29,21,5,0,138.1
+22438751,1,SRH,Saha (wk),Saha (wk),c Ishan Kishan b McClenaghan,0,2,0,0,0
+22438751,1,SRH,Manish Pandey,Manish Pandey,c Rohit b Hardik Pandya,16,11,3,0,145.45
+22438751,1,SRH,Shakib,Shakib Al Hasan,run out (Suryakumar Yadav),2,4,0,0,50
+22438751,1,SRH,Y Pathan,Y Pathan,c Hardik Pandya b Mustafizur,29,33,2,1,87.88
+22438751,1,SRH,Nabi,Mohammad Nabi,b Markande,14,10,2,0,140
+22438751,1,SRH,Rashid Khan,Rashid Khan,c Ishan Kishan b Bumrah,6,9,0,0,66.67
+22438751,1,SRH,Basil Thampi,Basil Thampi,b Markande,3,6,0,0,50
+22438751,1,SRH,S Kaul,S Kaul,run out (Hardik Pandya/Ishan Kishan),2,9,0,0,22.22
+22438751,1,SRH,Sandeep Sharma,Sandeep Sharma,not out,0,1,0,0,0
+22438751,2,MI,Suryakumar Yadav,Suryakumar Yadav,c Rashid Khan b Basil Thampi,34,38,4,0,89.47
+22438751,2,MI,Evin Lewis,Evin Lewis,c Manish Pandey b Sandeep Sharma,5,9,1,0,55.56
+22438751,2,MI,Ishan Kishan (wk),Ishan Kishan (wk),c (sub)Deepak Hooda b Nabi,0,3,0,0,0
+22438751,2,MI,Rohit Sharma (c),Rohit Sharma (c),c Dhawan b Shakib,2,6,0,0,33.33
+22438751,2,MI,Krunal Pandya,Krunal Pandya,lbw b Rashid Khan,24,20,4,0,120
+22438751,2,MI,Kieron Pollard,Kieron Pollard,c Dhawan b Rashid Khan,9,6,0,1,150
+22438751,2,MI,Hardik Pandya,Hardik Pandya,c Basil Thampi b S Kaul,3,19,0,0,15.79
+22438751,2,MI,Mitchell McClenaghan,Mitchell McClenaghan,lbw b S Kaul,0,2,0,0,0
+22438751,2,MI,Mayank Markande,Mayank Markande,lbw b S Kaul,1,2,0,0,50
+22438751,2,MI,Jasprit Bumrah,Jasprit Bumrah,not out,6,5,1,0,120
+22438751,2,MI,Mustafizur Rahman,Mustafizur Rahman,c (sub)Deepak Hooda b Basil Thampi,1,3,0,0,33.33
+24653108,1,RCB,de Kock (wk),de Kock (wk),c and b DJ Bravo,53,37,1,4,143.24
+24653108,1,RCB,Kohli (c),Kohli (c),c Ravindra Jadeja b SN Thakur,18,15,3,0,120
+24653108,1,RCB,de Villiers,de Villiers,c Billings b Tahir,68,30,2,8,226.67
+24653108,1,RCB,CJ Anderson,CJ Anderson,c Harbhajan b Tahir,2,8,0,0,25
+24653108,1,RCB,Mandeep,Mandeep Singh,c Ravindra Jadeja b SN Thakur,32,17,1,3,188.24
+24653108,1,RCB,de Grandhomme,de Grandhomme,run out (Dhoni),11,7,1,0,157.14
+24653108,1,RCB,Negi,Pawan Negi,run out (Ravindra Jadeja/Dhoni),0,1,0,0,0
+24653108,1,RCB,Washington Sundar,Washington Sundar,not out,13,4,1,1,325
+24653108,1,RCB,Umesh,Umesh Yadav,c Billings b DJ Bravo,0,1,0,0,0
+24653108,1,RCB,Siraj,Mohammed Siraj,not out,0,0,0,0,0
+24653108,2,CSK,Shane Watson,Shane Watson,c Siraj b Negi,7,4,0,1,175
+24653108,2,CSK,Ambati Rayudu,Ambati Rayudu,run out (Umesh),82,53,3,8,154.72
+24653108,2,CSK,Suresh Raina,Suresh Raina,c Mandeep b Umesh,11,9,2,0,122.22
+24653108,2,CSK,Sam Billings,Sam Billings,st de Kock b Chahal,9,7,2,0,128.57
+24653108,2,CSK,Ravindra Jadeja,Ravindra Jadeja,b Chahal,3,5,0,0,60
+24653108,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),not out,70,34,1,7,205.88
+24653108,2,CSK,Dwayne Bravo,Dwayne Bravo,not out,14,7,1,1,200
+68797121,1,SRH,Dhawan,Shikhar Dhawan,c Nair b Rajpoot,11,8,2,0,137.5
+68797121,1,SRH,Williamson (c),Williamson (c),c Ashwin b Rajpoot,0,3,0,0,0
+68797121,1,SRH,Saha (wk),Saha (wk),c Andrew Tye b Rajpoot,6,9,1,0,66.67
+68797121,1,SRH,Manish Pandey,Manish Pandey,b Rajpoot,54,51,3,1,105.88
+68797121,1,SRH,Shakib,Shakib Al Hasan,c Mayank Agarwal b Mujeeb,28,29,3,0,96.55
+68797121,1,SRH,Y Pathan,Y Pathan,not out,21,19,1,1,110.53
+68797121,1,SRH,Nabi,Mohammad Nabi,c Mayank Agarwal b Rajpoot,4,2,1,0,200
+68797121,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),b Rashid Khan,32,26,4,1,123.08
+68797121,2,KXIP,Chris Gayle,Chris Gayle,c and b Basil Thampi,23,22,1,2,104.55
+68797121,2,KXIP,Mayank Agarwal,Mayank Agarwal,c Manish Pandey b Shakib,12,15,0,0,80
+68797121,2,KXIP,Karun Nair,Karun Nair,lbw b Rashid Khan,13,17,0,0,76.47
+68797121,2,KXIP,Aaron Finch,Aaron Finch,c Manish Pandey b Shakib,8,4,0,1,200
+68797121,2,KXIP,Manoj Tiwary,Manoj Tiwary,c Williamson b Sandeep Sharma,1,5,0,0,20
+68797121,2,KXIP,Ravichandran Ashwin (c),Ravichandran Ashwin (c),c Williamson b Rashid Khan,4,6,0,0,66.67
+68797121,2,KXIP,Andrew Tye,Andrew Tye,lbw b Sandeep Sharma,4,2,1,0,200
+68797121,2,KXIP,Barinder Sran,Barinder Sran,run out (Saha),2,5,0,0,40
+68797121,2,KXIP,Ankit Rajpoot,Ankit Rajpoot,b Basil Thampi,8,9,1,0,88.89
+68797121,2,KXIP,Mujeeb Ur Rahman,Mujeeb Ur Rahman,not out,10,5,2,0,200
+91943896,1,DD,Prithvi Shaw,Prithvi Shaw,b Chawla,62,44,7,2,140.91
+91943896,1,DD,Munro,Colin Munro,b Shivam Mavi,33,18,4,2,183.33
+91943896,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),not out,93,40,3,10,232.5
+91943896,1,DD,Pant (wk),Pant (wk),c Karthik b A Russell,0,1,0,0,0
+91943896,1,DD,Maxwell,Glenn Maxwell,run out (Karthik/Shivam Mavi),27,18,1,2,150
+91943896,1,DD,Vijay Shankar,Vijay Shankar,not out,0,0,0,0,0
+91943896,2,KKR,Chris Lynn,Chris Lynn,b Maxwell,5,6,1,0,83.33
+91943896,2,KKR,Sunil Narine,Sunil Narine,c Shreyas Iyer b Boult,26,9,1,3,288.89
+91943896,2,KKR,Robin Uthappa,Robin Uthappa,c Prithvi Shaw b Boult,1,2,0,0,50
+91943896,2,KKR,Nitish Rana,Nitish Rana,c and b Avesh Khan,8,7,1,0,114.29
+91943896,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),c Boult b A Mishra,18,18,0,1,100
+91943896,2,KKR,Shubman Gill,Shubman Gill,run out (Shreyas Iyer/Pant),37,29,3,1,127.59
+91943896,2,KKR,Andre Russell,Andre Russell,b Avesh Khan,44,30,3,4,146.67
+91943896,2,KKR,Shivam Mavi,Shivam Mavi,b A Mishra,0,3,0,0,0
+91943896,2,KKR,Piyush Chawla,Piyush Chawla,c Munro b Maxwell,2,4,0,0,50
+91943896,2,KKR,Mitchell Johnson,Mitchell Johnson,not out,12,6,2,0,200
+91943896,2,KKR,Kuldeep Yadav,Kuldeep Yadav,not out,7,6,1,0,116.67
+30746005,1,CSK,Watson,Shane Watson,c Markande b Krunal Pandya,12,11,1,0,109.09
+30746005,1,CSK,Rayudu,Ambati Rayudu,c Cutting b Krunal Pandya,46,35,2,4,131.43
+30746005,1,CSK,Raina,Suresh Raina,not out,75,47,6,4,159.57
+30746005,1,CSK,Dhoni (c & wk),Dhoni (c & wk),c Lewis b McClenaghan,26,21,3,1,123.81
+30746005,1,CSK,DJ Bravo,DJ Bravo,c Markande b McClenaghan,0,1,0,0,0
+30746005,1,CSK,Billings,Sam Billings,c Cutting b Hardik Pandya,3,5,0,0,60
+30746005,1,CSK,Ravindra Jadeja,Ravindra Jadeja,not out,0,0,0,0,0
+30746005,2,MI,Suryakumar Yadav,Suryakumar Yadav,c Ravindra Jadeja b Harbhajan,44,34,5,1,129.41
+30746005,2,MI,Evin Lewis,Evin Lewis,c SN Thakur b DJ Bravo,47,43,3,2,109.3
+30746005,2,MI,Rohit Sharma (c),Rohit Sharma (c),not out,56,33,6,2,169.7
+30746005,2,MI,Hardik Pandya,Hardik Pandya,not out,13,8,0,1,162.5
+55652113,1,SRH,Hales,Alex Hales,c Samson b Gowtham,45,39,4,0,115.38
+55652113,1,SRH,Dhawan,Shikhar Dhawan,b Gowtham,6,4,1,0,150
+55652113,1,SRH,Williamson (c),Williamson (c),c Jos Buttler b Ish Sodhi,63,43,7,2,146.51
+55652113,1,SRH,Manish Pandey,Manish Pandey,c A Rahane b Unadkat,16,15,1,0,106.67
+55652113,1,SRH,Shakib,Shakib Al Hasan,b Jofra Archer,6,6,1,0,100
+55652113,1,SRH,Y Pathan,Y Pathan,c D Kulkarni b Jofra Archer,2,3,0,0,66.67
+55652113,1,SRH,Saha (wk),Saha (wk),not out,11,7,1,0,157.14
+55652113,1,SRH,Rashid Khan,Rashid Khan,c Stokes b Jofra Archer,1,3,0,0,33.33
+55652113,1,SRH,Basil Thampi,Basil Thampi,not out,0,0,0,0,0
+55652113,2,RR,Ajinkya Rahane (c),Ajinkya Rahane (c),not out,65,53,5,1,122.64
+55652113,2,RR,Rahul Tripathi,Rahul Tripathi,b Sandeep Sharma,4,5,0,0,80
+55652113,2,RR,Sanju Samson,Sanju Samson,c Hales b S Kaul,40,30,3,1,133.33
+55652113,2,RR,Ben Stokes,Ben Stokes,b Y Pathan,0,3,0,0,0
+55652113,2,RR,Jos Buttler (wk),Jos Buttler (wk),c Dhawan b Rashid Khan,10,11,0,0,90.91
+55652113,2,RR,Mahipal Lomror,Mahipal Lomror,c Saha b S Kaul,11,12,0,0,91.67
+55652113,2,RR,Krishnappa Gowtham,Krishnappa Gowtham,c Dhawan b Basil Thampi,8,5,1,0,160
+55652113,2,RR,Jofra Archer,Jofra Archer,not out,1,1,0,0,100
+77093352,1,RCB,de Kock (wk),de Kock (wk),c Shubman Gill b Kuldeep Yadav,29,27,3,1,107.41
+77093352,1,RCB,Brendon McCullum,Brendon McCullum,c Karthik b A Russell,38,28,4,2,135.71
+77093352,1,RCB,Kohli (c),Kohli (c),not out,68,44,5,3,154.55
+77093352,1,RCB,Vohra,Manan Vohra,b A Russell,0,1,0,0,0
+77093352,1,RCB,Mandeep,Mandeep Singh,c Shivam Mavi b A Russell,19,14,0,2,135.71
+77093352,1,RCB,de Grandhomme,de Grandhomme,not out,11,6,0,1,183.33
+77093352,2,KKR,Chris Lynn,Chris Lynn,not out,62,52,7,1,119.23
+77093352,2,KKR,Sunil Narine,Sunil Narine,c de Grandhomme b M Ashwin,27,19,3,1,142.11
+77093352,2,KKR,Robin Uthappa,Robin Uthappa,c Southee b M Ashwin,36,21,3,3,171.43
+77093352,2,KKR,Nitish Rana,Nitish Rana,retd hurt,15,10,2,0,150
+77093352,2,KKR,Andre Russell,Andre Russell,c de Kock b Siraj,0,1,0,0,0
+77093352,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),c Kohli b Siraj,23,10,2,1,230
+77093352,2,KKR,Shubman Gill,Shubman Gill,not out,5,2,1,0,250
+86795960,1,CSK,Watson,Shane Watson,c Plunkett b A Mishra,78,40,4,7,195
+86795960,1,CSK,du Plessis,du Plessis,c Boult b Vijay Shankar,33,33,3,1,100
+86795960,1,CSK,Raina,Suresh Raina,b Maxwell,1,2,0,0,50
+86795960,1,CSK,Rayudu,Ambati Rayudu,run out (Pant/Boult),41,24,5,1,170.83
+86795960,1,CSK,Dhoni (c & wk),Dhoni (c & wk),not out,51,22,2,5,231.82
+86795960,1,CSK,Ravindra Jadeja,Ravindra Jadeja,not out,0,0,0,0,0
+86795960,2,DD,Prithvi Shaw,Prithvi Shaw,c Ravindra Jadeja b KM Asif,9,5,2,0,180
+86795960,2,DD,Colin Munro,Colin Munro,c Karn Sharma b KM Asif,26,16,3,2,162.5
+86795960,2,DD,Shreyas Iyer (c),Shreyas Iyer (c),run out (Watson/Dhoni),13,14,1,0,92.86
+86795960,2,DD,Rishabh Pant (wk),Rishabh Pant (wk),c Ravindra Jadeja b Lungi Ngidi,79,45,7,4,175.56
+86795960,2,DD,Glenn Maxwell,Glenn Maxwell,b Ravindra Jadeja,6,5,1,0,120
+86795960,2,DD,Vijay Shankar,Vijay Shankar,not out,54,31,1,5,174.19
+86795960,2,DD,Rahul Tewatia,Rahul Tewatia,not out,3,4,0,0,75
+14402401,1,RCB,Vohra,Manan Vohra,lbw b Markande,45,31,2,4,145.16
+14402401,1,RCB,de Kock (wk),de Kock (wk),c Rohit b McClenaghan,7,13,1,0,53.85
+14402401,1,RCB,Brendon McCullum,Brendon McCullum,run out (Hardik Pandya),37,25,4,2,148
+14402401,1,RCB,Kohli (c),Kohli (c),c Pollard b Hardik Pandya,32,26,2,1,123.08
+14402401,1,RCB,Mandeep,Mandeep Singh,c Suryakumar Yadav b Hardik Pandya,14,10,1,1,140
+14402401,1,RCB,de Grandhomme,de Grandhomme,not out,23,10,0,3,230
+14402401,1,RCB,Washington Sundar,Washington Sundar,c Rohit b Hardik Pandya,1,3,0,0,33.33
+14402401,1,RCB,Southee,Tim Southee,c Cutting b Bumrah,1,2,0,0,50
+14402401,1,RCB,Umesh,Umesh Yadav,not out,1,2,0,0,50
+14402401,2,MI,Suryakumar Yadav,Suryakumar Yadav,lbw b Umesh,9,9,2,0,100
+14402401,2,MI,Ishan Kishan (wk),Ishan Kishan (wk),b Southee,0,1,0,0,0
+14402401,2,MI,Jean-Paul Duminy,Jean-Paul Duminy,run out (Umesh/de Kock),23,29,3,0,79.31
+14402401,2,MI,Rohit Sharma (c),Rohit Sharma (c),c de Kock b Umesh,0,1,0,0,0
+14402401,2,MI,Kieron Pollard,Kieron Pollard,c de Kock b Siraj,13,13,1,0,100
+14402401,2,MI,Hardik Pandya,Hardik Pandya,c Kohli b Southee,50,42,5,1,119.05
+14402401,2,MI,Krunal Pandya,Krunal Pandya,c Mandeep b Siraj,23,19,1,1,121.05
+14402401,2,MI,Ben Cutting,Ben Cutting,not out,12,6,1,1,200
+14402401,2,MI,Mitchell McClenaghan,Mitchell McClenaghan,not out,0,0,0,0,0
+86204440,1,DD,Prithvi Shaw,Prithvi Shaw,c and b Shreyas Gopal,47,25,4,4,188
+86204440,1,DD,Munro,Colin Munro,c Jos Buttler b D Kulkarni,0,1,0,0,0
+86204440,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),c R Tripathi b Unadkat,50,35,3,3,142.86
+86204440,1,DD,Pant (wk),Pant (wk),c Stokes b Unadkat,69,29,7,5,237.93
+86204440,1,DD,Maxwell,Glenn Maxwell,lbw b Jofra Archer,5,5,0,0,100
+86204440,1,DD,Vijay Shankar,Vijay Shankar,c R Tripathi b Unadkat,17,6,2,1,283.33
+86204440,1,DD,Plunkett,Liam Plunkett,not out,1,2,0,0,50
+86204440,2,RR,D Arcy Short,D Arcy Short,c Avesh Khan b Maxwell,44,25,2,4,176
+86204440,2,RR,Jos Buttler (wk),Jos Buttler (wk),st Pant b A Mishra,67,26,4,7,257.69
+86204440,2,RR,Sanju Samson,Sanju Samson,c Munro b Boult,3,5,0,0,60
+86204440,2,RR,Ben Stokes,Ben Stokes,c Vijay Shankar b Boult,1,2,0,0,50
+86204440,2,RR,Rahul Tripathi,Rahul Tripathi,run out (Pant/Boult),9,8,1,0,112.5
+86204440,2,RR,Krishnappa Gowtham,Krishnappa Gowtham,not out,18,6,2,1,300
+86204440,2,RR,Jofra Archer,Jofra Archer,not out,0,0,0,0,0
+63587158,1,CSK,Watson,Shane Watson,c Shivam Mavi b Narine,36,25,4,2,144
+63587158,1,CSK,du Plessis,du Plessis,b Chawla,27,15,4,1,180
+63587158,1,CSK,Raina,Suresh Raina,c Johnson b Kuldeep Yadav,31,26,4,0,119.23
+63587158,1,CSK,Rayudu,Ambati Rayudu,b Narine,21,17,3,0,123.53
+63587158,1,CSK,Dhoni (c & wk),Dhoni (c & wk),not out,43,25,1,4,172
+63587158,1,CSK,Ravindra Jadeja,Ravindra Jadeja,c Karthik b Chawla,12,12,1,0,100
+63587158,1,CSK,Karn Sharma,Karn Sharma,not out,0,0,0,0,0
+63587158,2,KKR,Chris Lynn,Chris Lynn,c Watson b Lungi Ngidi,12,6,0,2,200
+63587158,2,KKR,Sunil Narine,Sunil Narine,c DJ Bravo b Ravindra Jadeja,32,20,4,2,160
+63587158,2,KKR,Robin Uthappa,Robin Uthappa,c DJ Bravo b KM Asif,6,8,1,0,75
+63587158,2,KKR,Shubman Gill,Shubman Gill,not out,57,36,6,2,158.33
+63587158,2,KKR,Rinku Singh,Rinku Singh,b Harbhajan,16,18,2,0,88.89
+63587158,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),not out,45,18,7,1,250
+88391654,1,KXIP,Rahul (wk),Rahul (wk),c Duminy b Markande,24,20,1,2,120
+88391654,1,KXIP,Gayle,Chris Gayle,c Suryakumar Yadav b Cutting,50,40,6,2,125
+88391654,1,KXIP,Yuvraj,Yuvraj Singh,run out (Lewis/Ishan Kishan),14,14,0,1,100
+88391654,1,KXIP,Nair,Karun Nair,c Hardik Pandya b McClenaghan,23,12,1,2,191.67
+88391654,1,KXIP,Axar,Axar Patel,c Hardik Pandya b Bumrah,13,12,0,1,108.33
+88391654,1,KXIP,Stoinis,Marcus Stoinis,not out,29,15,2,2,193.33
+88391654,1,KXIP,Mayank Agarwal,Mayank Agarwal,c Krunal Pandya b Hardik Pandya,11,7,0,1,157.14
+88391654,1,KXIP,Ashwin (c),Ashwin (c),not out,0,0,0,0,0
+88391654,2,MI,Suryakumar Yadav,Suryakumar Yadav,c Rahul b Stoinis,57,42,6,3,135.71
+88391654,2,MI,Evin Lewis,Evin Lewis,c Rahul b Mujeeb,10,13,0,0,76.92
+88391654,2,MI,Ishan Kishan (wk),Ishan Kishan (wk),b Mujeeb,25,19,0,3,131.58
+88391654,2,MI,Hardik Pandya,Hardik Pandya,b Andrew Tye,23,13,2,1,176.92
+88391654,2,MI,Rohit Sharma (c),Rohit Sharma (c),not out,24,15,1,2,160
+88391654,2,MI,Krunal Pandya,Krunal Pandya,not out,31,12,4,2,258.33
+11522540,1,RCB,Parthiv Patel (wk),Parthiv Patel (wk),c and b Ravindra Jadeja,53,41,5,2,129.27
+11522540,1,RCB,Brendon McCullum,Brendon McCullum,c SN Thakur b Lungi Ngidi,5,3,1,0,166.67
+11522540,1,RCB,Kohli (c),Kohli (c),b Ravindra Jadeja,8,11,1,0,72.73
+11522540,1,RCB,de Villiers,de Villiers,st Dhoni b Harbhajan,1,4,0,0,25
+11522540,1,RCB,Mandeep,Mandeep Singh,c Willey b Ravindra Jadeja,7,13,0,0,53.85
+11522540,1,RCB,de Grandhomme,de Grandhomme,c Raina b Willey,8,8,1,0,100
+11522540,1,RCB,M Ashwin,M Ashwin,st Dhoni b Harbhajan,1,2,0,0,50
+11522540,1,RCB,Southee,Tim Southee,not out,36,26,3,1,138.46
+11522540,1,RCB,Umesh,Umesh Yadav,run out (Willey),1,5,0,0,20
+11522540,1,RCB,Siraj,Mohammed Siraj,run out (Rayudu/Dhoni),3,7,0,0,42.86
+11522540,2,CSK,Shane Watson,Shane Watson,b Umesh,11,14,2,0,78.57
+11522540,2,CSK,Ambati Rayudu,Ambati Rayudu,c Siraj b M Ashwin,32,25,3,2,128
+11522540,2,CSK,Suresh Raina,Suresh Raina,c Southee b Umesh,25,21,2,1,119.05
+11522540,2,CSK,Dhruv Shorey,Dhruv Shorey,c Mandeep b de Grandhomme,8,9,0,1,88.89
+11522540,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),not out,31,23,1,3,134.78
+11522540,2,CSK,Dwayne Bravo,Dwayne Bravo,not out,14,17,0,1,82.35
+98904096,1,DD,Prithvi Shaw,Prithvi Shaw,c S Kaul b Rashid Khan,65,36,6,3,180.56
+98904096,1,DD,Maxwell,Glenn Maxwell,run out (Sandeep Sharma),2,3,0,0,66.67
+98904096,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),c Dhawan b S Kaul,44,36,3,2,122.22
+98904096,1,DD,Pant (wk),Pant (wk),lbw b Rashid Khan,18,19,1,0,94.74
+98904096,1,DD,Naman Ojha,Naman Ojha,run out (Rashid Khan/Saha),1,4,0,0,25
+98904096,1,DD,Vijay Shankar,Vijay Shankar,not out,23,13,1,1,176.92
+98904096,1,DD,Christian,Daniel Christian,not out,7,9,0,0,77.78
+98904096,2,SRH,Alex Hales,Alex Hales,b A Mishra,45,31,3,3,145.16
+98904096,2,SRH,Shikhar Dhawan,Shikhar Dhawan,b A Mishra,33,30,2,1,110
+98904096,2,SRH,Kane Williamson (c),Kane Williamson (c),not out,32,30,0,1,106.67
+98904096,2,SRH,Manish Pandey,Manish Pandey,c Prithvi Shaw b Plunkett,21,17,2,0,123.53
+98904096,2,SRH,Yusuf Pathan,Yusuf Pathan,not out,27,12,2,2,225
+61739047,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Karthik b A Russell,59,39,7,2,151.28
+61739047,1,MI,Lewis,Evin Lewis,c Chris Lynn b A Russell,43,28,5,2,153.57
+61739047,1,MI,Rohit (c),Rohit (c),c (sub)Rinku Singh b Narine,11,11,1,0,100
+61739047,1,MI,Hardik Pandya,Hardik Pandya,not out,35,20,4,1,175
+61739047,1,MI,Krunal Pandya,Krunal Pandya,c Shubman Gill b Narine,14,11,1,1,127.27
+61739047,1,MI,Duminy,Jean-Paul Duminy,not out,13,11,0,1,118.18
+61739047,2,KKR,Chris Lynn,Chris Lynn,c Bumrah b McClenaghan,17,13,4,0,130.77
+61739047,2,KKR,Shubman Gill,Shubman Gill,c Krunal Pandya b Hardik Pandya,7,5,1,0,140
+61739047,2,KKR,Robin Uthappa,Robin Uthappa,c Cutting b Markande,54,35,6,3,154.29
+61739047,2,KKR,Nitish Rana,Nitish Rana,c Bumrah b Hardik Pandya,31,27,3,1,114.81
+61739047,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),not out,36,26,5,1,138.46
+61739047,2,KKR,Andre Russell,Andre Russell,c Krunal Pandya b Bumrah,9,10,1,0,90
+61739047,2,KKR,Sunil Narine,Sunil Narine,c Rohit b Krunal Pandya,5,4,1,0,125
+61739047,2,KKR,Piyush Chawla,Piyush Chawla,not out,0,0,0,0,0
+29216261,1,RR,Jos Buttler (wk),Jos Buttler (wk),c Rahul b Mujeeb,51,39,7,0,130.77
+29216261,1,RR,D Arcy Short,D Arcy Short,c Andrew Tye b Ashwin,2,2,0,0,100
+29216261,1,RR,A Rahane (c),A Rahane (c),c Gayle b Axar,5,7,0,0,71.43
+29216261,1,RR,Samson,Sanju Samson,c Nair b Andrew Tye,28,23,2,1,121.74
+29216261,1,RR,Stokes,Ben Stokes,c Manoj Tiwary b Mujeeb,12,9,2,0,133.33
+29216261,1,RR,R Tripathi,R Tripathi,c Ashwin b Andrew Tye,11,13,1,0,84.62
+29216261,1,RR,Jofra Archer,Jofra Archer,b Mujeeb,0,1,0,0,0
+29216261,1,RR,Gowtham,Krishnappa Gowtham,c Stoinis b Rajpoot,5,3,1,0,166.67
+29216261,1,RR,Shreyas Gopal,Shreyas Gopal,run out (Rahul),24,16,3,0,150
+29216261,1,RR,Unadkat,Jaydev Unadkat,not out,6,7,0,0,85.71
+29216261,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),not out,84,54,7,3,155.56
+29216261,2,KXIP,Chris Gayle,Chris Gayle,c Samson b Jofra Archer,8,11,2,0,72.73
+29216261,2,KXIP,Mayank Agarwal,Mayank Agarwal,c R Tripathi b Stokes,2,3,0,0,66.67
+29216261,2,KXIP,Karun Nair,Karun Nair,b Anureet Singh,31,23,2,2,134.78
+29216261,2,KXIP,Axar Patel,Axar Patel,c D Arcy Short b Gowtham,4,5,0,0,80
+29216261,2,KXIP,Marcus Stoinis,Marcus Stoinis,not out,23,16,2,1,143.75
+70861412,1,SRH,Hales,Alex Hales,b Southee,5,5,1,0,100
+70861412,1,SRH,Dhawan,Shikhar Dhawan,c Southee b Siraj,13,19,1,0,68.42
+70861412,1,SRH,Williamson (c),Williamson (c),c Mandeep b Umesh,56,39,5,2,143.59
+70861412,1,SRH,Manish Pandey,Manish Pandey,c Kohli b Chahal,5,7,0,0,71.43
+70861412,1,SRH,Shakib,Shakib Al Hasan,c Umesh b Southee,35,32,5,0,109.38
+70861412,1,SRH,Y Pathan,Y Pathan,b Siraj,12,7,2,0,171.43
+70861412,1,SRH,Saha (wk),Saha (wk),b Siraj,8,5,0,1,160
+70861412,1,SRH,Rashid Khan,Rashid Khan,run out (Kohli/Parthiv Patel),1,3,0,0,33.33
+70861412,1,SRH,Bhuvneshwar,Bhuvneshwar Kumar,not out,1,2,0,0,50
+70861412,1,SRH,S Kaul,S Kaul,run out (Kohli/Parthiv Patel),1,1,0,0,100
+70861412,1,SRH,Sandeep Sharma,Sandeep Sharma,lbw b Southee,0,1,0,0,0
+70861412,2,RCB,Manan Vohra,Manan Vohra,b Sandeep Sharma,8,10,0,0,80
+70861412,2,RCB,Parthiv Patel (wk),Parthiv Patel (wk),lbw b Shakib,20,13,4,0,153.85
+70861412,2,RCB,Virat Kohli (c),Virat Kohli (c),c Y Pathan b Shakib,39,30,5,1,130
+70861412,2,RCB,AB de Villiers,AB de Villiers,b Rashid Khan,5,8,0,0,62.5
+70861412,2,RCB,Moeen Ali,Moeen Ali,c Saha b S Kaul,10,7,2,0,142.86
+70861412,2,RCB,Mandeep Singh,Mandeep Singh,not out,21,23,1,0,91.3
+70861412,2,RCB,Colin de Grandhomme,Colin de Grandhomme,b Bhuvneshwar,33,29,1,2,113.79
+63572074,1,RR,A Rahane (c),A Rahane (c),c Akshdeep Nath b Andrew Tye,9,10,1,0,90
+63572074,1,RR,Jos Buttler (wk),Jos Buttler (wk),st Rahul b Mujeeb,82,58,9,1,141.38
+63572074,1,RR,Gowtham,Krishnappa Gowtham,c Manoj Tiwary b Stoinis,8,6,0,1,133.33
+63572074,1,RR,Samson,Sanju Samson,c Manoj Tiwary b Mujeeb,22,18,1,1,122.22
+63572074,1,RR,Stokes,Ben Stokes,c Ashwin b Andrew Tye,14,11,1,0,127.27
+63572074,1,RR,Binny,Stuart Binny,run out (Nair/Andrew Tye),11,7,0,1,157.14
+63572074,1,RR,Lomror,Mahipal Lomror,not out,9,9,1,0,100
+63572074,1,RR,Jofra Archer,Jofra Archer,c Manoj Tiwary b Andrew Tye,0,1,0,0,0
+63572074,1,RR,Unadkat,Jaydev Unadkat,c Nair b Andrew Tye,0,1,0,0,0
+63572074,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),not out,95,70,11,2,135.71
+63572074,2,KXIP,Chris Gayle,Chris Gayle,st Jos Buttler b Gowtham,1,1,0,0,100
+63572074,2,KXIP,Ravichandran Ashwin (c),Ravichandran Ashwin (c),b Gowtham,0,2,0,0,0
+63572074,2,KXIP,Karun Nair,Karun Nair,c Unadkat b Jofra Archer,3,5,0,0,60
+63572074,2,KXIP,Akshdeep Nath,Akshdeep Nath,c Gowtham b Ish Sodhi,9,13,1,0,69.23
+63572074,2,KXIP,Manoj Tiwary,Manoj Tiwary,c A Rahane b Stokes,7,8,0,0,87.5
+63572074,2,KXIP,Axar Patel,Axar Patel,run out (Binny/Jos Buttler),9,5,1,0,180
+63572074,2,KXIP,Marcus Stoinis,Marcus Stoinis,c Gowtham b Unadkat,11,16,0,0,68.75
+63572074,2,KXIP,Andrew Tye,Andrew Tye,not out,1,1,0,0,100
+99171228,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Rinku Singh b Chawla,36,32,5,1,112.5
+99171228,1,MI,Lewis,Evin Lewis,c Chris Lynn b Chawla,18,13,3,0,138.46
+99171228,1,MI,Rohit (c),Rohit (c),c Uthappa b Prasidh,36,31,2,1,116.13
+99171228,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Uthappa b Narine,62,21,5,6,295.24
+99171228,1,MI,Hardik Pandya,Hardik Pandya,c Rinku Singh b Tom Curran,19,13,0,2,146.15
+99171228,1,MI,Cutting,Ben Cutting,c A Russell b Chawla,24,9,1,3,266.67
+99171228,1,MI,Krunal Pandya,Krunal Pandya,not out,8,2,0,1,400
+99171228,1,MI,Duminy,Jean-Paul Duminy,not out,0,0,0,0,0
+99171228,2,KKR,Sunil Narine,Sunil Narine,c Krunal Pandya b McClenaghan,4,2,1,0,200
+99171228,2,KKR,Chris Lynn,Chris Lynn,run out (Suryakumar Yadav/Krunal Pandya),21,15,3,1,140
+99171228,2,KKR,Robin Uthappa,Robin Uthappa,c Suryakumar Yadav b Markande,14,13,0,2,107.69
+99171228,2,KKR,Nitish Rana,Nitish Rana,c Cutting b Hardik Pandya,21,19,2,1,110.53
+99171228,2,KKR,Andre Russell,Andre Russell,c Markande b Hardik Pandya,2,4,0,0,50
+99171228,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),run out (Duminy/Hardik Pandya),5,3,1,0,166.67
+99171228,2,KKR,Rinku Singh,Rinku Singh,c Ishan Kishan b Bumrah,5,3,1,0,166.67
+99171228,2,KKR,Tom Curran,Tom Curran,c Duminy b Krunal Pandya,18,17,3,0,105.88
+99171228,2,KKR,Piyush Chawla,Piyush Chawla,c Suryakumar Yadav b Cutting,11,13,1,0,84.62
+99171228,2,KKR,Kuldeep Yadav,Kuldeep Yadav,lbw b Krunal Pandya,5,15,0,0,33.33
+99171228,2,KKR,Prasidh Krishna,Prasidh Krishna,not out,1,5,0,0,20
+78705812,1,DD,Prithvi Shaw,Prithvi Shaw,c Dhawan b Shakib,9,11,1,0,81.82
+78705812,1,DD,Roy,Jason Roy,c Goswami b Shakib,11,13,2,0,84.62
+78705812,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),run out (Goswami/Sandeep Sharma),3,8,0,0,37.5
+78705812,1,DD,Pant (wk),Pant (wk),not out,128,63,15,7,203.17
+78705812,1,DD,Harshal Patel,Harshal Patel,run out (Dhawan/Goswami),24,17,0,2,141.18
+78705812,1,DD,Maxwell,Glenn Maxwell,c Hales b Bhuvneshwar,9,8,1,0,112.5
+78705812,1,DD,Vijay Shankar,Vijay Shankar,not out,0,0,0,0,0
+78705812,2,SRH,Alex Hales,Alex Hales,lbw b Harshal Patel,14,10,3,0,140
+78705812,2,SRH,Shikhar Dhawan,Shikhar Dhawan,not out,92,50,9,4,184
+78705812,2,SRH,Kane Williamson (c),Kane Williamson (c),not out,83,53,8,2,156.6
+23170294,1,CSK,Watson,Shane Watson,c Jos Buttler b Jofra Archer,39,31,2,2,125.81
+23170294,1,CSK,Rayudu,Ambati Rayudu,b Jofra Archer,12,9,2,0,133.33
+23170294,1,CSK,Raina,Suresh Raina,c Binny b Ish Sodhi,52,35,6,1,148.57
+23170294,1,CSK,Dhoni (c & wk),Dhoni (c & wk),not out,33,23,1,1,143.48
+23170294,1,CSK,Billings,Sam Billings,run out (Jos Buttler),27,22,3,0,122.73
+23170294,1,CSK,DJ Bravo,DJ Bravo,not out,1,1,0,0,100
+23170294,2,RR,Jos Buttler (wk),Jos Buttler (wk),not out,95,60,11,2,158.33
+23170294,2,RR,Ben Stokes,Ben Stokes,b Harbhajan,11,7,1,1,157.14
+23170294,2,RR,Ajinkya Rahane (c),Ajinkya Rahane (c),c Raina b Ravindra Jadeja,4,3,1,0,133.33
+23170294,2,RR,Sanju Samson,Sanju Samson,run out (Raina/DJ Bravo),21,22,2,0,95.45
+23170294,2,RR,Prashant Chopra,Prashant Chopra,c DJ Bravo b SN Thakur,8,6,2,0,133.33
+23170294,2,RR,Stuart Binny,Stuart Binny,c Watson b DJ Bravo,22,17,1,1,129.41
+23170294,2,RR,Krishnappa Gowtham,Krishnappa Gowtham,c Dhoni b Willey,13,4,0,2,325
+23170294,2,RR,Jofra Archer,Jofra Archer,not out,0,0,0,0,0
+73983062,1,KKR,Chris Lynn,Chris Lynn,b Andrew Tye,27,17,2,2,158.82
+73983062,1,KKR,Narine,Sunil Narine,c Rahul b Andrew Tye,75,36,9,4,208.33
+73983062,1,KKR,Uthappa,Robin Uthappa,c Mohit Sharma b Andrew Tye,24,17,2,1,141.18
+73983062,1,KKR,A Russell,A Russell,c Rahul b Andrew Tye,31,14,2,3,221.43
+73983062,1,KKR,Karthik (c & wk),Karthik (c & wk),c (sub)Miller b Barinder,50,23,5,3,217.39
+73983062,1,KKR,Nitish Rana,Nitish Rana,c (sub)Miller b Mohit Sharma,11,4,1,1,275
+73983062,1,KKR,Shubman Gill,Shubman Gill,not out,16,8,3,0,200
+73983062,1,KKR,Searles,Javon Searles,not out,6,1,0,1,600
+73983062,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),b Narine,66,29,2,7,227.59
+73983062,2,KXIP,Chris Gayle,Chris Gayle,c Karthik b A Russell,21,17,2,1,123.53
+73983062,2,KXIP,Mayank Agarwal,Mayank Agarwal,c Searles b A Russell,0,1,0,0,0
+73983062,2,KXIP,Karun Nair,Karun Nair,c Prasidh b A Russell,3,6,0,0,50
+73983062,2,KXIP,Aaron Finch,Aaron Finch,c Kuldeep Yadav b Searles,34,20,0,3,170
+73983062,2,KXIP,Axar Patel,Axar Patel,c Searles b Kuldeep Yadav,19,11,2,1,172.73
+73983062,2,KXIP,Ravichandran Ashwin (c),Ravichandran Ashwin (c),lbw b Prasidh,45,22,4,3,204.55
+73983062,2,KXIP,Andrew Tye,Andrew Tye,c Karthik b Prasidh,14,10,1,1,140
+73983062,2,KXIP,Barinder Sran,Barinder Sran,not out,1,1,0,0,100
+73983062,2,KXIP,Mohit Sharma,Mohit Sharma,not out,4,3,1,0,133.33
+17701187,1,DD,Prithvi Shaw,Prithvi Shaw,b Chahal,2,4,0,0,50
+17701187,1,DD,Roy,Jason Roy,b Chahal,12,9,1,1,133.33
+17701187,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),c Kohli b Siraj,32,35,3,0,91.43
+17701187,1,DD,Pant (wk),Pant (wk),c de Villiers b Moeen,61,34,5,4,179.41
+17701187,1,DD,Vijay Shankar,Vijay Shankar,not out,21,20,2,0,105
+17701187,1,DD,Abhishek Sharma,Abhishek Sharma,not out,46,19,3,4,242.11
+17701187,2,RCB,Parthiv Patel (wk),Parthiv Patel (wk),lbw b Lamichhane,6,8,1,0,75
+17701187,2,RCB,Moeen Ali,Moeen Ali,c Prithvi Shaw b Boult,1,3,0,0,33.33
+17701187,2,RCB,Virat Kohli (c),Virat Kohli (c),c Pant b A Mishra,70,40,7,3,175
+17701187,2,RCB,AB de Villiers,AB de Villiers,not out,72,37,4,6,194.59
+17701187,2,RCB,Mandeep Singh,Mandeep Singh,b Boult,13,14,0,1,92.86
+17701187,2,RCB,Sarfaraz Khan,Sarfaraz Khan,c Prithvi Shaw b Harshal Patel,11,8,2,0,137.5
+17701187,2,RCB,Colin de Grandhomme,Colin de Grandhomme,not out,3,4,0,0,75
+44465908,1,SRH,Dhawan,Shikhar Dhawan,c Harbhajan b DJ Bravo,79,49,10,3,161.22
+44465908,1,SRH,Hales,Alex Hales,c Raina b D Chahar,2,9,0,0,22.22
+44465908,1,SRH,Williamson (c),Williamson (c),c DJ Bravo b SN Thakur,51,39,5,2,130.77
+44465908,1,SRH,Manish Pandey,Manish Pandey,c Willey b SN Thakur,5,6,0,0,83.33
+44465908,1,SRH,Deepak Hooda,Deepak Hooda,not out,21,11,1,1,190.91
+44465908,1,SRH,Shakib,Shakib Al Hasan,not out,8,6,1,0,133.33
+44465908,2,CSK,Shane Watson,Shane Watson,run out (Williamson/Goswami),57,35,5,3,162.86
+44465908,2,CSK,Ambati Rayudu,Ambati Rayudu,not out,100,62,7,7,161.29
+44465908,2,CSK,Suresh Raina,Suresh Raina,c Williamson b Sandeep Sharma,2,3,0,0,66.67
+44465908,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),not out,20,14,1,1,142.86
+14405637,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Unadkat b Jofra Archer,38,31,7,0,122.58
+14405637,1,MI,Lewis,Evin Lewis,c Samson b D Kulkarni,60,42,4,4,142.86
+14405637,1,MI,Rohit (c),Rohit (c),c Unadkat b Jofra Archer,0,1,0,0,0
+14405637,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Samson b Stokes,12,11,1,0,109.09
+14405637,1,MI,Hardik Pandya,Hardik Pandya,c Samson b Stokes,36,21,3,2,171.43
+14405637,1,MI,Krunal Pandya,Krunal Pandya,c Gowtham b Unadkat,3,7,0,0,42.86
+14405637,1,MI,Cutting,Ben Cutting,not out,10,7,0,1,142.86
+14405637,1,MI,Duminy,Jean-Paul Duminy,not out,0,0,0,0,0
+14405637,2,RR,D Arcy Short,D Arcy Short,c Ishan Kishan b Bumrah,4,5,1,0,80
+14405637,2,RR,Jos Buttler (wk),Jos Buttler (wk),not out,94,53,9,5,177.36
+14405637,2,RR,Ajinkya Rahane (c),Ajinkya Rahane (c),c Suryakumar Yadav b Hardik Pandya,37,36,4,0,102.78
+14405637,2,RR,Sanju Samson,Sanju Samson,c (sub)Rahul Chahar b Hardik Pandya,26,14,2,2,185.71
+14405637,2,RR,Ben Stokes,Ben Stokes,not out,0,0,0,0,0
+54112227,1,KXIP,Rahul (wk),Rahul (wk),c de Grandhomme b Umesh,21,15,0,3,140
+54112227,1,KXIP,Gayle,Chris Gayle,c Siraj b Umesh,18,14,4,0,128.57
+54112227,1,KXIP,Nair,Karun Nair,c Kohli b Siraj,1,3,0,0,33.33
+54112227,1,KXIP,Finch,Aaron Finch,c Kohli b Moeen,26,23,1,2,113.04
+54112227,1,KXIP,Stoinis,Marcus Stoinis,b Chahal,2,3,0,0,66.67
+54112227,1,KXIP,Mayank Agarwal,Mayank Agarwal,c Parthiv Patel b de Grandhomme,2,6,0,0,33.33
+54112227,1,KXIP,Axar,Axar Patel,not out,9,13,0,0,69.23
+54112227,1,KXIP,Ashwin (c),Ashwin (c),run out ((sub)Negi/Parthiv Patel),0,1,0,0,0
+54112227,1,KXIP,Andrew Tye,Andrew Tye,c Parthiv Patel b Umesh,0,3,0,0,0
+54112227,1,KXIP,Mohit Sharma,Mohit Sharma,run out (de Villiers/Moeen),3,5,0,0,60
+54112227,1,KXIP,Rajpoot,Ankit Rajpoot,run out (Southee/Moeen),1,5,0,0,20
+54112227,2,RCB,Virat Kohli (c),Virat Kohli (c),not out,48,28,6,2,171.43
+54112227,2,RCB,Parthiv Patel (wk),Parthiv Patel (wk),not out,40,22,7,0,181.82
+37307759,1,RR,R Tripathi,R Tripathi,c Karthik b A Russell,27,15,4,1,180
+37307759,1,RR,Jos Buttler (wk),Jos Buttler (wk),c Searles b Kuldeep Yadav,39,22,5,2,177.27
+37307759,1,RR,A Rahane (c),A Rahane (c),b Kuldeep Yadav,11,12,1,0,91.67
+37307759,1,RR,Samson,Sanju Samson,lbw b Narine,12,10,2,0,120
+37307759,1,RR,Stokes,Ben Stokes,c and b Kuldeep Yadav,11,13,0,0,84.62
+37307759,1,RR,Binny,Stuart Binny,st Karthik b Kuldeep Yadav,1,4,0,0,25
+37307759,1,RR,Gowtham,Krishnappa Gowtham,c Karthik b Shivam Mavi,3,5,0,0,60
+37307759,1,RR,Unadkat,Jaydev Unadkat,b Prasidh,26,18,3,1,144.44
+37307759,1,RR,Ish Sodhi,Ish Sodhi,c Karthik b Prasidh,1,6,0,0,16.67
+37307759,1,RR,Jofra Archer,Jofra Archer,c Shubman Gill b A Russell,6,5,1,0,120
+37307759,1,RR,Anureet Singh,Anureet Singh,not out,3,4,0,0,75
+37307759,2,KKR,Sunil Narine,Sunil Narine,c Gowtham b Stokes,21,7,2,2,300
+37307759,2,KKR,Chris Lynn,Chris Lynn,c Anureet Singh b Stokes,45,42,5,1,107.14
+37307759,2,KKR,Robin Uthappa,Robin Uthappa,c R Tripathi b Stokes,4,6,0,0,66.67
+37307759,2,KKR,Nitish Rana,Nitish Rana,lbw b Ish Sodhi,21,17,2,1,123.53
+37307759,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),not out,41,31,5,1,132.26
+37307759,2,KKR,Andre Russell,Andre Russell,not out,11,5,2,0,220
+95655282,1,MI,Suryakumar Yadav,Suryakumar Yadav,c Rahul b Andrew Tye,27,15,3,2,180
+95655282,1,MI,Lewis,Evin Lewis,b Andrew Tye,9,7,0,1,128.57
+95655282,1,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Stoinis b Andrew Tye,20,12,1,2,166.67
+95655282,1,MI,Rohit (c),Rohit (c),c Yuvraj b Rajpoot,6,10,0,0,60
+95655282,1,MI,Krunal Pandya,Krunal Pandya,c Rajpoot b Stoinis,32,23,1,2,139.13
+95655282,1,MI,Pollard,Kieron Pollard,c Finch b Ashwin,50,23,5,3,217.39
+95655282,1,MI,Hardik Pandya,Hardik Pandya,c Ashwin b Andrew Tye,9,12,0,0,75
+95655282,1,MI,Cutting,Ben Cutting,c Axar b Ashwin,4,7,0,0,57.14
+95655282,1,MI,McClenaghan,Mitchell McClenaghan,not out,11,7,1,1,157.14
+95655282,1,MI,Markande,Mayank Markande,not out,7,5,1,0,140
+95655282,2,KXIP,Lokesh Rahul (wk),Lokesh Rahul (wk),c Cutting b Bumrah,94,60,10,3,156.67
+95655282,2,KXIP,Chris Gayle,Chris Gayle,c Cutting b McClenaghan,18,11,2,1,163.64
+95655282,2,KXIP,Aaron Finch,Aaron Finch,c Hardik Pandya b Bumrah,46,35,3,1,131.43
+95655282,2,KXIP,Marcus Stoinis,Marcus Stoinis,c Ishan Kishan b Bumrah,1,2,0,0,50
+95655282,2,KXIP,Axar Patel,Axar Patel,not out,10,8,0,1,125
+95655282,2,KXIP,Yuvraj Singh,Yuvraj Singh,c Lewis b McClenaghan,1,3,0,0,33.33
+95655282,2,KXIP,Manoj Tiwary,Manoj Tiwary,not out,4,1,1,0,400
+78640391,1,RCB,Parthiv Patel (wk),Parthiv Patel (wk),c S Kaul b Sandeep Sharma,1,4,0,0,25
+78640391,1,RCB,Kohli (c),Kohli (c),b Rashid Khan,12,11,2,0,109.09
+78640391,1,RCB,de Villiers,de Villiers,c Dhawan b Rashid Khan,69,39,12,1,176.92
+78640391,1,RCB,Moeen,Moeen Ali,c Goswami b Rashid Khan,65,34,2,6,191.18
+78640391,1,RCB,de Grandhomme,de Grandhomme,c Rashid Khan b S Kaul,40,17,1,4,235.29
+78640391,1,RCB,Mandeep,Mandeep Singh,c Dhawan b S Kaul,4,6,0,0,66.67
+78640391,1,RCB,Sarfaraz Khan,Sarfaraz Khan,not out,22,8,3,1,275
+78640391,1,RCB,Southee,Tim Southee,not out,1,1,0,0,100
+78640391,2,SRH,Shikhar Dhawan,Shikhar Dhawan,c and b Chahal,18,15,0,2,120
+78640391,2,SRH,Alex Hales,Alex Hales,c de Villiers b Moeen,37,24,2,3,154.17
+78640391,2,SRH,Kane Williamson (c),Kane Williamson (c),c de Grandhomme b Siraj,81,42,7,5,192.86
+78640391,2,SRH,Manish Pandey,Manish Pandey,not out,62,38,7,2,163.16
+78640391,2,SRH,Deepak Hooda,Deepak Hooda,not out,1,1,0,0,100
+30469729,1,DD,Prithvi Shaw,Prithvi Shaw,c SN Thakur b D Chahar,17,17,1,1,100
+30469729,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),b Lungi Ngidi,19,22,3,0,86.36
+30469729,1,DD,Pant (wk),Pant (wk),c DJ Bravo b Lungi Ngidi,38,26,3,2,146.15
+30469729,1,DD,Maxwell,Glenn Maxwell,b Ravindra Jadeja,5,7,0,0,71.43
+30469729,1,DD,Vijay Shankar,Vijay Shankar,not out,36,28,2,2,128.57
+30469729,1,DD,Abhishek Sharma,Abhishek Sharma,c Harbhajan b SN Thakur,2,4,0,0,50
+30469729,1,DD,Harshal Patel,Harshal Patel,not out,36,16,1,4,225
+30469729,2,CSK,Shane Watson,Shane Watson,c Boult b A Mishra,14,23,0,1,60.87
+30469729,2,CSK,Ambati Rayudu,Ambati Rayudu,c Maxwell b Harshal Patel,50,29,4,4,172.41
+30469729,2,CSK,Suresh Raina,Suresh Raina,c Vijay Shankar b Lamichhane,15,18,1,0,83.33
+30469729,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),c Shreyas Iyer b Boult,17,23,1,0,73.91
+30469729,2,CSK,Sam Billings,Sam Billings,c Abhishek Sharma b A Mishra,1,5,0,0,20
+30469729,2,CSK,Ravindra Jadeja,Ravindra Jadeja,not out,27,18,0,2,150
+30469729,2,CSK,Dwayne Bravo,Dwayne Bravo,c Vijay Shankar b Boult,1,2,0,0,50
+30469729,2,CSK,Deepak Chahar,Deepak Chahar,not out,1,2,0,0,50
+28038694,1,RR,R Tripathi,R Tripathi,not out,80,58,5,3,137.93
+28038694,1,RR,Jofra Archer,Jofra Archer,c Parthiv Patel b Umesh,0,4,0,0,0
+28038694,1,RR,A Rahane (c),A Rahane (c),lbw b Umesh,33,31,3,0,106.45
+28038694,1,RR,Samson,Sanju Samson,c Moeen b Umesh,0,1,0,0,0
+28038694,1,RR,Klaasen (wk),Klaasen (wk),c Moeen b Siraj,32,21,3,1,152.38
+28038694,1,RR,Gowtham,Krishnappa Gowtham,run out (Parthiv Patel/Southee),14,5,0,2,280
+28038694,2,RCB,Virat Kohli (c),Virat Kohli (c),b Gowtham,4,9,0,0,44.44
+28038694,2,RCB,Parthiv Patel (wk),Parthiv Patel (wk),st Klaasen b Shreyas Gopal,33,21,3,2,157.14
+28038694,2,RCB,AB de Villiers,AB de Villiers,st Klaasen b Shreyas Gopal,53,35,7,0,151.43
+28038694,2,RCB,Moeen Ali,Moeen Ali,c and b Shreyas Gopal,1,2,0,0,50
+28038694,2,RCB,Mandeep Singh,Mandeep Singh,st Klaasen b Shreyas Gopal,3,4,0,0,75
+28038694,2,RCB,Colin de Grandhomme,Colin de Grandhomme,c A Rahane b Ish Sodhi,2,3,0,0,66.67
+28038694,2,RCB,Sarfaraz Khan,Sarfaraz Khan,c Klaasen b Laughlin,7,8,1,0,87.5
+28038694,2,RCB,Tim Southee,Tim Southee,c Gowtham b Unadkat,14,17,2,0,82.35
+28038694,2,RCB,Umesh Yadav,Umesh Yadav,b Laughlin,0,1,0,0,0
+28038694,2,RCB,Mohammed Siraj,Mohammed Siraj,c Gowtham b Unadkat,14,12,2,0,116.67
+28038694,2,RCB,Yuzvendra Chahal,Yuzvendra Chahal,not out,0,4,0,0,0
+88389412,1,SRH,Dhawan,Shikhar Dhawan,lbw b Prasidh,50,39,5,1,128.21
+88389412,1,SRH,Goswami (wk),Goswami (wk),c A Russell b Kuldeep Yadav,35,26,4,1,134.62
+88389412,1,SRH,Williamson (c),Williamson (c),c A Russell b Searles,36,17,1,3,211.76
+88389412,1,SRH,Manish Pandey,Manish Pandey,c (sub)Rinku Singh b Prasidh,25,22,2,1,113.64
+88389412,1,SRH,Y Pathan,Y Pathan,c Uthappa b Narine,2,4,0,0,50
+88389412,1,SRH,C Brathwaite,C Brathwaite,c Karthik b A Russell,3,4,0,0,75
+88389412,1,SRH,Shakib,Shakib Al Hasan,c Narine b Prasidh,10,7,2,0,142.86
+88389412,1,SRH,Rashid Khan,Rashid Khan,c Karthik b Prasidh,0,1,0,0,0
+88389412,1,SRH,Bhuvneshwar,Bhuvneshwar Kumar,run out (Karthik),0,1,0,0,0
+88389412,1,SRH,S Kaul,S Kaul,not out,0,0,0,0,0
+88389412,2,KKR,Chris Lynn,Chris Lynn,c Manish Pandey b S Kaul,55,43,4,3,127.91
+88389412,2,KKR,Sunil Narine,Sunil Narine,c Manish Pandey b Shakib,29,10,4,2,290
+88389412,2,KKR,Robin Uthappa,Robin Uthappa,c Goswami b C Brathwaite,45,34,3,2,132.35
+88389412,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),not out,26,22,1,1,118.18
+88389412,2,KKR,Andre Russell,Andre Russell,c Manish Pandey b S Kaul,4,4,1,0,100
+88389412,2,KKR,Nitish Rana,Nitish Rana,c Bhuvneshwar b C Brathwaite,7,5,1,0,140
+88389412,2,KKR,Shubman Gill,Shubman Gill,not out,0,0,0,0,0
+11903893,1,DD,Prithvi Shaw,Prithvi Shaw,run out (Hardik Pandya),12,8,2,0,150
+11903893,1,DD,Maxwell,Glenn Maxwell,b Bumrah,22,18,4,0,122.22
+11903893,1,DD,Shreyas Iyer (c),Shreyas Iyer (c),c Krunal Pandya b Markande,6,10,0,0,60
+11903893,1,DD,Pant (wk),Pant (wk),c Pollard b Krunal Pandya,64,44,4,4,145.45
+11903893,1,DD,Vijay Shankar,Vijay Shankar,not out,43,30,3,2,143.33
+11903893,1,DD,Abhishek Sharma,Abhishek Sharma,not out,15,10,0,1,150
+11903893,2,MI,Suryakumar Yadav,Suryakumar Yadav,c Vijay Shankar b Lamichhane,12,4,1,1,300
+11903893,2,MI,Evin Lewis,Evin Lewis,st Pant b A Mishra,48,31,3,4,154.84
+11903893,2,MI,Ishan Kishan (wk),Ishan Kishan (wk),c Vijay Shankar b A Mishra,5,13,0,0,38.46
+11903893,2,MI,Kieron Pollard,Kieron Pollard,c Boult b Lamichhane,7,7,0,0,100
+11903893,2,MI,Rohit Sharma (c),Rohit Sharma (c),c Boult b Harshal Patel,13,11,1,0,118.18
+11903893,2,MI,Krunal Pandya,Krunal Pandya,c (sub)Rahul Tewatia b Lamichhane,4,3,1,0,133.33
+11903893,2,MI,Hardik Pandya,Hardik Pandya,c (sub)Rahul Tewatia b A Mishra,27,17,2,1,158.82
+11903893,2,MI,Ben Cutting,Ben Cutting,c Maxwell b Harshal Patel,37,20,2,3,185
+11903893,2,MI,Mayank Markande,Mayank Markande,b Boult,3,10,0,0,30
+11903893,2,MI,Jasprit Bumrah,Jasprit Bumrah,c Boult b Harshal Patel,0,1,0,0,0
+11903893,2,MI,Mustafizur Rahman,Mustafizur Rahman,not out,0,0,0,0,0
+26731324,1,KXIP,Rahul (wk),Rahul (wk),b Lungi Ngidi,7,11,1,0,63.64
+26731324,1,KXIP,Gayle,Chris Gayle,c Dhoni b Lungi Ngidi,0,2,0,0,0
+26731324,1,KXIP,Finch,Aaron Finch,c Raina b D Chahar,4,6,1,0,66.67
+26731324,1,KXIP,Manoj Tiwary,Manoj Tiwary,c Dhoni b Ravindra Jadeja,35,30,3,1,116.67
+26731324,1,KXIP,Miller,David Miller,b DJ Bravo,24,22,1,1,109.09
+26731324,1,KXIP,Nair,Karun Nair,c D Chahar b DJ Bravo,54,26,3,5,207.69
+26731324,1,KXIP,Axar,Axar Patel,c Billings b SN Thakur,14,12,0,1,116.67
+26731324,1,KXIP,Ashwin (c),Ashwin (c),c Dhoni b Lungi Ngidi,0,1,0,0,0
+26731324,1,KXIP,Andrew Tye,Andrew Tye,c Raina b Lungi Ngidi,0,2,0,0,0
+26731324,1,KXIP,Mohit Sharma,Mohit Sharma,not out,2,3,0,0,66.67
+26731324,1,KXIP,Rajpoot,Ankit Rajpoot,c du Plessis b SN Thakur,2,4,0,0,50
+26731324,2,CSK,Ambati Rayudu,Ambati Rayudu,c Rahul b Mohit Sharma,1,3,0,0,33.33
+26731324,2,CSK,Faf du Plessis,Faf du Plessis,c Gayle b Rajpoot,14,15,3,0,93.33
+26731324,2,CSK,Suresh Raina,Suresh Raina,not out,61,48,4,2,127.08
+26731324,2,CSK,Sam Billings,Sam Billings,b Rajpoot,0,1,0,0,0
+26731324,2,CSK,Harbhajan Singh,Harbhajan Singh,lbw b Ashwin,19,22,2,1,86.36
+26731324,2,CSK,Deepak Chahar,Deepak Chahar,c Mohit Sharma b Ashwin,39,20,1,3,195
+26731324,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),not out,16,7,1,1,228.57
+83120692,1,SRH,Dhawan,Shikhar Dhawan,b D Chahar,0,1,0,0,0
+83120692,1,SRH,Goswami (wk),Goswami (wk),c and b Lungi Ngidi,12,9,2,0,133.33
+83120692,1,SRH,Williamson (c),Williamson (c),c Dhoni b SN Thakur,24,15,4,0,160
+83120692,1,SRH,Manish Pandey,Manish Pandey,c and b Ravindra Jadeja,8,16,0,0,50
+83120692,1,SRH,Shakib,Shakib Al Hasan,c Dhoni b DJ Bravo,12,10,2,0,120
+83120692,1,SRH,Y Pathan,Y Pathan,c and b DJ Bravo,24,29,3,0,82.76
+83120692,1,SRH,C Brathwaite,C Brathwaite,not out,43,29,1,4,148.28
+83120692,1,SRH,Bhuvneshwar,Bhuvneshwar Kumar,run out (Dhoni),7,11,0,0,63.64
+83120692,2,CSK,Shane Watson,Shane Watson,c Goswami b Bhuvneshwar,0,5,0,0,0
+83120692,2,CSK,Faf du Plessis,Faf du Plessis,not out,67,42,5,4,159.52
+83120692,2,CSK,Suresh Raina,Suresh Raina,b S Kaul,22,13,4,0,169.23
+83120692,2,CSK,Ambati Rayudu,Ambati Rayudu,b S Kaul,0,1,0,0,0
+83120692,2,CSK,MS Dhoni (c & wk),MS Dhoni (c & wk),b Rashid Khan,9,18,1,0,50
+83120692,2,CSK,Dwayne Bravo,Dwayne Bravo,c Dhawan b Rashid Khan,7,11,0,0,63.64
+83120692,2,CSK,Ravindra Jadeja,Ravindra Jadeja,c and b Sandeep Sharma,3,5,0,0,60
+83120692,2,CSK,Deepak Chahar,Deepak Chahar,c C Brathwaite b Sandeep Sharma,10,6,0,1,166.67
+83120692,2,CSK,Harbhajan Singh,Harbhajan Singh,run out (Rashid Khan/C Brathwaite),2,9,0,0,22.22
+83120692,2,CSK,Shardul Thakur,Shardul Thakur,not out,15,5,3,0,300
+32529376,1,KKR,Narine,Sunil Narine,st Klaasen b Gowtham,4,2,1,0,200
+32529376,1,KKR,Chris Lynn,Chris Lynn,c and b Shreyas Gopal,18,22,2,0,81.82
+32529376,1,KKR,Uthappa,Robin Uthappa,c and b Gowtham,3,7,0,0,42.86
+32529376,1,KKR,Nitish Rana,Nitish Rana,c Unadkat b Jofra Archer,3,5,0,0,60
+32529376,1,KKR,Karthik (c & wk),Karthik (c & wk),c A Rahane b Laughlin,52,38,4,2,136.84
+32529376,1,KKR,Shubman Gill,Shubman Gill,c Klaasen b Jofra Archer,28,17,3,1,164.71
+32529376,1,KKR,A Russell,A Russell,not out,49,25,3,5,196
+32529376,1,KKR,Searles,Javon Searles,c Jofra Archer b Laughlin,2,5,0,0,40
+32529376,1,KKR,Chawla,Piyush Chawla,not out,0,0,0,0,0
+32529376,2,RR,Ajinkya Rahane (c),Ajinkya Rahane (c),c and b Kuldeep Yadav,46,41,4,1,112.2
+32529376,2,RR,Rahul Tripathi,Rahul Tripathi,c and b Chawla,20,13,1,2,153.85
+32529376,2,RR,Sanju Samson,Sanju Samson,c Searles b Chawla,50,38,4,2,131.58
+32529376,2,RR,Heinrich Klaasen (wk),Heinrich Klaasen (wk),not out,18,18,1,0,100
+32529376,2,RR,Stuart Binny,Stuart Binny,c Chris Lynn b Prasidh,0,3,0,0,0
+32529376,2,RR,Krishnappa Gowtham,Krishnappa Gowtham,not out,9,7,1,0,128.57
+55717066,1,SRH,Saha (wk),Saha (wk),st Karthik b Chawla,35,27,5,0,129.63
+55717066,1,SRH,Dhawan,Shikhar Dhawan,lbw b Kuldeep Yadav,34,24,4,1,141.67
+55717066,1,SRH,Williamson (c),Williamson (c),c Karthik b Kuldeep Yadav,3,3,0,0,100
+55717066,1,SRH,Shakib,Shakib Al Hasan,run out (Kuldeep Yadav),28,24,4,0,116.67
+55717066,1,SRH,Deepak Hooda,Deepak Hooda,c Chawla b Narine,19,19,0,1,100
+55717066,1,SRH,Y Pathan,Y Pathan,c Chawla b Shivam Mavi,3,7,0,0,42.86
+55717066,1,SRH,C Brathwaite,C Brathwaite,run out (Nitish Rana/Karthik),8,4,0,1,200
+55717066,1,SRH,Rashid Khan,Rashid Khan,not out,34,10,2,4,340
+55717066,1,SRH,Bhuvneshwar,Bhuvneshwar Kumar,not out,5,2,1,0,250
+55717066,2,KKR,Chris Lynn,Chris Lynn,lbw b Rashid Khan,48,31,6,2,154.84
+55717066,2,KKR,Sunil Narine,Sunil Narine,c C Brathwaite b S Kaul,26,13,4,1,200
+55717066,2,KKR,Nitish Rana,Nitish Rana,run out (Rashid Khan/Saha),22,16,1,2,137.5
+55717066,2,KKR,Robin Uthappa,Robin Uthappa,b Rashid Khan,2,8,0,0,25
+55717066,2,KKR,Dinesh Karthik (c & wk),Dinesh Karthik (c & wk),b Shakib,8,6,1,0,133.33
+55717066,2,KKR,Shubman Gill,Shubman Gill,c Rashid Khan b C Brathwaite,30,20,2,1,150
+55717066,2,KKR,Andre Russell,Andre Russell,c Dhawan b Rashid Khan,3,7,0,0,42.86
+55717066,2,KKR,Piyush Chawla,Piyush Chawla,b S Kaul,12,12,0,1,100
+55717066,2,KKR,Shivam Mavi,Shivam Mavi,c Rashid Khan b C Brathwaite,6,4,1,0,150
+55717066,2,KKR,Kuldeep Yadav,Kuldeep Yadav,not out,0,3,0,0,0
+55717066,2,KKR,Prasidh Krishna,Prasidh Krishna,not out,0,0,0,0,0
+53482560,1,SRH,Goswami (wk),Goswami (wk),run out (Karn Sharma/Dhoni),5,5,0,0,100
+53482560,1,SRH,Dhawan,Shikhar Dhawan,b Ravindra Jadeja,26,25,2,1,104
+53482560,1,SRH,Williamson (c),Williamson (c),st Dhoni b Karn Sharma,47,36,5,2,130.56
+53482560,1,SRH,Shakib,Shakib Al Hasan,c Raina b DJ Bravo,23,15,2,1,153.33
+53482560,1,SRH,Y Pathan,Y Pathan,not out,45,25,4,2,180
+53482560,1,SRH,Deepak Hooda,Deepak Hooda,c (sub)D Shorey b Lungi Ngidi,3,4,0,0,75
+53482560,1,SRH,C Brathwaite,C Brathwaite,c Rayudu b SN Thakur,21,11,0,3,190.91
+53482560,2,CSK,Shane Watson,Shane Watson,not out,117,57,11,8,205.26
+53482560,2,CSK,Faf du Plessis,Faf du Plessis,c and b Sandeep Sharma,10,11,1,0,90.91
+53482560,2,CSK,Suresh Raina,Suresh Raina,c Goswami b C Brathwaite,32,24,3,1,133.33
+53482560,2,CSK,Ambati Rayudu,Ambati Rayudu,not out,16,19,1,1,84.21

@@ -1,0 +1,61 @@
+date,team1,team2,venue,match_id
+4/7/2018,MI,CSK,"Wankhede Stadium, Mumbai",25679291
+4/8/2018,PBKS,DC,"Punjab Cricket Association IS Bindra Stadium, Mohali",30183435
+4/8/2018,KKR,RCB,"Eden Gardens, Kolkata",50552842
+4/9/2018,SRH,RR,"Rajiv Gandhi International Stadium, Hyderabad",16890119
+4/10/2018,CSK,KKR,"MA Chidambaram Stadium, Chennai",16228818
+4/11/2018,RR,DC,"Sawai Mansingh Stadium, Jaipur",57401276
+4/12/2018,SRH,MI,"Rajiv Gandhi International Stadium, Hyderabad",89818043
+4/13/2018,RCB,PBKS,"M.Chinnaswamy Stadium, Bengaluru",10591151
+4/14/2018,MI,DC,"Wankhede Stadium, Mumbai",61770985
+4/14/2018,KKR,SRH,"Eden Gardens, Kolkata",45899307
+4/15/2018,RCB,RR,"M.Chinnaswamy Stadium, Bengaluru",57422007
+4/15/2018,PBKS,CSK,"Punjab Cricket Association IS Bindra Stadium, Mohali",88927779
+4/16/2018,KKR,DC,"Eden Gardens, Kolkata",52943274
+4/17/2018,MI,RCB,"Wankhede Stadium, Mumbai",79481315
+4/18/2018,RR,KKR,"Sawai Mansingh Stadium, Jaipur",79450473
+4/19/2018,PBKS,SRH,"Punjab Cricket Association IS Bindra Stadium, Mohali",80774249
+4/20/2018,CSK,RR,"Maharashtra Cricket Association Stadium, Pune",89102970
+4/21/2018,KKR,PBKS,"Eden Gardens, Kolkata",29027302
+4/21/2018,RCB,DC,"M.Chinnaswamy Stadium, Bengaluru",44251598
+4/22/2018,SRH,CSK,"Rajiv Gandhi International Stadium, Hyderabad",64859377
+4/22/2018,RR,MI,"Sawai Mansingh Stadium, Jaipur",35540201
+4/23/2018,DC,PBKS,"Arun Jaitley Stadium, Delhi",97839188
+4/24/2018,MI,SRH,"Wankhede Stadium, Mumbai",22438751
+4/25/2018,RCB,CSK,"M.Chinnaswamy Stadium, Bengaluru",24653108
+4/26/2018,SRH,PBKS,"Rajiv Gandhi International Stadium, Hyderabad",68797121
+4/27/2018,DC,KKR,"Arun Jaitley Stadium, Delhi",91943896
+4/28/2018,CSK,MI,"Maharashtra Cricket Association Stadium, Pune",30746005
+4/29/2018,RR,SRH,"Sawai Mansingh Stadium, Jaipur",55652113
+4/29/2018,RCB,KKR,"M.Chinnaswamy Stadium, Bengaluru",77093352
+4/30/2018,CSK,DC,"Maharashtra Cricket Association Stadium, Pune",86795960
+5/1/2018,RCB,MI,"M.Chinnaswamy Stadium, Bengaluru",14402401
+5/2/2018,DC,RR,"Arun Jaitley Stadium, Delhi",86204440
+5/3/2018,KKR,CSK,"Eden Gardens, Kolkata",63587158
+5/4/2018,PBKS,MI,"Holkar Cricket Stadium, Indore",88391654
+5/5/2018,CSK,RCB,"Maharashtra Cricket Association Stadium, Pune",11522540
+5/5/2018,SRH,DC,"Rajiv Gandhi International Stadium, Hyderabad",98904096
+5/6/2018,MI,KKR,"Wankhede Stadium, Mumbai",61739047
+5/6/2018,PBKS,RR,"Holkar Cricket Stadium, Indore",29216261
+5/7/2018,SRH,RCB,"Rajiv Gandhi International Stadium, Hyderabad",70861412
+5/8/2018,RR,PBKS,"Sawai Mansingh Stadium, Jaipur",63572074
+5/9/2018,KKR,MI,"Eden Gardens, Kolkata",99171228
+5/10/2018,DC,SRH,"Arun Jaitley Stadium, Delhi",78705812
+5/11/2018,RR,CSK,"Sawai Mansingh Stadium, Jaipur",23170294
+5/12/2018,PBKS,KKR,"Holkar Cricket Stadium, Indore",73983062
+5/12/2018,DC,RCB,"Arun Jaitley Stadium, Delhi",17701187
+5/13/2018,CSK,SRH,"Maharashtra Cricket Association Stadium, Pune",44465908
+5/13/2018,MI,RR,"Wankhede Stadium, Mumbai",14405637
+5/14/2018,PBKS,RCB,"Holkar Cricket Stadium, Indore",54112227
+5/15/2018,KKR,RR,"Eden Gardens, Kolkata",37307759
+5/16/2018,MI,PBKS,"Wankhede Stadium, Mumbai",95655282
+5/17/2018,RCB,SRH,"M.Chinnaswamy Stadium, Bengaluru",78640391
+5/18/2018,DC,CSK,"Arun Jaitley Stadium, Delhi",30469729
+5/19/2018,RR,RCB,"Sawai Mansingh Stadium, Jaipur",28038694
+5/19/2018,SRH,KKR,"Rajiv Gandhi International Stadium, Hyderabad",88389412
+5/20/2018,DC,MI,"Arun Jaitley Stadium, Delhi",11903893
+5/20/2018,CSK,PBKS,"Maharashtra Cricket Association Stadium, Pune",26731324
+5/22/2018,SRH,CSK,"Wankhede Stadium, Mumbai",83120692
+5/23/2018,KKR,RR,"Eden Gardens, Kolkata",32529376
+5/25/2018,SRH,KKR,"Eden Gardens, Kolkata",55717066
+5/27/2018,CSK,SRH,"Wankhede Stadium, Mumbai",53482560

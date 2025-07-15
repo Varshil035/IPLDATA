@@ -1,0 +1,228 @@
+player_id,player_name,team,team_id,team_abrv
+17913492,Shivam Dube,Chennai Super Kings,111,CSK
+24413052,Shreyas Gopal,Chennai Super Kings,111,CSK
+32512944,Deepak Hooda,Chennai Super Kings,111,CSK
+38685509,Rahul Tripathi,Chennai Super Kings,111,CSK
+40099896,Ruturaj Gaikwad,Chennai Super Kings,111,CSK
+41794795,Jamie Overton,Chennai Super Kings,111,CSK
+43846882,Devon Conway,Chennai Super Kings,111,CSK
+46621199,Gurjapneet Singh,Chennai Super Kings,111,CSK
+48359806,Ravichandran Ashwin,Chennai Super Kings,111,CSK
+56411106,Shaik Rasheed,Chennai Super Kings,111,CSK
+58629406,Ravindra Jadeja,Chennai Super Kings,111,CSK
+60765083,Vansh Bedi,Chennai Super Kings,111,CSK
+64488420,Anshul Kamboj,Chennai Super Kings,111,CSK
+67792849,Rachin Ravindra,Chennai Super Kings,111,CSK
+67901475,Khaleel Ahmed,Chennai Super Kings,111,CSK
+68209317,Matheesha Pathirana,Chennai Super Kings,111,CSK
+70198228,MS Dhoni,Chennai Super Kings,111,CSK
+71375013,Sam Curran,Chennai Super Kings,111,CSK
+72048961,Ramakrishna Ghosh,Chennai Super Kings,111,CSK
+78141523,Noor Ahmad,Chennai Super Kings,111,CSK
+84212641,Kamlesh Nagarkoti,Chennai Super Kings,111,CSK
+84823528,Vijay Shankar,Chennai Super Kings,111,CSK
+96584788,Andre Siddarth,Chennai Super Kings,111,CSK
+96760362,Nathan Ellis,Chennai Super Kings,111,CSK
+96895857,Mukesh Choudhary,Chennai Super Kings,111,CSK
+10840155,Dushmantha Chameera,Delhi Capitals,222,DC
+13644283,Tristan Stubbs,Delhi Capitals,222,DC
+14340516,Vipraj Nigam,Delhi Capitals,222,DC
+15816854,Tripurana Vijay,Delhi Capitals,222,DC
+16517321,Darshan Nalkande,Delhi Capitals,222,DC
+17294593,Donovan Ferreira,Delhi Capitals,222,DC
+17587546,Sameer Rizvi,Delhi Capitals,222,DC
+20350623,Mukesh Kumar,Delhi Capitals,222,DC
+20747072,Jake Fraser-McGurk,Delhi Capitals,222,DC
+22126778,KL Rahul,Delhi Capitals,222,DC
+25580874,Madhav Tiwari,Delhi Capitals,222,DC
+33176257,Manvanth Kumar,Delhi Capitals,222,DC
+37790102,T. Natarajan,Delhi Capitals,222,DC
+40867382,Faf du Plessis,Delhi Capitals,222,DC
+41543088,Mohit Sharma,Delhi Capitals,222,DC
+45245488,Ajay Mandal,Delhi Capitals,222,DC
+46609525,Axar Patel,Delhi Capitals,222,DC
+48425096,Karun Nair,Delhi Capitals,222,DC
+58059919,Kuldeep Yadav,Delhi Capitals,222,DC
+61977544,Mitchell Starc,Delhi Capitals,222,DC
+79242080,Abishek Porel,Delhi Capitals,222,DC
+86880593,Ashutosh Sharma,Delhi Capitals,222,DC
+14809605,Nishant Sindhu,Gujarat Titans,333,GT
+17057000,Sai Sudharsan,Gujarat Titans,333,GT
+17241272,Kumar Kushagra,Gujarat Titans,333,GT
+20188696,Karim Janat,Gujarat Titans,333,GT
+20830216,Gerald Coetzee,Gujarat Titans,333,GT
+26490932,Sai Kishore,Gujarat Titans,333,GT
+29379700,Mahipal Lomror,Gujarat Titans,333,GT
+31242358,Rashid Khan,Gujarat Titans,333,GT
+37101813,Jos Buttler,Gujarat Titans,333,GT
+37562423,Gurnoor Singh Brar,Gujarat Titans,333,GT
+44898588,Jayant Yadav,Gujarat Titans,333,GT
+48735424,Sherfane Rutherford,Gujarat Titans,333,GT
+51680131,Manav Suthar,Gujarat Titans,333,GT
+53710917,Kulwant Khejroliya,Gujarat Titans,333,GT
+59123119,Anuj Rawat,Gujarat Titans,333,GT
+59350838,Mohd. Arshad Khan,Gujarat Titans,333,GT
+66964910,Shubman Gill,Gujarat Titans,333,GT
+69661158,Prasidh Krishna,Gujarat Titans,333,GT
+70540866,Kagiso Rabada,Gujarat Titans,333,GT
+70787813,Mohammed Siraj,Gujarat Titans,333,GT
+73273165,Ishant Sharma,Gujarat Titans,333,GT
+77071504,Glenn Phillips,Gujarat Titans,333,GT
+84209270,Shahrukh Khan,Gujarat Titans,333,GT
+86513885,Rahul Tewatia,Gujarat Titans,333,GT
+95800270,Washington Sundar,Gujarat Titans,333,GT
+11271975,Spencer Johnson,Kolkata Knight Riders,444,KKR
+11985166,Vaibhav Arora,Kolkata Knight Riders,444,KKR
+14521776,Rovman Powell,Kolkata Knight Riders,444,KKR
+16314207,Venkatesh Iyer,Kolkata Knight Riders,444,KKR
+26979998,Quinton de Kock,Kolkata Knight Riders,444,KKR
+34667363,Manish Pandey,Kolkata Knight Riders,444,KKR
+35681741,Ramandeep Singh,Kolkata Knight Riders,444,KKR
+37579092,Harshit Rana,Kolkata Knight Riders,444,KKR
+37933663,Rinku Singh,Kolkata Knight Riders,444,KKR
+38616764,Chetan Sakariya,Kolkata Knight Riders,444,KKR
+39950686,Andre Russell,Kolkata Knight Riders,444,KKR
+49309154,Anukul Roy,Kolkata Knight Riders,444,KKR
+59620035,Varun Chakaravarthy,Kolkata Knight Riders,444,KKR
+65210641,Mayank Markande,Kolkata Knight Riders,444,KKR
+82523980,Sunil Narine,Kolkata Knight Riders,444,KKR
+83245536,Rahmanullah Gurbaz,Kolkata Knight Riders,444,KKR
+84300301,Luvnith Sisodia,Kolkata Knight Riders,444,KKR
+89145373,Moeen Ali,Kolkata Knight Riders,444,KKR
+98086080,Angkrish Raghuvanshi,Kolkata Knight Riders,444,KKR
+98718324,Ajinkya Rahane,Kolkata Knight Riders,444,KKR
+99536350,Anrich Nortje,Kolkata Knight Riders,444,KKR
+11047659,Avesh Khan,Lucknow Super Giants,555,LSG
+16186339,Rajvardhan Hangargekar,Lucknow Super Giants,555,LSG
+21731242,Prince Yadav,Lucknow Super Giants,555,LSG
+22310717,Mayank Yadav,Lucknow Super Giants,555,LSG
+24778298,Mitchell Marsh,Lucknow Super Giants,555,LSG
+29891082,Rishabh Pant,Lucknow Super Giants,555,LSG
+31042801,Shardul Thakur,Lucknow Super Giants,555,LSG
+32039605,Ayush Badoni,Lucknow Super Giants,555,LSG
+37127866,Shamar Joseph,Lucknow Super Giants,555,LSG
+38067930,M. Siddharth,Lucknow Super Giants,555,LSG
+48837272,Nicholas Pooran,Lucknow Super Giants,555,LSG
+50653979,Abdul Samad,Lucknow Super Giants,555,LSG
+52056053,David Miller,Lucknow Super Giants,555,LSG
+55556465,Matthew Breetzke,Lucknow Super Giants,555,LSG
+55966457,Yuvraj Chaudhary,Lucknow Super Giants,555,LSG
+58049681,Himmat Singh,Lucknow Super Giants,555,LSG
+68218921,Shahbaz Ahamad,Lucknow Super Giants,555,LSG
+71807418,Digvesh Singh,Lucknow Super Giants,555,LSG
+74980499,Arshin Kulkarni,Lucknow Super Giants,555,LSG
+88671896,Akash Singh,Lucknow Super Giants,555,LSG
+90130521,Ravi Bishnoi,Lucknow Super Giants,555,LSG
+93210504,Akash Deep,Lucknow Super Giants,555,LSG
+97383698,Aryan Juyal,Lucknow Super Giants,555,LSG
+99127818,Aiden Markram,Lucknow Super Giants,555,LSG
+24114478,N. Tilak Varma,Mumbai Indians,666,MI
+24338169,Rohit Sharma,Mumbai Indians,666,MI
+25936401,Surya Kumar Yadav,Mumbai Indians,666,MI
+36130576,Hardik Pandya,Mumbai Indians,666,MI
+40709265,Trent Boult,Mumbai Indians,666,MI
+44062424,Reece Topley,Mumbai Indians,666,MI
+44858481,Ryan Rickelton,Mumbai Indians,666,MI
+48743659,Will Jacks,Mumbai Indians,666,MI
+50680300,Karn Sharma,Mumbai Indians,666,MI
+52776833,V.Satyanarayana Penmetsa,Mumbai Indians,666,MI
+54655918,Ashwani Kumar,Mumbai Indians,666,MI
+57076914,Raj Angad Bawa,Mumbai Indians,666,MI
+79687514,Mujeeb-ur-Rahman,Mumbai Indians,666,MI
+80888064,Robin Minz,Mumbai Indians,666,MI
+82089529,Deepak Chahar,Mumbai Indians,666,MI
+82475578,Jasprit Bumrah,Mumbai Indians,666,MI
+85409941,Shrijith Krishnan,Mumbai Indians,666,MI
+95948959,Corbin Bosch,Mumbai Indians,666,MI
+96431772,Arjun Tendulkar,Mumbai Indians,666,MI
+96821614,Naman Dhir,Mumbai Indians,666,MI
+97569048,Mitchell Santner,Mumbai Indians,666,MI
+98730093,Bevon Jacobs,Mumbai Indians,666,MI
+99117337,Vignesh Puthur,Mumbai Indians,666,MI
+13674225,Suryansh Shedge,Punjab Kings,777,PK
+14650990,Aaron Hardie,Punjab Kings,777,PK
+18685715,Pyla Avinash,Punjab Kings,777,PK
+21017736,Vishnu Vinod,Punjab Kings,777,PK
+23995522,Harnoor Pannu,Punjab Kings,777,PK
+28144649,Lockie Ferguson,Punjab Kings,777,PK
+30835349,Marcus Stoinis,Punjab Kings,777,PK
+39825470,Harpreet Brar,Punjab Kings,777,PK
+40473723,Prabhsimran Singh,Punjab Kings,777,PK
+44437135,Yash Thakur,Punjab Kings,777,PK
+48559300,Kuldeep Sen,Punjab Kings,777,PK
+53436789,Azmatullah Omarzai,Punjab Kings,777,PK
+64513165,Arshdeep Singh,Punjab Kings,777,PK
+67061180,Glenn Maxwell,Punjab Kings,777,PK
+74008433,Josh Inglis,Punjab Kings,777,PK
+74311130,Musheer Khan,Punjab Kings,777,PK
+74767696,Priyansh Arya,Punjab Kings,777,PK
+77295052,Shreyas Iyer,Punjab Kings,777,PK
+78476176,Shashank Singh,Punjab Kings,777,PK
+79460408,Xavier Bartlett,Punjab Kings,777,PK
+94020078,Pravin Dubey,Punjab Kings,777,PK
+94919402,Nehal Wadhera,Punjab Kings,777,PK
+96668413,Marco Jansen,Punjab Kings,777,PK
+97416156,Yuzvendra Chahal,Punjab Kings,777,PK
+98485021,Vyshak Vijaykumar,Punjab Kings,777,PK
+21832671,Tushar Deshpande,Rajasthan Royals,888,RR
+24143238,Sandeep Sharma,Rajasthan Royals,888,RR
+33613735,Fazalhaq Farooqi,Rajasthan Royals,888,RR
+41060398,Shimron Hetmyer,Rajasthan Royals,888,RR
+46799788,Yashasvi Jaiswal,Rajasthan Royals,888,RR
+47429014,Wanindu Hasaranga,Rajasthan Royals,888,RR
+50774226,Kumar Kartikeya Singh,Rajasthan Royals,888,RR
+55111479,Sanju Samson,Rajasthan Royals,888,RR
+58328009,Kunal Rathore,Rajasthan Royals,888,RR
+60419715,Nitish Rana,Rajasthan Royals,888,RR
+61890443,Shubham Dubey,Rajasthan Royals,888,RR
+62436703,Ashok Sharma,Rajasthan Royals,888,RR
+64582360,Riyan Parag,Rajasthan Royals,888,RR
+66494398,Vaibhav Suryavanshi,Rajasthan Royals,888,RR
+70281247,Maheesh Theekshana,Rajasthan Royals,888,RR
+81858761,Yudhvir Charak,Rajasthan Royals,888,RR
+82085291,Jofra Archer,Rajasthan Royals,888,RR
+84701405,Akash Madhwal,Rajasthan Royals,888,RR
+97293759,Kwena Maphaka,Rajasthan Royals,888,RR
+97963572,Dhruv Jurel,Rajasthan Royals,888,RR
+10188694,Krunal Pandya,Royal Challengers Bangaluru,999,RCB
+12662977,Nuwan Thushara,Royal Challengers Bangaluru,999,RCB
+19287462,Abhinandan Singh,Royal Challengers Bangaluru,999,RCB
+20657349,Swapnil Singh,Royal Challengers Bangaluru,999,RCB
+21003440,Rasikh Dar,Royal Challengers Bangaluru,999,RCB
+23029029,Rajat Patidar,Royal Challengers Bangaluru,999,RCB
+27112548,Manoj Bhandage,Royal Challengers Bangaluru,999,RCB
+27681274,Phil Salt,Royal Challengers Bangaluru,999,RCB
+27921134,Josh Hazlewood,Royal Challengers Bangaluru,999,RCB
+29643971,Tim David,Royal Challengers Bangaluru,999,RCB
+31738699,Swastik Chhikara,Royal Challengers Bangaluru,999,RCB
+39304663,Lungisani Ngidi,Royal Challengers Bangaluru,999,RCB
+42681300,Bhuvneshwar Kumar,Royal Challengers Bangaluru,999,RCB
+45971032,Yash Dayal,Royal Challengers Bangaluru,999,RCB
+47067695,Devdutt Padikkal,Royal Challengers Bangaluru,999,RCB
+50235661,Jitesh Sharma,Royal Challengers Bangaluru,999,RCB
+60403239,Suyash Sharma,Royal Challengers Bangaluru,999,RCB
+60488206,Virat Kohli,Royal Challengers Bangaluru,999,RCB
+70046788,Mohit Rathee,Royal Challengers Bangaluru,999,RCB
+71784354,Romario Shepherd,Royal Challengers Bangaluru,999,RCB
+72862045,Liam Livingstone,Royal Challengers Bangaluru,999,RCB
+98038423,Jacob Bethell,Royal Challengers Bangaluru,999,RCB
+10377165,Ishan Kishan,Sunrisers Hyderabad,123,SRH
+14076231,Eshan Malinga,Sunrisers Hyderabad,123,SRH
+32049185,Atharva Taide,Sunrisers Hyderabad,123,SRH
+33358449,Travis Head,Sunrisers Hyderabad,123,SRH
+33427261,Pat Cummins,Sunrisers Hyderabad,123,SRH
+37283539,Heinrich Klaasen,Sunrisers Hyderabad,123,SRH
+38857175,Nitish Kumar Reddy,Sunrisers Hyderabad,123,SRH
+43167109,Wiaan Mulder,Sunrisers Hyderabad,123,SRH
+44257937,Kamindu Mendis,Sunrisers Hyderabad,123,SRH
+46333248,Abhishek Sharma,Sunrisers Hyderabad,123,SRH
+49822071,Simarjeet Singh,Sunrisers Hyderabad,123,SRH
+51727222,Aniket Verma,Sunrisers Hyderabad,123,SRH
+53278815,Mohammad Shami,Sunrisers Hyderabad,123,SRH
+60870378,Sachin Baby,Sunrisers Hyderabad,123,SRH
+67923692,Zeeshan Ansari,Sunrisers Hyderabad,123,SRH
+81071271,Abhinav Manohar,Sunrisers Hyderabad,123,SRH
+85014715,Adam Zampa,Sunrisers Hyderabad,123,SRH
+88511985,Harshal Patel,Sunrisers Hyderabad,123,SRH
+93551046,Rahul Chahar,Sunrisers Hyderabad,123,SRH
+96844281,Jaydev Unadkat,Sunrisers Hyderabad,123,SRH
